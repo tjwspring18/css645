@@ -1,0 +1,280 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.9 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global}
+    \entry{baptist}{book}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=ffe72d19972f931bb0a0145e34a4b940}{%
+           family={Baptist},
+           familyi={B\bibinitperiod},
+           given={Edward},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Hachette}%
+      }
+      \strng{namehash}{ffe72d19972f931bb0a0145e34a4b940}
+      \strng{fullhash}{ffe72d19972f931bb0a0145e34a4b940}
+      \strng{bibnamehash}{ffe72d19972f931bb0a0145e34a4b940}
+      \strng{authorbibnamehash}{ffe72d19972f931bb0a0145e34a4b940}
+      \strng{authornamehash}{ffe72d19972f931bb0a0145e34a4b940}
+      \strng{authorfullhash}{ffe72d19972f931bb0a0145e34a4b940}
+      \field{sortinit}{B}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The half has never been told: Slavery and the making of American capitalism}
+      \field{year}{2016}
+    \endentry
+    \entry{beckert2004emancipation}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=15abc3cc38a4138e38599eb222907a0a}{%
+           family={Beckert},
+           familyi={B\bibinitperiod},
+           given={Sven},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{15abc3cc38a4138e38599eb222907a0a}
+      \strng{fullhash}{15abc3cc38a4138e38599eb222907a0a}
+      \strng{bibnamehash}{15abc3cc38a4138e38599eb222907a0a}
+      \strng{authorbibnamehash}{15abc3cc38a4138e38599eb222907a0a}
+      \strng{authornamehash}{15abc3cc38a4138e38599eb222907a0a}
+      \strng{authorfullhash}{15abc3cc38a4138e38599eb222907a0a}
+      \field{sortinit}{B}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The American Historical Review}
+      \field{number}{5}
+      \field{title}{Emancipation and empire: Reconstructing the worldwide web of cotton production in the age of the American Civil War}
+      \field{volume}{109}
+      \field{year}{2004}
+      \field{pages}{1405\bibrangedash 1438}
+      \range{pages}{34}
+    \endentry
+    \entry{empire}{book}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=15abc3cc38a4138e38599eb222907a0a}{%
+           family={Beckert},
+           familyi={B\bibinitperiod},
+           given={Sven},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Vintage}%
+      }
+      \strng{namehash}{15abc3cc38a4138e38599eb222907a0a}
+      \strng{fullhash}{15abc3cc38a4138e38599eb222907a0a}
+      \strng{bibnamehash}{15abc3cc38a4138e38599eb222907a0a}
+      \strng{authorbibnamehash}{15abc3cc38a4138e38599eb222907a0a}
+      \strng{authornamehash}{15abc3cc38a4138e38599eb222907a0a}
+      \strng{authorfullhash}{15abc3cc38a4138e38599eb222907a0a}
+      \field{sortinit}{B}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Empire of cotton: a global history}
+      \field{year}{2014}
+    \endentry
+    \entry{beckert2016slavery}{book}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=15abc3cc38a4138e38599eb222907a0a}{%
+           family={Beckert},
+           familyi={B\bibinitperiod},
+           given={Sven},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=650c250e1c596edf93482760b5f9a87e}{%
+           family={Rockman},
+           familyi={R\bibinitperiod},
+           given={Seth},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {University of Pennsylvania Press}%
+      }
+      \strng{namehash}{38d9300be4fc4d1e389b5e4180709fde}
+      \strng{fullhash}{38d9300be4fc4d1e389b5e4180709fde}
+      \strng{bibnamehash}{38d9300be4fc4d1e389b5e4180709fde}
+      \strng{authorbibnamehash}{38d9300be4fc4d1e389b5e4180709fde}
+      \strng{authornamehash}{38d9300be4fc4d1e389b5e4180709fde}
+      \strng{authorfullhash}{38d9300be4fc4d1e389b5e4180709fde}
+      \field{sortinit}{B}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Slavery's capitalism: a new history of American economic development}
+      \field{year}{2016}
+    \endentry
+    \entry{elkins2013slavery}{book}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=47bbd51b417c25dfcf363d9384fe364b}{%
+           family={Elkins},
+           familyi={E\bibinitperiod},
+           given={Stanley},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {University of Chicago Press}%
+      }
+      \strng{namehash}{47bbd51b417c25dfcf363d9384fe364b}
+      \strng{fullhash}{47bbd51b417c25dfcf363d9384fe364b}
+      \strng{bibnamehash}{47bbd51b417c25dfcf363d9384fe364b}
+      \strng{authorbibnamehash}{47bbd51b417c25dfcf363d9384fe364b}
+      \strng{authornamehash}{47bbd51b417c25dfcf363d9384fe364b}
+      \strng{authorfullhash}{47bbd51b417c25dfcf363d9384fe364b}
+      \field{sortinit}{E}
+      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Slavery: A problem in American institutional and intellectual life}
+      \field{year}{2013}
+    \endentry
+    \entry{genovese2014political}{book}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=0b4c6224811d9191813a6e099bb20590}{%
+           family={Genovese},
+           familyi={G\bibinitperiod},
+           given={Eugene},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Wesleyan University Press}%
+      }
+      \strng{namehash}{0b4c6224811d9191813a6e099bb20590}
+      \strng{fullhash}{0b4c6224811d9191813a6e099bb20590}
+      \strng{bibnamehash}{0b4c6224811d9191813a6e099bb20590}
+      \strng{authorbibnamehash}{0b4c6224811d9191813a6e099bb20590}
+      \strng{authornamehash}{0b4c6224811d9191813a6e099bb20590}
+      \strng{authorfullhash}{0b4c6224811d9191813a6e099bb20590}
+      \field{sortinit}{G}
+      \field{sortinithash}{5e8d2bf9d38de41b1528bd307546008f}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The political economy of slavery: Studies in the economy and society of the slave South}
+      \field{year}{2014}
+    \endentry
+    \entry{river}{book}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=f0f7cf40df468a23dacc30f35233f877}{%
+           family={Johnson},
+           familyi={J\bibinitperiod},
+           given={Walter},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Harvard University Press}%
+      }
+      \strng{namehash}{f0f7cf40df468a23dacc30f35233f877}
+      \strng{fullhash}{f0f7cf40df468a23dacc30f35233f877}
+      \strng{bibnamehash}{f0f7cf40df468a23dacc30f35233f877}
+      \strng{authorbibnamehash}{f0f7cf40df468a23dacc30f35233f877}
+      \strng{authornamehash}{f0f7cf40df468a23dacc30f35233f877}
+      \strng{authorfullhash}{f0f7cf40df468a23dacc30f35233f877}
+      \field{sortinit}{J}
+      \field{sortinithash}{fce5f8d0bd05e8d93f3dbe21c78897ca}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{River of dark dreams}
+      \field{year}{2013}
+    \endentry
+    \entry{olmstead2017cotton}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=213ef4a0c132c97a02a177ce965d4b4c}{%
+           family={Olmstead},
+           familyi={O\bibinitperiod},
+           given={Alan},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=c757b4d1f6aec7869ba5dbc5d1c59b8f}{%
+           family={Rhode},
+           familyi={R\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{0030a3acf6134249d0ea23d433b6f970}
+      \strng{fullhash}{0030a3acf6134249d0ea23d433b6f970}
+      \strng{bibnamehash}{0030a3acf6134249d0ea23d433b6f970}
+      \strng{authorbibnamehash}{0030a3acf6134249d0ea23d433b6f970}
+      \strng{authornamehash}{0030a3acf6134249d0ea23d433b6f970}
+      \strng{authorfullhash}{0030a3acf6134249d0ea23d433b6f970}
+      \field{sortinit}{O}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Explorations in Economic History}
+      \field{title}{Cotton, slavery, and the new history of capitalism}
+      \field{year}{2017}
+    \endentry
+    \entry{williams}{book}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=c42915d62e351de863b56323760b8b41}{%
+           family={Williams},
+           familyi={W\bibinitperiod},
+           given={Eric},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {UNC Press Books}%
+      }
+      \strng{namehash}{c42915d62e351de863b56323760b8b41}
+      \strng{fullhash}{c42915d62e351de863b56323760b8b41}
+      \strng{bibnamehash}{c42915d62e351de863b56323760b8b41}
+      \strng{authorbibnamehash}{c42915d62e351de863b56323760b8b41}
+      \strng{authornamehash}{c42915d62e351de863b56323760b8b41}
+      \strng{authorfullhash}{c42915d62e351de863b56323760b8b41}
+      \field{sortinit}{W}
+      \field{sortinithash}{ecb89ff85896a47dc313960773ac311d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Capitalism and slavery}
+      \field{year}{2014}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

@@ -1,0 +1,123 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.9 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global}
+    \entry{biddle2004military}{book}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=5d51eda35d6d494dad057cbf73a8728b}{%
+           family={Biddle},
+           familyi={B\bibinitperiod},
+           given={Stephen\bibnamedelima D},
+           giveni={S\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Princeton University Press}%
+      }
+      \strng{namehash}{5d51eda35d6d494dad057cbf73a8728b}
+      \strng{fullhash}{5d51eda35d6d494dad057cbf73a8728b}
+      \strng{bibnamehash}{5d51eda35d6d494dad057cbf73a8728b}
+      \strng{authorbibnamehash}{5d51eda35d6d494dad057cbf73a8728b}
+      \strng{authornamehash}{5d51eda35d6d494dad057cbf73a8728b}
+      \strng{authorfullhash}{5d51eda35d6d494dad057cbf73a8728b}
+      \field{sortinit}{B}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Military power: Explaining victory and defeat in modern battle}
+      \field{year}{2004}
+    \endentry
+    \entry{gartzke2001democracy}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=6daa92a78fce568a80227a48f72ced00}{%
+           family={Gartzke},
+           familyi={G\bibinitperiod},
+           given={Erik},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{6daa92a78fce568a80227a48f72ced00}
+      \strng{fullhash}{6daa92a78fce568a80227a48f72ced00}
+      \strng{bibnamehash}{6daa92a78fce568a80227a48f72ced00}
+      \strng{authorbibnamehash}{6daa92a78fce568a80227a48f72ced00}
+      \strng{authornamehash}{6daa92a78fce568a80227a48f72ced00}
+      \strng{authorfullhash}{6daa92a78fce568a80227a48f72ced00}
+      \field{sortinit}{G}
+      \field{sortinithash}{5e8d2bf9d38de41b1528bd307546008f}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Studies Quarterly}
+      \field{number}{3}
+      \field{title}{Democracy and the Preparation for War: Does Regime Type Affect States' Anticipation of Casualties?}
+      \field{volume}{45}
+      \field{year}{2001}
+      \field{pages}{467\bibrangedash 484}
+      \range{pages}{18}
+    \endentry
+    \entry{sechser2010army}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=735d742e91495f4d028982f7b1819a99}{%
+           family={Sechser},
+           familyi={S\bibinitperiod},
+           given={Todd\bibnamedelima S},
+           giveni={T\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=bc5c3409293487bde69f1d7d77577962}{%
+           family={Saunders},
+           familyi={S\bibinitperiod},
+           given={Elizabeth\bibnamedelima N},
+           giveni={E\bibinitperiod\bibinitdelim N\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{ae1b46c6e240fc0f93e13da82a227edf}
+      \strng{fullhash}{ae1b46c6e240fc0f93e13da82a227edf}
+      \strng{bibnamehash}{ae1b46c6e240fc0f93e13da82a227edf}
+      \strng{authorbibnamehash}{ae1b46c6e240fc0f93e13da82a227edf}
+      \strng{authornamehash}{ae1b46c6e240fc0f93e13da82a227edf}
+      \strng{authorfullhash}{ae1b46c6e240fc0f93e13da82a227edf}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Studies Quarterly}
+      \field{number}{2}
+      \field{title}{The Army You Have: The Determinants of Military Mechanization, 1979--2001}
+      \field{volume}{54}
+      \field{year}{2010}
+      \field{pages}{481\bibrangedash 511}
+      \range{pages}{31}
+    \endentry
+  \enddatalist
+  \missing{farrell2001transitional}
+\endrefsection
+\endinput
+

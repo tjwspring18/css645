@@ -1,18 +1,18 @@
 [0] Config.pm:302> INFO - This is Biber 2.10
-[0] Config.pm:305> INFO - Logfile is 'paper2.blg'
-[62] biber:313> INFO - === Thu Apr 26, 2018, 15:54:15
-[107] Biber.pm:371> INFO - Reading 'paper2.bcf'
-[268] Biber.pm:857> INFO - Found 4 citekeys in bib section 0
-[297] Biber.pm:3976> INFO - Processing section 0
-[319] Biber.pm:4136> INFO - Looking for bibtex format file 'paper2.bib' for section 0
-[320] bibtex.pm:1444> INFO - Reading ascii input as UTF-8
-[321] bibtex.pm:1490> INFO - LaTeX decoding ...
-[337] bibtex.pm:1306> INFO - Found BibTeX data source 'paper2.bib'
-[363] Utils.pm:193> WARN - I didn't find a database entry for 'farrell2001transitional' (section 0)
-[388] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[388] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[388] Biber.pm:3804> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
-[389] Biber.pm:3810> INFO - No sort tailoring available for locale 'en-US'
-[399] bbl.pm:617> INFO - Writing 'paper2.bbl' with encoding 'ascii'
-[405] bbl.pm:720> INFO - Output to paper2.bbl
-[405] Biber.pm:110> INFO - WARNINGS: 1
+[1] Config.pm:305> INFO - Logfile is 'paper2.blg'
+[109] biber:313> INFO - === Sat May  5, 2018, 20:43:24
+[172] Biber.pm:371> INFO - Reading 'paper2.bcf'
+[368] Biber.pm:857> INFO - Found 24 citekeys in bib section 0
+[406] Biber.pm:3976> INFO - Processing section 0
+[432] Biber.pm:4136> INFO - Looking for bibtex format file 'paper2.bib' for section 0
+[433] bibtex.pm:1444> INFO - Reading ascii input as UTF-8
+[435] bibtex.pm:1490> INFO - LaTeX decoding ...
+[535] bibtex.pm:1306> INFO - Found BibTeX data source 'paper2.bib'
+[592] Utils.pm:193> WARN - month field 'Dec' in entry 'schmitt_2004' is not an integer - this will probably not sort properly.
+[859] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[861] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[861] Biber.pm:3804> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
+[861] Biber.pm:3810> INFO - No sort tailoring available for locale 'en-US'
+[940] bbl.pm:617> INFO - Writing 'paper2.bbl' with encoding 'ascii'
+[986] bbl.pm:720> INFO - Output to paper2.bbl
+[987] Biber.pm:110> INFO - WARNINGS: 1

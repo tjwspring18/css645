@@ -1924,10 +1924,35 @@
     <bcf:datasource type="file" datatype="bibtex">paper2.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">sechser2010army</bcf:citekey>
+    <bcf:citekey order="1">lyall2009rage</bcf:citekey>
     <bcf:citekey order="2">biddle2004military</bcf:citekey>
-    <bcf:citekey order="3">gartzke2001democracy</bcf:citekey>
-    <bcf:citekey order="4">farrell2001transitional</bcf:citekey>
+    <bcf:citekey order="3">murray1998military</bcf:citekey>
+    <bcf:citekey order="4">locher2004victory</bcf:citekey>
+    <bcf:citekey order="5">zegart2000flawed</bcf:citekey>
+    <bcf:citekey order="6">schmitt_2004</bcf:citekey>
+    <bcf:citekey order="7">mearsheimer1983conventional</bcf:citekey>
+    <bcf:citekey order="8">huth1988extended</bcf:citekey>
+    <bcf:citekey order="9">murray2011military</bcf:citekey>
+    <bcf:citekey order="10">reiter2002democracies</bcf:citekey>
+    <bcf:citekey order="11">quinlivan1999coup</bcf:citekey>
+    <bcf:citekey order="12">talmadge2015dictator</bcf:citekey>
+    <bcf:citekey order="13">brooks2008shaping</bcf:citekey>
+    <bcf:citekey order="14">gartzke2001democracy</bcf:citekey>
+    <bcf:citekey order="15">van1984cult</bcf:citekey>
+    <bcf:citekey order="16">pollack2004arabs</bcf:citekey>
+    <bcf:citekey order="17">farrell1998professionalization</bcf:citekey>
+    <bcf:citekey order="18">farrell2001transnational</bcf:citekey>
+    <bcf:citekey order="19">sechser2010army</bcf:citekey>
+    <bcf:citekey order="20">sechser2010army</bcf:citekey>
+    <bcf:citekey order="21">gilbert2005simulation</bcf:citekey>
+    <bcf:citekey order="22">miller2009complex</bcf:citekey>
+    <bcf:citekey order="23">sechser2010army</bcf:citekey>
+    <bcf:citekey order="24">schelling1960strategy</bcf:citekey>
+    <bcf:citekey order="25">schelling2006micromotives</bcf:citekey>
+    <bcf:citekey order="26">sechser2010army</bcf:citekey>
+    <bcf:citekey order="27">sechser2010army</bcf:citekey>
+    <bcf:citekey order="28">sechser2010army</bcf:citekey>
+    <bcf:citekey order="29">grimm2006standard</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">

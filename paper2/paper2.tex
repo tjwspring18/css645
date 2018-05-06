@@ -1,9 +1,10 @@
 \documentclass{article}
 
-\title{An agent-based model of military mechanization}
 
 \usepackage[citestyle=authoryear, style=authoryear]{biblatex}
 \addbibresource{paper2.bib}
+
+\title{An agent-based model of military mechanization}
 
 \author{Tom Wallace}
 
@@ -19,17 +20,22 @@ hypothesis, and explains why agent-based modeling is an appropriate research str
 Then, it details an original agent-based model; presents results; and discusses
 their implications for the academic debate on military mechanization.
 
-In summary, the orthodox 
+In summary, the orthodox view of military mechanization is that it is a
+reflexive process: states choose their mechanization posture largely based on
+that neighbors and enemies. This paper argues
+that this view---based on traditional longitudinal data analysis---is ripe for
+agentization: 
 
 \section{Background}
 
-States differ in the composition of their militaries, and in particular, of
-their ground forces.\footnote{States may have multiple organizations that
+\subsection{Military mechanization}
+
+States differ in the composition of their military ground forces.\footnote{States may have multiple organizations that
 conduct ground combat operations: e.g., the United States operates both an Army
 and a Marine Corps as independent services. Henceforth, this paper uses the
 terms ``army'' and ``ground forces'' interchangeably.} One notable axis of comparison 
-is \textit{mechanization}: the degree to which the state relies on infantry 
-vs. ground combat vehicles. Treating mechanization as a continuous variable, 
+is \textit{mechanization}: the degree to which an army consists of infantry 
+vs. combat vehicles. Treating mechanization as a continuous variable, 
 one extreme is an army consisting exclusively of dismounted, small 
 arms-wielding infantry units; the other extreme is an army consisting 
 solely of tank units, armored personnel carriers, artillery, and the like.
@@ -37,18 +43,123 @@ Clearly, no modern state embodies either extreme, but the 1970s-era Vietcong are
 a good example of a low-mechanization army and the 1980s-era Israeli army of
 high mechanization.
 
-The consequences of choices regarding mechanization are extreme. To quote former
-U.S. Secretary of Defense Donald Rumsfeld, ``you go to war with the army you
-have.''
+The consequences of choices regarding mechanization are large. There is
+academic consensus that defense policy---including but not limited to
+mechanization---conditions battlefield effectiveness. 
+\cite{lyall2009rage} finds that highly mechanized militaries are less effective
+at counterinsurgency, while \cite{biddle2004military} argues that
+mechanization-enabled mobility aids conventional warfighting. It thus
+pays to have an army that is designed to win the
+kinds of
+conflicts that a state is likely to face. Lacking a crystal ball, however,
+leaders cannot always forecast conflict, and armies are large, complex
+organizations that typically are held to change only infrequently and slowly at
+that, even if there is a pressing need (\cite{murray1998military},
+\cite{locher2004victory}, \cite{zegart2000flawed}). A state suddenly faced with
+a war for which its mechanization posture is ill-suited can either concede or
+pay a cost in blood and treasure; what it cannot do is
+quickly overcome the constraints imposed by past mechanization decisions. 
+A quote from then-Secretary of Defense Donald Rumsfeld---made in 2004, when the U.S. military
+was confronted in Iraq with the consequences of past choices regarding
+mechanization---emphasizes the point:
+``you go to war with the army you have'' (\cite{schmitt_2004}). 
 
-The causes of mechanization 
+The causes of military mechanization are disputed. \textit{Realists} believe 
+that mechanization choices are driven by security environment. States
+choose mechanization policies that they believe will allow them to prevail against potential adversaries, or to send a
+signal of deterrence, or to learn from the perceived mistakes of the last war
+(\cite{mearsheimer1983conventional};
+\cite{huth1988extended}; \cite{murray2011military}). The other school of thought is more
+diverse and so harder to name, but may be termed 
+\textit{institutionalists}. They believe that factors other than 
+strategic calculation determine military mechanization. Domestic political
+institutions---e.g., democracy vs. autocracy, politically stable vs.
+coup-prone, the state of civil-military relations, and so on---may influence 
+force structure (\cite{reiter2002democracies}; \cite{quinlivan1999coup};
+\cite{talmadge2015dictator}; \cite{brooks2008shaping}). Economic factor
+endowments may play a role: e.g., capital-rich states may mechanize more
+than labor-rich states (\cite{gartzke2001democracy}). Lastly,
+ideology (\cite{van1984cult}) and culture (e.g., \cite{pollack2004arabs}) are
+hard-to-measure but perhaps influential. Consider Ireland: between the 1920s and
+1940s, it expended a large portion of its defense budget on building
+a small number of tanks. They were wholly insufficient to repel a British 
+invasion (their ostensible purpose), and
+Ireland would have been better-served to pursue a low-mechanization guerrilla
+defense strategy, but tanks were seen as a prestigious signifier of a ``real''
+professional military, an important factor for the young Irish state
+(\cite{farrell1998professionalization};
+\cite{farrell2001transnational}).
 
-\cite{sechser2010army}
-\cite{biddle2004military}
-\cite{gartzke2001democracy}
-\cite{farrell2001transitional}
+\cite{sechser2010army} is the landmark study on military mechanization. They
+assemble a longitudinal dataset at the country-year level of the mechanization
+of all states between 1979 and 2001, and conduct regression analysis to identify
+the effect of covariates on mechanization. They conclude that ``choices about
+mechanization are strongly associated with a state's security environment.''
+The more mechanized a state's geographic neighbors and enemies, the higher the state's 
+own mechanization; also, states
+learn from defeat in insurgency by subsequently decreasing their mechanization.
+
+\subsection{The case for agent-based modeling}
+
+The findings of \cite{sechser2010army} are ripe for agentization. The
+conclusions drawn implicitly claim
+that states are autonomous agents; that they have
+cognition regarding how to perceive the outside world in terms of mechanization
+and how to adjust their own mechanization to it; that spatiality and
+neighborhood matter; that inter-agent relationships (e.g. whether you are my
+enemy or not) matter; and that
+agents learn from experience. Agent-based modeling is uniquely well-suited to
+represent such phenomena (\cite{gilbert2005simulation};
+\cite{miller2009complex}).
+
+Importantly, if the findings of \cite{sechser2010army} are correct and states
+largely determine their own mechanization levels on the basis of what other
+states are doing, a positive feedback loop exists. State A has high
+mechanization, causing enemy State B to raise their mechanization, causing State
+A to raise their mechanization... and so on. This feedback loop---often called
+the ``security dilemma''---has been extensively studied, including by Thomas Schelling, one of the pioneers
+of agent-based modeling (\cite{schelling1960strategy};
+\cite{schelling2006micromotives}).
+
+\subsection{Research question and strategy}
+
+I hypothesize that the arguments of \cite{sechser2010army} are incomplete and
+that some omitted variable or set of variables acts as a ``brake'' on military
+mechanization.\footnote{By ``omitted'', I mean that they conclude that the variable
+is not very important for mechanization, not that they do not address the
+variable at all.} An agent-based model is used to test this hypothesis. In broad
+terms, agents (states) are defined to have the cognitive and learning behavior
+implicitly claimed by \cite{sechser2010army}. The model is initialized with
+real-world data from 1979 and allowed to run until 2001. The micro- and
+macro-outcomes are then validated against real-world 2001 data. If
+\cite{sechser2010army} are correct, the model's 2001 outcomes should match
+real-world 2001 outcomes. If the model mechanization levels in 2001 are much
+higher, then their claimed behavioral rules are incomplete and fail to include
+some ``brake'' on mechanization, matching my hypothesis. Proving exactly what
+that missing variable or set of variables is is outside the scope of this model
+and paper, though it is discussed.
 
 \section{Model}
+
+This section of the paper describes the model. It does not use the ODD protocol
+of \cite{grimm2006standard} but covers many of the same points.
+
+\subsection{Agents}
+
+There is one agent type: states. Agents exist at a fixed location and do not
+move. The composition of agents changes throughout the 
+
+\subsection{Environment}
+
+Agents exist in a spatial environment. Spatiality is represented by neighbor
+relationships rather than a raster or vector GIS map. Two states are defined as
+being neighbors if they share a contiguous land border or a stretch of water
+less than 400 miles. Every agent has an attribute \texttt{neighbor\_list}, a
+list in which it stores the names of neighboring agents for that time-step. 
+
+\subsection{Initialization and Time}
+
+\subsection{Dynamics and Interactions}
 
 \section{Results}
 

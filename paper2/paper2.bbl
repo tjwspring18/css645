@@ -21,30 +21,121 @@
   \datalist[entry]{nyt/global//global/global}
     \entry{biddle2004military}{book}{}
       \name{author}{1}{}{%
-        {{uniquename=0,uniquepart=base,hash=5d51eda35d6d494dad057cbf73a8728b}{%
+        {{uniquename=0,uniquepart=base,hash=31c1b9830c6e483b748a507cfdfa935e}{%
            family={Biddle},
            familyi={B\bibinitperiod},
-           given={Stephen\bibnamedelima D},
-           giveni={S\bibinitperiod\bibinitdelim D\bibinitperiod},
+           given={Stephen},
+           giveni={S\bibinitperiod},
            givenun=0}}%
       }
       \list{publisher}{1}{%
         {Princeton University Press}%
       }
-      \strng{namehash}{5d51eda35d6d494dad057cbf73a8728b}
-      \strng{fullhash}{5d51eda35d6d494dad057cbf73a8728b}
-      \strng{bibnamehash}{5d51eda35d6d494dad057cbf73a8728b}
-      \strng{authorbibnamehash}{5d51eda35d6d494dad057cbf73a8728b}
-      \strng{authornamehash}{5d51eda35d6d494dad057cbf73a8728b}
-      \strng{authorfullhash}{5d51eda35d6d494dad057cbf73a8728b}
+      \strng{namehash}{31c1b9830c6e483b748a507cfdfa935e}
+      \strng{fullhash}{31c1b9830c6e483b748a507cfdfa935e}
+      \strng{bibnamehash}{31c1b9830c6e483b748a507cfdfa935e}
+      \strng{authorbibnamehash}{31c1b9830c6e483b748a507cfdfa935e}
+      \strng{authornamehash}{31c1b9830c6e483b748a507cfdfa935e}
+      \strng{authorfullhash}{31c1b9830c6e483b748a507cfdfa935e}
       \field{sortinit}{B}
       \field{sortinithash}{276475738cc058478c1677046f857703}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Military power: Explaining victory and defeat in modern battle}
+      \field{title}{Military Power: Explaining Victory and Defeat in Modern Battle}
       \field{year}{2004}
+    \endentry
+    \entry{brooks2008shaping}{book}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=3c4d29d43db656a9e28ca49e127ff771}{%
+           family={Brooks},
+           familyi={B\bibinitperiod},
+           given={Risa},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Princeton University Press}%
+      }
+      \strng{namehash}{3c4d29d43db656a9e28ca49e127ff771}
+      \strng{fullhash}{3c4d29d43db656a9e28ca49e127ff771}
+      \strng{bibnamehash}{3c4d29d43db656a9e28ca49e127ff771}
+      \strng{authorbibnamehash}{3c4d29d43db656a9e28ca49e127ff771}
+      \strng{authornamehash}{3c4d29d43db656a9e28ca49e127ff771}
+      \strng{authorfullhash}{3c4d29d43db656a9e28ca49e127ff771}
+      \field{sortinit}{B}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Shaping Strategy: the Civil-Military Politics of Strategic Assessment}
+      \field{year}{2008}
+    \endentry
+    \entry{farrell1998professionalization}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=a728628c75b019234f08f1e3cfd28ff8}{%
+           family={Farrell},
+           familyi={F\bibinitperiod},
+           given={Theo},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Taylor \& Francis}%
+      }
+      \strng{namehash}{a728628c75b019234f08f1e3cfd28ff8}
+      \strng{fullhash}{a728628c75b019234f08f1e3cfd28ff8}
+      \strng{bibnamehash}{a728628c75b019234f08f1e3cfd28ff8}
+      \strng{authorbibnamehash}{a728628c75b019234f08f1e3cfd28ff8}
+      \strng{authornamehash}{a728628c75b019234f08f1e3cfd28ff8}
+      \strng{authorfullhash}{a728628c75b019234f08f1e3cfd28ff8}
+      \field{sortinit}{F}
+      \field{sortinithash}{669c706c6f1fbf3b5a83d26f1d9e9e72}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Strategic Studies}
+      \field{number}{3}
+      \field{title}{Professionalization and Suicidal Defence Planning by the Irish Army, 1921--1941}
+      \field{volume}{21}
+      \field{year}{1998}
+      \field{pages}{67\bibrangedash 85}
+      \range{pages}{19}
+    \endentry
+    \entry{farrell2001transnational}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=a728628c75b019234f08f1e3cfd28ff8}{%
+           family={Farrell},
+           familyi={F\bibinitperiod},
+           given={Theo},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Sage Publications}%
+      }
+      \strng{namehash}{a728628c75b019234f08f1e3cfd28ff8}
+      \strng{fullhash}{a728628c75b019234f08f1e3cfd28ff8}
+      \strng{bibnamehash}{a728628c75b019234f08f1e3cfd28ff8}
+      \strng{authorbibnamehash}{a728628c75b019234f08f1e3cfd28ff8}
+      \strng{authornamehash}{a728628c75b019234f08f1e3cfd28ff8}
+      \strng{authorfullhash}{a728628c75b019234f08f1e3cfd28ff8}
+      \field{sortinit}{F}
+      \field{sortinithash}{669c706c6f1fbf3b5a83d26f1d9e9e72}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{European Journal of International Relations}
+      \field{number}{1}
+      \field{title}{Transnational Norms and Military Development: Constructing Ireland's Professional Army}
+      \field{volume}{7}
+      \field{year}{2001}
+      \field{pages}{63\bibrangedash 102}
+      \range{pages}{40}
     \endentry
     \entry{gartzke2001democracy}{article}{}
       \name{author}{1}{}{%
@@ -78,30 +169,535 @@
       \field{pages}{467\bibrangedash 484}
       \range{pages}{18}
     \endentry
+    \entry{gilbert2005simulation}{book}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=0f06f662cc6ff7378a1c28613c4cb8c5}{%
+           family={Gilbert},
+           familyi={G\bibinitperiod},
+           given={Nigel},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=a91613d46a66f6da1a09d99ff77b634d}{%
+           family={Troitzsch},
+           familyi={T\bibinitperiod},
+           given={Klaus},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {McGraw-Hill Education (UK)}%
+      }
+      \strng{namehash}{e79d6eb6cf8c429ff12a192b08da970a}
+      \strng{fullhash}{e79d6eb6cf8c429ff12a192b08da970a}
+      \strng{bibnamehash}{e79d6eb6cf8c429ff12a192b08da970a}
+      \strng{authorbibnamehash}{e79d6eb6cf8c429ff12a192b08da970a}
+      \strng{authornamehash}{e79d6eb6cf8c429ff12a192b08da970a}
+      \strng{authorfullhash}{e79d6eb6cf8c429ff12a192b08da970a}
+      \field{sortinit}{G}
+      \field{sortinithash}{5e8d2bf9d38de41b1528bd307546008f}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Simulation for the Social Scientist}
+      \field{year}{2005}
+    \endentry
+    \entry{grimm2006standard}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{10}{}{%
+        {{uniquename=0,uniquepart=base,hash=1afed3b8eacb2219efb8bbe1f6581962}{%
+           family={Grimm},
+           familyi={G\bibinitperiod},
+           given={Volker},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=9384d3112d3d8d7a6daa243142b7d01c}{%
+           family={Berger},
+           familyi={B\bibinitperiod},
+           given={Uta},
+           giveni={U\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=995f9f8ee0aa73f01614844750eac8c2}{%
+           family={Bastiansen},
+           familyi={B\bibinitperiod},
+           given={Finn},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=8fb11fb91e321b7bcdcbae06ee54ce0a}{%
+           family={Eliassen},
+           familyi={E\bibinitperiod},
+           given={Sigrunn},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=7ffaba11f339629ba3d20279ea897357}{%
+           family={Ginot},
+           familyi={G\bibinitperiod},
+           given={Vincent},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=cebe364b2f95bcb284778ec7095dc684}{%
+           family={Giske},
+           familyi={G\bibinitperiod},
+           given={Jarl},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=fb679efcf8e3dbdb7411b73b83db1ea3}{%
+           family={Goss-Custard},
+           familyi={G\bibinithyphendelim C\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=16fd1c53690e29cb0f3c0ee6d9558497}{%
+           family={Grand},
+           familyi={G\bibinitperiod},
+           given={Tamara},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=6c26100b26d94b37adb8764e5b182898}{%
+           family={Heinz},
+           familyi={H\bibinitperiod},
+           given={Simone\bibnamedelima K},
+           giveni={S\bibinitperiod\bibinitdelim K\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=ab495b7c316f1c0a596d335857a1d28f}{%
+           family={Huse},
+           familyi={H\bibinitperiod},
+           given={Geir},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{34a4de0c97c67c80ceb4801a22916c07}
+      \strng{fullhash}{1bba0f3f445973ae990338236b311aa3}
+      \strng{bibnamehash}{34a4de0c97c67c80ceb4801a22916c07}
+      \strng{authorbibnamehash}{34a4de0c97c67c80ceb4801a22916c07}
+      \strng{authornamehash}{34a4de0c97c67c80ceb4801a22916c07}
+      \strng{authorfullhash}{1bba0f3f445973ae990338236b311aa3}
+      \field{sortinit}{G}
+      \field{sortinithash}{5e8d2bf9d38de41b1528bd307546008f}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Ecological M	odelling}
+      \field{number}{1-2}
+      \field{title}{A standard Protocol for Describing Individual-Based and Agent-Based Models}
+      \field{volume}{198}
+      \field{year}{2006}
+      \field{pages}{115\bibrangedash 126}
+      \range{pages}{12}
+    \endentry
+    \entry{huth1988extended}{book}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=6b1044d1228f41b5b7ded6f73319d986}{%
+           family={Huth},
+           familyi={H\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Yale University Press}%
+      }
+      \strng{namehash}{6b1044d1228f41b5b7ded6f73319d986}
+      \strng{fullhash}{6b1044d1228f41b5b7ded6f73319d986}
+      \strng{bibnamehash}{6b1044d1228f41b5b7ded6f73319d986}
+      \strng{authorbibnamehash}{6b1044d1228f41b5b7ded6f73319d986}
+      \strng{authornamehash}{6b1044d1228f41b5b7ded6f73319d986}
+      \strng{authorfullhash}{6b1044d1228f41b5b7ded6f73319d986}
+      \field{sortinit}{H}
+      \field{sortinithash}{5f15a7bc777ad49ff15aa4d2831b1681}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Extended Deterrence and the Prevention of War}
+      \field{year}{1988}
+    \endentry
+    \entry{locher2004victory}{book}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=40b3196c88d1bfaba354b5a82e01ba78}{%
+           family={Locher},
+           familyi={L\bibinitperiod},
+           given={James},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Texas A\&M University Press}%
+      }
+      \strng{namehash}{40b3196c88d1bfaba354b5a82e01ba78}
+      \strng{fullhash}{40b3196c88d1bfaba354b5a82e01ba78}
+      \strng{bibnamehash}{40b3196c88d1bfaba354b5a82e01ba78}
+      \strng{authorbibnamehash}{40b3196c88d1bfaba354b5a82e01ba78}
+      \strng{authornamehash}{40b3196c88d1bfaba354b5a82e01ba78}
+      \strng{authorfullhash}{40b3196c88d1bfaba354b5a82e01ba78}
+      \field{sortinit}{L}
+      \field{sortinithash}{2c7981aaabc885868aba60f0c09ee20f}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Victory on the Potomac: The Goldwater-Nichols Act Unifies the Pentagon}
+      \field{year}{2004}
+    \endentry
+    \entry{lyall2009rage}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=81ed18d317f98736f928241397e347cd}{%
+           family={Lyall},
+           familyi={L\bibinitperiod},
+           given={Jason},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=d0f9181a58df217e426b47ce9d3c0388}{%
+           family={Wilson},
+           familyi={W\bibinitperiod},
+           given={Isaiah},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{742b4f4446c6bb44840bca19c3160c13}
+      \strng{fullhash}{742b4f4446c6bb44840bca19c3160c13}
+      \strng{bibnamehash}{742b4f4446c6bb44840bca19c3160c13}
+      \strng{authorbibnamehash}{742b4f4446c6bb44840bca19c3160c13}
+      \strng{authornamehash}{742b4f4446c6bb44840bca19c3160c13}
+      \strng{authorfullhash}{742b4f4446c6bb44840bca19c3160c13}
+      \field{sortinit}{L}
+      \field{sortinithash}{2c7981aaabc885868aba60f0c09ee20f}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Organization}
+      \field{number}{1}
+      \field{title}{Rage Against the Machines: Explaining Outcomes in Counterinsurgency Wars}
+      \field{volume}{63}
+      \field{year}{2009}
+      \field{pages}{67\bibrangedash 106}
+      \range{pages}{40}
+    \endentry
+    \entry{mearsheimer1983conventional}{book}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=e10669b584cde1c14e7a974db35b7198}{%
+           family={Mearsheimer},
+           familyi={M\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Cornell University Press}%
+      }
+      \strng{namehash}{e10669b584cde1c14e7a974db35b7198}
+      \strng{fullhash}{e10669b584cde1c14e7a974db35b7198}
+      \strng{bibnamehash}{e10669b584cde1c14e7a974db35b7198}
+      \strng{authorbibnamehash}{e10669b584cde1c14e7a974db35b7198}
+      \strng{authornamehash}{e10669b584cde1c14e7a974db35b7198}
+      \strng{authorfullhash}{e10669b584cde1c14e7a974db35b7198}
+      \field{sortinit}{M}
+      \field{sortinithash}{cfd219b90152c06204fab207bc6c7cab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Conventional Deterrence}
+      \field{year}{1983}
+    \endentry
+    \entry{miller2009complex}{book}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=6b50415d37b3248a676f0e655b38b2bb}{%
+           family={Miller},
+           familyi={M\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=b28ace41ad98cbf94a89c1e04dfabc20}{%
+           family={Page},
+           familyi={P\bibinitperiod},
+           given={Scott},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Princeton University Press}%
+      }
+      \strng{namehash}{b6eb50f1cc6f066d6029165264141e71}
+      \strng{fullhash}{b6eb50f1cc6f066d6029165264141e71}
+      \strng{bibnamehash}{b6eb50f1cc6f066d6029165264141e71}
+      \strng{authorbibnamehash}{b6eb50f1cc6f066d6029165264141e71}
+      \strng{authornamehash}{b6eb50f1cc6f066d6029165264141e71}
+      \strng{authorfullhash}{b6eb50f1cc6f066d6029165264141e71}
+      \field{sortinit}{M}
+      \field{sortinithash}{cfd219b90152c06204fab207bc6c7cab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Complex Adaptive Systems: an Introduction to Computational Models of Social Life}
+      \field{year}{2009}
+    \endentry
+    \entry{murray2011military}{book}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=b37dad8205dbf844b892cb389dae5586}{%
+           family={Murray},
+           familyi={M\bibinitperiod},
+           given={Williamson},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{b37dad8205dbf844b892cb389dae5586}
+      \strng{fullhash}{b37dad8205dbf844b892cb389dae5586}
+      \strng{bibnamehash}{b37dad8205dbf844b892cb389dae5586}
+      \strng{authorbibnamehash}{b37dad8205dbf844b892cb389dae5586}
+      \strng{authornamehash}{b37dad8205dbf844b892cb389dae5586}
+      \strng{authorfullhash}{b37dad8205dbf844b892cb389dae5586}
+      \field{sortinit}{M}
+      \field{sortinithash}{cfd219b90152c06204fab207bc6c7cab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Military Adaptation in War: With Fear of Change}
+      \field{year}{2011}
+    \endentry
+    \entry{murray1998military}{book}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=b37dad8205dbf844b892cb389dae5586}{%
+           family={Murray},
+           familyi={M\bibinitperiod},
+           given={Williamson},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=5a134cbef15c31eded3dbc0f32f12cdc}{%
+           family={Millett},
+           familyi={M\bibinitperiod},
+           given={Allan},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{1246df8c9fadfe33f35dfa15aa487fca}
+      \strng{fullhash}{1246df8c9fadfe33f35dfa15aa487fca}
+      \strng{bibnamehash}{1246df8c9fadfe33f35dfa15aa487fca}
+      \strng{authorbibnamehash}{1246df8c9fadfe33f35dfa15aa487fca}
+      \strng{authornamehash}{1246df8c9fadfe33f35dfa15aa487fca}
+      \strng{authorfullhash}{1246df8c9fadfe33f35dfa15aa487fca}
+      \field{sortinit}{M}
+      \field{sortinithash}{cfd219b90152c06204fab207bc6c7cab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Military Innovation in the Interwar Period}
+      \field{year}{1998}
+    \endentry
+    \entry{pollack2004arabs}{book}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=ef970f15a375c464a67227cedc6e7727}{%
+           family={Pollack},
+           familyi={P\bibinitperiod},
+           given={Kenneth},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {University of Nebraska Press}%
+      }
+      \strng{namehash}{ef970f15a375c464a67227cedc6e7727}
+      \strng{fullhash}{ef970f15a375c464a67227cedc6e7727}
+      \strng{bibnamehash}{ef970f15a375c464a67227cedc6e7727}
+      \strng{authorbibnamehash}{ef970f15a375c464a67227cedc6e7727}
+      \strng{authornamehash}{ef970f15a375c464a67227cedc6e7727}
+      \strng{authorfullhash}{ef970f15a375c464a67227cedc6e7727}
+      \field{sortinit}{P}
+      \field{sortinithash}{8d51b3d5b78d75b54308d706b9bbe285}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Arabs at War: Military Effectiveness, 1948-1991}
+      \field{year}{2004}
+    \endentry
+    \entry{quinlivan1999coup}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=e6fe692b163a91f2104adc504252fb4e}{%
+           family={Quinlivan},
+           familyi={Q\bibinitperiod},
+           given={James},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {MIT Press}%
+      }
+      \strng{namehash}{e6fe692b163a91f2104adc504252fb4e}
+      \strng{fullhash}{e6fe692b163a91f2104adc504252fb4e}
+      \strng{bibnamehash}{e6fe692b163a91f2104adc504252fb4e}
+      \strng{authorbibnamehash}{e6fe692b163a91f2104adc504252fb4e}
+      \strng{authornamehash}{e6fe692b163a91f2104adc504252fb4e}
+      \strng{authorfullhash}{e6fe692b163a91f2104adc504252fb4e}
+      \field{sortinit}{Q}
+      \field{sortinithash}{d257e420984a3a5c57a3330114cd646a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Security}
+      \field{number}{2}
+      \field{title}{Coup-proofing: Its Practice and Consequences in the Middle East}
+      \field{volume}{24}
+      \field{year}{1999}
+      \field{pages}{131\bibrangedash 165}
+      \range{pages}{35}
+    \endentry
+    \entry{reiter2002democracies}{book}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=e570eb2ba858d4b5370b5d03311f243e}{%
+           family={Reiter},
+           familyi={R\bibinitperiod},
+           given={Dan},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=596ff5cf9cb58c16c5b81bf22d374a5a}{%
+           family={Stam},
+           familyi={S\bibinitperiod},
+           given={Allan},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Princeton University Press}%
+      }
+      \strng{namehash}{a18e536dd51cc92b4b13a119af55374c}
+      \strng{fullhash}{a18e536dd51cc92b4b13a119af55374c}
+      \strng{bibnamehash}{a18e536dd51cc92b4b13a119af55374c}
+      \strng{authorbibnamehash}{a18e536dd51cc92b4b13a119af55374c}
+      \strng{authornamehash}{a18e536dd51cc92b4b13a119af55374c}
+      \strng{authorfullhash}{a18e536dd51cc92b4b13a119af55374c}
+      \field{sortinit}{R}
+      \field{sortinithash}{da6b42bd3ab22fee61abed031ee405f7}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Democracies at war}
+      \field{year}{2002}
+    \endentry
+    \entry{schelling1960strategy}{book}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=8a5ff3fc3a49e5bab380e2ddabc8b9d4}{%
+           family={Schelling},
+           familyi={S\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Harvard University Press}%
+      }
+      \strng{namehash}{8a5ff3fc3a49e5bab380e2ddabc8b9d4}
+      \strng{fullhash}{8a5ff3fc3a49e5bab380e2ddabc8b9d4}
+      \strng{bibnamehash}{8a5ff3fc3a49e5bab380e2ddabc8b9d4}
+      \strng{authorbibnamehash}{8a5ff3fc3a49e5bab380e2ddabc8b9d4}
+      \strng{authornamehash}{8a5ff3fc3a49e5bab380e2ddabc8b9d4}
+      \strng{authorfullhash}{8a5ff3fc3a49e5bab380e2ddabc8b9d4}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The Strategy of Conflict}
+      \field{year}{1960}
+    \endentry
+    \entry{schelling2006micromotives}{book}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=8a5ff3fc3a49e5bab380e2ddabc8b9d4}{%
+           family={Schelling},
+           familyi={S\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {WW Norton \& Company}%
+      }
+      \strng{namehash}{8a5ff3fc3a49e5bab380e2ddabc8b9d4}
+      \strng{fullhash}{8a5ff3fc3a49e5bab380e2ddabc8b9d4}
+      \strng{bibnamehash}{8a5ff3fc3a49e5bab380e2ddabc8b9d4}
+      \strng{authorbibnamehash}{8a5ff3fc3a49e5bab380e2ddabc8b9d4}
+      \strng{authornamehash}{8a5ff3fc3a49e5bab380e2ddabc8b9d4}
+      \strng{authorfullhash}{8a5ff3fc3a49e5bab380e2ddabc8b9d4}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Micromotives and Macrobehavior}
+      \field{year}{2006}
+    \endentry
+    \entry{schmitt_2004}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=ad828531b948246af75b69480aa21417}{%
+           family={Schmitt},
+           familyi={S\bibinitperiod},
+           given={Eric},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{ad828531b948246af75b69480aa21417}
+      \strng{fullhash}{ad828531b948246af75b69480aa21417}
+      \strng{bibnamehash}{ad828531b948246af75b69480aa21417}
+      \strng{authorbibnamehash}{ad828531b948246af75b69480aa21417}
+      \strng{authornamehash}{ad828531b948246af75b69480aa21417}
+      \strng{authorfullhash}{ad828531b948246af75b69480aa21417}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{New York Times}
+      \field{month}{12}
+      \field{title}{Iraq-Bound Troops Confront Rumsfeld Over Lack of Armor}
+      \field{year}{2004}
+    \endentry
     \entry{sechser2010army}{article}{}
       \name{author}{2}{}{%
-        {{uniquename=0,uniquepart=base,hash=735d742e91495f4d028982f7b1819a99}{%
+        {{uniquename=0,uniquepart=base,hash=d7e0e1493b1c920614cc6547717b447c}{%
            family={Sechser},
            familyi={S\bibinitperiod},
-           given={Todd\bibnamedelima S},
-           giveni={T\bibinitperiod\bibinitdelim S\bibinitperiod},
+           given={Todd},
+           giveni={T\bibinitperiod},
            givenun=0}}%
-        {{uniquename=0,uniquepart=base,hash=bc5c3409293487bde69f1d7d77577962}{%
+        {{uniquename=0,uniquepart=base,hash=b6ab39b58c179cf17cefda19a210631f}{%
            family={Saunders},
            familyi={S\bibinitperiod},
-           given={Elizabeth\bibnamedelima N},
-           giveni={E\bibinitperiod\bibinitdelim N\bibinitperiod},
+           given={Elizabeth},
+           giveni={E\bibinitperiod},
            givenun=0}}%
       }
       \list{publisher}{1}{%
         {Wiley Online Library}%
       }
-      \strng{namehash}{ae1b46c6e240fc0f93e13da82a227edf}
-      \strng{fullhash}{ae1b46c6e240fc0f93e13da82a227edf}
-      \strng{bibnamehash}{ae1b46c6e240fc0f93e13da82a227edf}
-      \strng{authorbibnamehash}{ae1b46c6e240fc0f93e13da82a227edf}
-      \strng{authornamehash}{ae1b46c6e240fc0f93e13da82a227edf}
-      \strng{authorfullhash}{ae1b46c6e240fc0f93e13da82a227edf}
+      \strng{namehash}{ef5d2825f859acf315605987b8237333}
+      \strng{fullhash}{ef5d2825f859acf315605987b8237333}
+      \strng{bibnamehash}{ef5d2825f859acf315605987b8237333}
+      \strng{authorbibnamehash}{ef5d2825f859acf315605987b8237333}
+      \strng{authornamehash}{ef5d2825f859acf315605987b8237333}
+      \strng{authorfullhash}{ef5d2825f859acf315605987b8237333}
       \field{sortinit}{S}
       \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
       \field{extradatescope}{labelyear}
@@ -116,8 +712,93 @@
       \field{pages}{481\bibrangedash 511}
       \range{pages}{31}
     \endentry
+    \entry{talmadge2015dictator}{book}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=63227aa1f23d67051742c6d1efcbd0cf}{%
+           family={Talmadge},
+           familyi={T\bibinitperiod},
+           given={Caitlin},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Cornell University Press}%
+      }
+      \strng{namehash}{63227aa1f23d67051742c6d1efcbd0cf}
+      \strng{fullhash}{63227aa1f23d67051742c6d1efcbd0cf}
+      \strng{bibnamehash}{63227aa1f23d67051742c6d1efcbd0cf}
+      \strng{authorbibnamehash}{63227aa1f23d67051742c6d1efcbd0cf}
+      \strng{authornamehash}{63227aa1f23d67051742c6d1efcbd0cf}
+      \strng{authorfullhash}{63227aa1f23d67051742c6d1efcbd0cf}
+      \field{sortinit}{T}
+      \field{sortinithash}{6f7aff9db9dcfeb7f95fd5bbd2f78df9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The Dictator's Army: Battlefield Effectiveness in Authoritarian Regimes}
+      \field{year}{2015}
+    \endentry
+    \entry{van1984cult}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=ae434045acdc776111c8c6b24d103755}{%
+           family={Van\bibnamedelima Evera},
+           familyi={V\bibinitperiod\bibinitdelim E\bibinitperiod},
+           given={Stephen},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {JSTOR}%
+      }
+      \strng{namehash}{ae434045acdc776111c8c6b24d103755}
+      \strng{fullhash}{ae434045acdc776111c8c6b24d103755}
+      \strng{bibnamehash}{ae434045acdc776111c8c6b24d103755}
+      \strng{authorbibnamehash}{ae434045acdc776111c8c6b24d103755}
+      \strng{authornamehash}{ae434045acdc776111c8c6b24d103755}
+      \strng{authorfullhash}{ae434045acdc776111c8c6b24d103755}
+      \field{sortinit}{V}
+      \field{sortinithash}{75dd7385c90b2252c3ae853a80ca853b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Security}
+      \field{number}{1}
+      \field{title}{The Cult of the Offensive and the Origins of the First World War}
+      \field{volume}{9}
+      \field{year}{1984}
+      \field{pages}{58\bibrangedash 107}
+      \range{pages}{50}
+    \endentry
+    \entry{zegart2000flawed}{book}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=e37f3e9e2301d62d791d915a0ff636c9}{%
+           family={Zegart},
+           familyi={Z\bibinitperiod},
+           given={Amy},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Stanford University Press}%
+      }
+      \strng{namehash}{e37f3e9e2301d62d791d915a0ff636c9}
+      \strng{fullhash}{e37f3e9e2301d62d791d915a0ff636c9}
+      \strng{bibnamehash}{e37f3e9e2301d62d791d915a0ff636c9}
+      \strng{authorbibnamehash}{e37f3e9e2301d62d791d915a0ff636c9}
+      \strng{authornamehash}{e37f3e9e2301d62d791d915a0ff636c9}
+      \strng{authorfullhash}{e37f3e9e2301d62d791d915a0ff636c9}
+      \field{sortinit}{Z}
+      \field{sortinithash}{156173bd08b075d7295bc3e0f4735a04}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Flawed by Design: The Evolution of the CIA, JCS, and NSC}
+      \field{year}{2000}
+    \endentry
   \enddatalist
-  \missing{farrell2001transitional}
 \endrefsection
 \endinput
 

@@ -282,9 +282,9 @@
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Ecological M	odelling}
+      \field{journaltitle}{Ecological Modelling}
       \field{number}{1-2}
-      \field{title}{A standard Protocol for Describing Individual-Based and Agent-Based Models}
+      \field{title}{A Standard Protocol for Describing Individual-Based and Agent-Based Models}
       \field{volume}{198}
       \field{year}{2006}
       \field{pages}{115\bibrangedash 126}
@@ -502,6 +502,49 @@
       \field{title}{Military Innovation in the Interwar Period}
       \field{year}{1998}
     \endentry
+    \entry{cow_midb}{article}{}
+      \name{author}{4}{}{%
+        {{uniquename=0,uniquepart=base,hash=3001905402ff0d7b7e7a625b214b8b89}{%
+           family={Palmer},
+           familyi={P\bibinitperiod},
+           given={Glen},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=b2fecc1abdadf997411a5c4f2365f658}{%
+           family={d'Orazio},
+           familyi={d\bibinitperiod},
+           given={Vito},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=c99342b28a5c85928362c3ec9917f613}{%
+           family={Kenwick},
+           familyi={K\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=910c35f1916f2977cbdd5eec722b9280}{%
+           family={Lane},
+           familyi={L\bibinitperiod},
+           given={Matthew},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{2c09b91f44ebcd66f53a5e54da8856a2}
+      \strng{fullhash}{56b68bc067cbbaefdd41288071b07ac1}
+      \strng{bibnamehash}{2c09b91f44ebcd66f53a5e54da8856a2}
+      \strng{authorbibnamehash}{2c09b91f44ebcd66f53a5e54da8856a2}
+      \strng{authornamehash}{2c09b91f44ebcd66f53a5e54da8856a2}
+      \strng{authorfullhash}{56b68bc067cbbaefdd41288071b07ac1}
+      \field{sortinit}{P}
+      \field{sortinithash}{8d51b3d5b78d75b54308d706b9bbe285}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Conflict Management and Peace Science}
+      \field{title}{The MID4 Data Set: Procedures, Coding Rules, and Description}
+      \field{year}{forthcoming}
+    \endentry
     \entry{pollack2004arabs}{book}{}
       \name{author}{1}{}{%
         {{uniquename=0,uniquepart=base,hash=ef970f15a375c464a67227cedc6e7727}{%
@@ -591,7 +634,7 @@
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Democracies at war}
+      \field{title}{Democracies at War}
       \field{year}{2002}
     \endentry
     \entry{schelling1960strategy}{book}{}
@@ -711,6 +754,53 @@
       \field{year}{2010}
       \field{pages}{481\bibrangedash 511}
       \range{pages}{31}
+    \endentry
+    \entry{cow_contiguity}{article}{}
+      \name{author}{4}{}{%
+        {{uniquename=0,uniquepart=base,hash=fe4161c80f4385342346db5e7895f330}{%
+           family={Stinnett},
+           familyi={S\bibinitperiod},
+           given={Douglas},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=d4d871be2f60e69f64b7c47c8124c00e}{%
+           family={Tir},
+           familyi={T\bibinitperiod},
+           given={Jaroslav},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=8e776459a8ccf90abc110cc81c7564d1}{%
+           family={Diehl},
+           familyi={D\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=9cc6360cf0a60075b3bebea44c9d0108}{%
+           family={Gochman},
+           familyi={G\bibinitperiod},
+           given={Charles},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{857bce3ec41d561e27be1e37c5055084}
+      \strng{fullhash}{30d8bb681696a7fbe0c1d439ff02ec7e}
+      \strng{bibnamehash}{857bce3ec41d561e27be1e37c5055084}
+      \strng{authorbibnamehash}{857bce3ec41d561e27be1e37c5055084}
+      \strng{authornamehash}{857bce3ec41d561e27be1e37c5055084}
+      \strng{authorfullhash}{30d8bb681696a7fbe0c1d439ff02ec7e}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Conflict Management and Peace Science}
+      \field{number}{2}
+      \field{title}{The Correlates of War Project Direct Contiguity Data, Version 3}
+      \field{volume}{19}
+      \field{year}{2002}
+      \field{pages}{56\bibrangedash 66}
+      \range{pages}{11}
     \endentry
     \entry{talmadge2015dictator}{book}{}
       \name{author}{1}{}{%

@@ -1,18 +1,19 @@
 [0] Config.pm:302> INFO - This is Biber 2.10
 [1] Config.pm:305> INFO - Logfile is 'paper2.blg'
-[109] biber:313> INFO - === Sat May  5, 2018, 20:43:24
-[172] Biber.pm:371> INFO - Reading 'paper2.bcf'
-[368] Biber.pm:857> INFO - Found 24 citekeys in bib section 0
-[406] Biber.pm:3976> INFO - Processing section 0
-[432] Biber.pm:4136> INFO - Looking for bibtex format file 'paper2.bib' for section 0
-[433] bibtex.pm:1444> INFO - Reading ascii input as UTF-8
-[435] bibtex.pm:1490> INFO - LaTeX decoding ...
-[535] bibtex.pm:1306> INFO - Found BibTeX data source 'paper2.bib'
-[592] Utils.pm:193> WARN - month field 'Dec' in entry 'schmitt_2004' is not an integer - this will probably not sort properly.
-[859] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[861] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[861] Biber.pm:3804> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
-[861] Biber.pm:3810> INFO - No sort tailoring available for locale 'en-US'
-[940] bbl.pm:617> INFO - Writing 'paper2.bbl' with encoding 'ascii'
-[986] bbl.pm:720> INFO - Output to paper2.bbl
-[987] Biber.pm:110> INFO - WARNINGS: 1
+[64] biber:313> INFO - === Sun May  6, 2018, 20:33:37
+[109] Biber.pm:371> INFO - Reading 'paper2.bcf'
+[288] Biber.pm:857> INFO - Found 26 citekeys in bib section 0
+[318] Biber.pm:3976> INFO - Processing section 0
+[339] Biber.pm:4136> INFO - Looking for bibtex format file 'paper2.bib' for section 0
+[340] bibtex.pm:1444> INFO - Reading ascii input as UTF-8
+[342] bibtex.pm:1490> INFO - LaTeX decoding ...
+[442] bibtex.pm:1306> INFO - Found BibTeX data source 'paper2.bib'
+[498] Utils.pm:193> WARN - month field 'Dec' in entry 'schmitt_2004' is not an integer - this will probably not sort properly.
+[677] Utils.pm:193> WARN - year field 'forthcoming' in entry 'cow_midb' is not an integer - this will probably not sort properly.
+[774] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[774] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[775] Biber.pm:3804> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
+[775] Biber.pm:3810> INFO - No sort tailoring available for locale 'en-US'
+[830] bbl.pm:617> INFO - Writing 'paper2.bbl' with encoding 'ascii'
+[874] bbl.pm:720> INFO - Output to paper2.bbl
+[875] Biber.pm:110> INFO - WARNINGS: 2

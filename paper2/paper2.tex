@@ -12,6 +12,9 @@
 
 \maketitle
 
+\begin{centering}
+	Word count: XXXX
+\end{centering}
 \section{Introduction}
 
 This paper presents an agent-based model of military mechanization. First, it
@@ -112,12 +115,14 @@ agents learn from experience. Agent-based modeling is uniquely well-suited to
 represent such phenomena (\cite{gilbert2005simulation};
 \cite{miller2009complex}).
 
-Importantly, if the findings of \cite{sechser2010army} are correct and states
-largely determine their own mechanization levels on the basis of what other
-states are doing, a positive feedback loop exists. State A has high
+Importantly, the findings of \cite{sechser2010army} imply a positive feedback
+loop. State A has high
 mechanization, causing enemy State B to raise their mechanization, causing State
-A to raise their mechanization... and so on. This feedback loop---often called
-the ``security dilemma''---has been extensively studied, including by Thomas Schelling, one of the pioneers
+A to raise their mechanization... and so on. Such feedback loops are a hallmark
+of complex systems and again are well-suited for representation by agent-based
+modeling. This specific one---states changing their military in response to
+other states change in military in response to... and so on---feedback loop---is often called
+the ``security dilemma'' and was a main research interest of Thomas Schelling, one of the pioneers
 of agent-based modeling (\cite{schelling1960strategy};
 \cite{schelling2006micromotives}).
 
@@ -147,19 +152,108 @@ of \cite{grimm2006standard} but covers many of the same points.
 \subsection{Agents}
 
 There is one agent type: states. Agents exist at a fixed location and do not
-move. The composition of agents changes throughout the 
+move. The set of agents encompasses all diplomatically-recognized 
+states in the world at a particular point in time, minus microstates (defined as
+those with a population less than 750,000).
+
+Agents have attributes. \textit{Name} is self-explanatory.
+\textit{Mechanization} is the agent's level of mechanization at a given
+timestep. Mechanization is calculated as the number of armored vehicles per 100
+soldiers, per \cite{sechser2010army}. \textit{Neighbors} is a list containing
+the \textit{Names} of an agent's geographic neighbors at a given point in
+time---more on this in the subsequent \textbf{Environment} section. \textit{NeighborsMech} is the
+average mechanization level of an agent's \textit{Neighbors} at a given point in
+time. \textit{Enemies} is a list containing the \textit{Names} of an agent's
+enemies at a given point in time. An enemy is an agent with which the agent in
+question has had a militarized interstate dispute in the preceding ten years,
+per the Correlates of War (COW) Militarized Interstate Disputes Database (MIDB)
+(\cite{cow_midb}). \textit{EnemiesMech} is the average mechanization score of
+enemies. Agents also have attributes that affect their
+perception of other agents and cognition for changing their own behavior. These
+attributes are discussed in the \textbf{Cognition and Actions} section.
 
 \subsection{Environment}
 
 Agents exist in a spatial environment. Spatiality is represented by neighbor
-relationships rather than a raster or vector GIS map. Two states are defined as
+relationships. Two states are defined as
 being neighbors if they share a contiguous land border or a stretch of water
-less than 400 miles. Every agent has an attribute \texttt{neighbor\_list}, a
-list in which it stores the names of neighboring agents for that time-step. 
+less than 400 miles. Data on neighbor relationships is taken from the Correlates
+of War (COW) Direct Continuity dataset (\cite{cow_contiguity}).
+Modeling spatiality as dyadic neighbor relationships, rather than a more
+detailed raster or vector GIS implementation, is justified on the basis that the
+academic literature on mechanization suggests that two states neighboring each
+other is the important factor, not more detailed geographic information (e.g.,
+topographical features along the border). As such, this paper's modeling choice
+captures the phenomenon of interest while avoiding the overhead of a full-blown GIS implementation.
 
-\subsection{Initialization and Time}
+\subsection{Cognition}
 
-\subsection{Dynamics and Interactions}
+Agents have global perception of other agents: they can ``see'' the
+mechanization state of all other agents. This modeling choice is reflective of
+the real world, in which states devote significant resources to stay informed of
+the military posture of others. Agent cognition centers on 
+updating their own mechanization in response to the external security
+environment. This occurs in three ways. One, if an agent's
+\textit{NeighborsMech} increases---i.e., the agent's neighbors become more
+mechanized---the agent will increase its own mechanization by some proportional
+amount controlled by the agent's unique \textit{NeighborMechSensitivity}
+attribute, which is heterogenous across agents (more on this below).
+Two, if an agent's
+\textit{EnemiesMech} increases---i.e., the agent's enemies become more
+mechanized---the agent will increase its own mechanization by some proportional
+amount controlled by the agent's unique \textit{EnemyMechSensitivity} attribute,
+again heterogenous across agents. Three,
+agents occasionally suffer an ``anti-mechanization lesson'': defeat in a
+counter-insurgency conflict. Such events are scripted to occur for agents and
+years as per the historical record: e.g., the Soviet Union experienced such a
+lesson in the 1980s in Afghanistan. An agent experiencing such an event will
+decrease their own mechanization by some amount controlled by the agent's
+unique \textit{LessonSensitivity} attribute, again heterogenous across agents. 
+
+An important note is that these three factors---neighbors, enemies, and
+defeat in counter-insurgency---correspond to the factors identified by 
+\cite{sechser2010army} as most important for mechanization. Because the research
+goal is essentially to see whether their findings stand up to agentization,
+it is critical to make agent cognition work in about the way that their findings
+predict. Inclusion of other factors not identified as important for
+mechanization---e.g., alliances, economic factors,
+culture, etc.---would be interesting but counter-productive to the research
+question. They are discussed along with this model's findings. 
+
+Data for \textit{NeighborsMechSensitivity}, \textit{EnemiesMechSensitivity}, and
+\textit{LessonSensitivity} come from \cite{sechser2010army}. Specifically, they
+estimate coefficients and standard errors for these three factors, thus defining
+a statistical distribution for each. Upon instantiation, every agent makes a
+random draw from each of the three distributions, the resulting values of are
+taken for these three attributes. This introduces a stochastic element to the
+model and variation across runs, providing a richer body of data to draw upon.
+
+\subsection{Time}
+
+The model starts in 1979 and runs in 2-year time increments until 2001. This
+timespan and periodicity reflects data availability: a longer time period and
+more frequent updates would be ideal but is not practically achievable. Agent
+attributes are initialized, and then then the model iterates through timesteps.
+
+In discussing what happens each timestep, it is useful to distinguish between
+things that depend on agents' actions and those that do not.
+
+Some changes are deterministically programmed into the model and do not depend on
+agent behavior. Every timestep, neighbor relationships and enemy relationships
+are updated in accordance with the historical record. The occurrence of
+counter-insurgency defeats also is hardwired into the model and does not depend
+on agent behavior within the model.
+
+Other changes do depend on agent behavior. Agent activation order in a
+particular timestep is random. Every timestep, every agent perceives the world
+aorund them; recalculates \textit{NeighborsMech} and \textit{EnemiesMech};
+updates their mechanization level according to \textit{NeighborMechSensitivity}
+and \textit{EnemyMechSensitivity}; and updates their mechanization level
+according to \textit{LessonSensitivity} if an anti-mechanization lesson occured.
+
+
+\subsection{Output Data}
+
 
 \section{Results}
 

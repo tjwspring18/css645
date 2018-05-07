@@ -1953,6 +1953,11 @@
     <bcf:citekey order="27">sechser2010army</bcf:citekey>
     <bcf:citekey order="28">sechser2010army</bcf:citekey>
     <bcf:citekey order="29">grimm2006standard</bcf:citekey>
+    <bcf:citekey order="30">sechser2010army</bcf:citekey>
+    <bcf:citekey order="31">cow_midb</bcf:citekey>
+    <bcf:citekey order="32">cow_contiguity</bcf:citekey>
+    <bcf:citekey order="33">sechser2010army</bcf:citekey>
+    <bcf:citekey order="34">sechser2010army</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">

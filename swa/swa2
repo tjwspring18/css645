@@ -1,0 +1,61 @@
+% SWA: Elk Migration in Yellowstone
+% Tom Wallace
+% Spring 2018
+
+Research Question
+============================
+
+This model buries the lede on its research questions: they exist, but are not
+prominently advertised. Once the model is built, the authors use it to test the
+following hypotheses:
+
+* Model variance is relatively low over multiple runs
+* Model variance is highest in low-trafficked geographic areas
+* Elk spatial memory degrades with distance from summer range and well-traveled paths
+* Cognitive maps become more highly structured as strength of stimuli increases
+
+It seems that the authors intended these more as sanity checks on the behavior
+of the model than as true research topics of interest, but I still give them
+credit for making clear hypotheses and testing them in a systematic way.
+
+Model Effectiveness
+===============================
+
+I judge this to be a very effective model---one of the best we have read this
+semester.
+
+Many things are good about this model---theoretical backing, implementation,
+documentation, etc.---but I want to devote most of my discussion to the
+inclusion of learning. Many of the models we have examined this semester encode
+some kind of agent cognition but do so in an ad-hoc and static fashion. Agent
+cognition patterns are chosen because they seem to make sense, and once coded
+and initialized, remain static throughout the simulation time-span. In real
+life, of course, human agents (and even some animal agents, such as elk) have
+the capacity to update their cognition so as to improve fitness against
+environmental stimuli. This model uses genetic algorithms and reinforcement
+learning to update elk cognition over the model timespan. 
+
+Also, the authors conduct validation that leaves the reader confident their
+model is a good map to reality. In section 5.1, they compare the output of their
+model to available data on elk kill rates and locations (which were not used for
+the initial training of the model), and find that they line up quite well. I
+actually think that the authors did not learn forward enough in their
+research questions to exploit the potential empirical implications of their model. Most of their research
+questions concern *internal behavior* of the model with no claim of its
+correspondence to reality, but since they have a basis for asserting findings in
+the model are predictive of reality, they could have explored more substantive
+hypotheses.
+
+Course Themes
+=================================
+
+Empirical methods for building agent decision models: this model has the most
+empirically-driven agent decision models of any in this course. Agent cognition
+is altered as a function of environmental stimuli and rewards (based on
+real-world data such as biomass (food) density), rather than remaining static
+over the course of the model run.
+
+Modeling cross-scale feedbacks and interactions: this model allows for
+individual knowledge to be transmitted to the group. For example, an elk's knowledge
+of a particularly good route will be mimicked by other elk in the group. This
+contributes to the impressive amount of adaptive learning in the model.

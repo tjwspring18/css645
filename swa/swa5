@@ -1,0 +1,54 @@
+% SWA: Management Application of an Agent-Based Model: Control of Cowbirds at the Landscape Scale
+% Tom Wallace
+% Spring 2018
+
+Research Question
+=================================
+This paper does not have a research question, but it does have a clearly
+stated purpose: to build a model capable of predicting cowbird movement patterns
+in a specific geographic region so as to aid development of better trapping
+strategies. This clarity of purpose contributed to a focused and well-posed
+research effort.
+
+Model Effectiveness
+==================================
+I judge that this model is highly effective.
+
+First, a brief description of the model. There are three main agent types: feeding
+areas (immobile), cow herds (mobile), and cowbirds (mobile). Feeding areas have
+attributes that make them more or less attractive for grazing. Herds choose
+feeding areas based on those attributes and some simple logic (e.g., avoid
+recently-used areas, prefer near locations over far, and so on). Cowbirds search
+for herds. Optimal trap placement thus can be determined by placing them at the
+areas of greatest cowbird density.
+
+One, this model is effective because we have a standard by which to measure it.
+The model's goal is to help catch cowbirds; model-generated strategies do so at a 42% greater rate
+than prior, non-model-based strategies; ergo, the model is effective. Such focus
+is a contrast to some other models surveyed in this course that are paired with
+vague, non-measurable, non-falsifiable research goals (e.g., "explore the
+potential of MAS...").
+
+Two, this model is effective because we can understand it. The documentation is
+extensive and clear. Key parameters are identified and their values are backed
+by theory and empirical evidence. Sensitivity analyis reveals the effect of
+changing model elements. Verification and validation is conducted.
+
+Three, this model is effective because it is well-suited for the problem at
+hand. I discuss this in greater length below, but this model is a great
+advertisement for ABM-GIS integration because integrating the two is not just a
+"science project" done for the fun of it, but because the
+research goal cannot be achieved without integration.
+
+Course Themes 
+==================================
+
+I focus on only one topic in greater depth: ABM-GIS integration. Counterfactuals
+are a good way to illustrate why both modeling paradigms were needed to achieve
+research goal. Consider a purely ABM approach. Because the location of cowbirds
+depends on the location of cows depends on specific geographical features,
+knowing the decision rules of agents would be useless if they were not paired
+with accurate information on the geographic features driving those decisions.
+Conversely, consider a purely GIS approach. Knowing the location of geographic
+features is irrelevant if they are not coupled the phenomena we actually are
+interested in (cowbird movement). Clearly, both elements are needed.

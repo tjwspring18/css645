@@ -1,0 +1,60 @@
+% SWA: A step-by-step approach to building land management scenarios based on multiple viewpoints on multi-agent system simulations
+% Tom Wallace
+% Spring 2018
+
+Research Question
+===========================================
+
+In what is probably the single most prominent theme of this semester's writing
+assignments, this paper does not have a research question. The paper focuses
+exclusively on how MAS can be used to support collective decisionmaking. 
+
+Model Effectiveness
+===========================================
+
+The model appears to have been effective, as it attained buy-in from all
+participants. There were three key factors that allowed this effectiveness.
+
+One, the model allowed representation of different phenomena at different time
+scales. Different stakeholders had different priorities: e.g., foresters were
+most concerned with viewing the problem through an economic lens while
+conservationists viewed it through an ecological and heritage lens. The ability
+of the model to accommodate all features relevant to the decision process and 8
+different scenarios was a
+key part of its effectiveness.
+
+Two, the use of a formal model allowed better forecasting of the future impact
+of current decisions. Even the sharpest forestry mind would struggle to map the
+spread of invasive pines more than a few years into the future, but putting this
+phenomenon into a formal model allows tracing out its evolution in the
+long-term. 
+
+Three, although the paper does not directly state this, the use of a model often
+introduces a sense of transparency and fairness into the decision-making
+process. Sides can argue over what parameter values should be used and how
+results should be interpreted but they cannot argue about the basic shape of the
+model and decision space. 
+
+Course Themes
+=============================================
+
+Model communication is a challenge even when the intended audience is other
+modelers. It becomes exponentially harder when the audience is non-modelers.
+Moreover, the stakes of model communication are arguably higher when the model
+is intended to facilitate collective decisionmaking. A model intended to
+elucidate some intellectual point operates on the timescale of academic
+discourse measured in years; a model intended to facilitate practical
+decisionmaking needs to get its point across in the timespan of the decision
+process, which typically is much more compressed. For these reasons, I find the
+communication aspect of this model particularly noteworthy. GIS and ABM are not
+simple topics yet the authors apparently managed to communicate them in such a
+way that the audience understood them and bought in.
+
+Integration of GIS also was noteworthy. There is a tendency to assume that more
+detail is automatically better, which is not necessarily true. The authors chose
+a model resolution---5726 cells of 4 hectares---that was sufficiently granular
+to capture phenomena of interest (e.g., pine dynamics and the home range of
+endangered species) but also was coarse enough to be computationally tractable,
+and was obtainable in the time period needed (c.f. earlier point about the
+compressed timescale of models intended for decision support). I commend the
+authors for their choices in this area.

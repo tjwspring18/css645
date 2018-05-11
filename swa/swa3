@@ -1,0 +1,75 @@
+% SWA: Multiagent simulations to explore rules for rural credit in a highland farming community of Northern Thailand
+% Tom Wallace
+% Spring 2018
+
+Research Question
+===========================
+This paper seeks to answer the following questions:
+
++ What are the potential and limits of bottom-up models such as MAS to explore
+the functioning of agricultural systems, in particular farm differentiation and
+rural credit systems?
+
++ What are the potential and limits of MAS models to support a bottom-up
+modelling approach, i.e. a participatory modelling process in which models are
+conceived and used with and for local stakeholders?
+
+These are questions but they are not research questions. 
+They not make falsifiable propositions. They do not engage
+with a research debate (e.g., something along the lines of *we hypothesize 
+that credit patterns follow behavior X* to set up a finding of 
+*our participatory model showed that they actually follow Y*).
+
+Thankfully, the authors bypass their ostensible questions to explore
+some interesting points along these lines. For example, on page 624,
+they show how the linkage between formal and informal credit in their model
+confounds expectations of conventional theory. The authors would have been
+well-served to ditch the MAS-as-a-whole questions and focus more on the
+substance of their model.
+
+Model Effectiveness
+==============================
+
+I consider the research questions ill-posed and so focus my assessment of the
+model on its potential utility under a better-formed research regime.
+
+This model is highly effective. This judgment is best understood in the context
+of a discussion of the relative merits of empirical vs. modeling studies.
+With empirical studies---e.g., if the authors had obtained credit statistics in
+rural Thailand and run econometric analyses---one cannot dispute the realism of
+behavior (the data is a record of actual life) but observational data is riddled with
+selection effects, confounding variables, and the like, such
+that proving cause and effect is difficult. With models, it is much easier to
+assess causality because the researcher is in total control of all relevant
+variables, but models are often unsatisfactory simplifications of real life. 
+At their best, participatory ABMs have the advantages of
+both: the inclusion of expert opinion enhances model credibility while the
+formal model structure allows easier causal inference.
+
+This model's object of study---rural economics in the developing world---is
+very difficult to do empirical work on because of the lack of good data. Purely
+theoretical approaches often fail to capture key behaviors. This sort of
+participatory ABM thus can rapidly generate valuable insight and in fact did: their
+findings regarding credit patterns were interesting and of theoretical interest.
+One would not have gotten these findings without the realism of participatory
+play and the structure of a formal model, and so their model should be
+considered effective. It is a shame that this good work was
+saddled to poorly-formed research questions.
+
+Course Themes
+============================
+
+Alternative theoretical models of decision-making: actors in these model are not
+economically rational (by the strict definition of the term). For example,
+land-usage depends not on a straightforward calculation of costs vs. benefits,
+but rather on socioeconomic status and cultural preferences, among other things.
+Similarly, agents do not hesitate to go into debt to afford non-productive
+expenses (e.g. host weddings). 
+
+Model verification and validation: the authors' use of participatory roleplaying
+allowed validation of a sort. Partipants agreed that the game
+corresponded closely to their real lives. However, I find their
+validation incomplete since first-hand perception is not necessarily accurate:
+e.g., the fact that I am a participant in the housing market does not
+necessarily endow me with real understanding of the system as a whole. 
+To be clear, it is good that participants found the game believable, but I don't think is enough.

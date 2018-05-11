@@ -1,0 +1,192 @@
+\documentclass{beamer}
+\usetheme{Madrid}
+\usecolortheme{spruce}
+
+\usepackage{graphicx}
+\graphicspath{{./img/}}
+
+\title{An agent-based model of military mechanization}
+\subtitle{CSS 645}
+\author{Tom Wallace}
+\institute{George Mason University}
+\date{Spring 2018}
+
+\begin{document}
+
+\frame{\titlepage}
+
+\begin{frame}
+	\frametitle{Military mechanization}
+
+	States differ in the composition of their militaries, particularly ground forces \\~\\
+
+	One axis of comparison is \textbf{mechanization}
+	\begin{itemize}
+		\item \small The degree to which an army is comprised of infantry vs. ground combat vehicles \\~\\
+	\end{itemize}
+
+	Historical examples help illustrate the general idea
+	\begin{itemize}
+		\item \small 1970s Vietcong (low mechanization) vs. 1980s Israel (high mechanization)
+		\item \small 1980s U.S. (higher mechanization) vs. present-day U.S. (lower mechanization)
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{The consequences of choices regarding force structure are great}
+	Academic and professional consensus that choices regarding military
+	composition (including but not limited to mechanization) condition
+	battlefield effectiveness \\~\\
+
+	Size, cost, and complexity dictate that states can only slowly alter 
+	military composition, even under great duress \\~\\
+
+	``You go to war with the army you have'' \\~\\
+\end{frame}
+
+\begin{frame}
+	\frametitle{The determinants of mechanization are disputed}
+	One view stresses \textbf{security environment}: states adjust
+	mechanization to be able to prevail in conflict
+	\begin{itemize}
+		\item \small Neighbors' and enemys' mechanization (e.g. 1930s
+			France and Germany)
+		\item \small Terrain (e.g. Switzerland)
+		\item \small Insurgency (e.g. U.S.)\\~\\
+	\end{itemize}
+
+	Another view stresses \textbf{political, economic, and cultural
+	factors}: states are not pure security-maximizers
+	\begin{itemize}
+		\item \small Regime type (e.g. democracy vs. autocracy)
+		\item \small Economic endowments (e.g. capital vs. labor)
+		\item \small Cultural norms (e.g. Irish tanks)\\~\\
+	\end{itemize}
+
+	Sechser and Saunders 2010 conclude the former matters much more than the
+	latter
+	\begin{itemize}
+		\item \small Developed state-year level dataset on
+			mechanization, 1979-2001
+		\item \small Traditional econometric analysis (OLS)
+		\item \small Cultural norms (e.g. Irish tanks)\\~\\
+	\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+	\frametitle{Viewing their findings through an ABM lens}
+
+	Emphasis on \textbf{spatiality}: what are my neighbors doing? \\~\\
+
+	My actions affect your actions affect my actions... $\to$ \textbf{positive feedback loops} \\~\\
+
+	Estimated statistical coefficients implicitly claim particular cognitive model
+	\begin{itemize}
+		\item \small If neighbors mechanization goes up by $X$, I raise my mechanization by $\beta$ \\~\\
+	\end{itemize}
+
+	My research question: do their findings hold up under an ABM formulation?
+\end{frame}
+
+\begin{frame}
+	\frametitle{Model description}
+	Agent = state actor\\~\\
+
+	Attributes:
+	\begin{itemize}
+		\item \small Mechanization level (vehicles : infantry ratio,
+			IISS data)
+		\item \small Geographic neighbors (contiguous border per COW dataset)
+		\item \small Enemies (defined based on 10-year MID history)
+		\item \small Terrain (Fearon and Laitin 2004) \\~\\
+	\end{itemize}
+
+	Cognition regarding mechanization
+	\begin{itemize}
+		\item \small Takes into account neighbors, enemies, terrain,
+			wars
+		\item \small Agents observe lagged global behavior (2 years prior) and calculate
+			weighted average of neighbor mechanization; weighted
+			average of enemy mechanization; own terrain; and wars
+		\item \small For each of the above, adjust own mechanization by some
+			coefficient
+		\item \small Coefficients drawn from statistical distribution
+			found by Sechser and Saunders, randomly assigned to
+			agents (heterogeneity)
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Model description}
+	Initialized in 1979 \\~\\
+
+	Proceeds in two-year timesteps until 2001 \\~\\
+
+	Every turn, agents perceive neighbors, enemies, terrain, and wars, and
+	adjust own mechanization accordingly \\~\\
+
+	Because agent cognition has random element, model is stochastic and must
+	be run many times \\~\\
+
+	General research strategy: initialize with values from 1979, run, see if model results in 2001 match reality at both
+	actor- and system-level
+\end{frame}
+
+\begin{frame}
+	\frametitle{Example}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Findings}
+
+	Model results in significantly higher mechanization at both system- and
+	agent-level than reality
+
+	INSERT IMAGES
+\end{frame}
+
+\begin{frame}
+	\frametitle{Influence of positive feedback loops}
+
+	Results stem from positive feedback loop: you increase your
+	mechanization, which causes me to increase my mechanization, which
+	causes you to increase your mechanization... \\~\\
+
+	Modeled system lacks countervailing negative feedback loop \\~\\
+
+	Conclusion: some of the factors dismissed by Sechser and Saunders must
+	play a role in mitigating rate-of-increase in the real-world system
+	\\~\\
+
+	Cannot say \textit{which} factors, but the system-level point remains
+
+\end{frame}
+
+\begin{frame}
+	\frametitle{Verification, validation, and other topics}
+
+	In our taxonomy: analyzed-analyzed model \\~\\
+
+	Validation central to research strategy: comparison of model-2001 to
+	reality-2001 \\~\\
+
+	Significant amount of coding work was dealing with fact that composition
+	of international system changed over time (e.g., 1991)
+
+	\begin{itemize}
+		\item \small Inheritance
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Possible extensions}
+
+	Alliances \\~\\
+
+	More sophisticated cognition \\~\\
+
+	Incorporation of other force structure choices (e.g. human capital) \\~\\
+\end{frame}
+
+\end{document}

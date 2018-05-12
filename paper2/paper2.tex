@@ -1,5 +1,8 @@
 \documentclass{article}
 
+\usepackage{amsmath}
+\usepackage{graphicx}
+\graphicspath{}
 
 \usepackage[citestyle=authoryear, style=authoryear]{biblatex}
 \addbibresource{paper2.bib}
@@ -25,9 +28,21 @@ their implications for the academic debate on military mechanization.
 
 In summary, the orthodox view of military mechanization is that it is a
 reflexive process: states choose their mechanization posture largely based on
-that neighbors and enemies. This paper argues
+that neighbors, enemies, and recent military experiences (e.g. defeat in
+counter-insurgency). This paper argues
 that this view---based on traditional longitudinal data analysis---is ripe for
-agentization: 
+agentization. It implicitly argues for autonomous agents (states) that have
+cognition regarding mechanization that takes into account other agents (e.g.
+enemies), spatiality (e.g. neighbors), and learning from experience. This paper
+builds such a model and validates it against the empirical record, using the
+National Mechanization Index of \cite{sechser2010army}. It finds that the 
+orthodox view of mechanization does not stand up to agentization. A positive feedback loop exists causes states to
+mechanize much faster and to a greater degree than occurs in the real-world.
+This implies the existence of some countervailing factor (possibly a negative
+feedback loop) that mitigates the extent of mechanization. Candidates for what
+this could be mostly center on ``internal'' factors---e.g., culture, economy,
+and so on---as opposed to the ``external'', security environment-centric
+orthodox view.
 
 \section{Background}
 
@@ -46,7 +61,7 @@ Clearly, no modern state embodies either extreme, but the 1970s-era Vietcong are
 a good example of a low-mechanization army and the 1980s-era Israeli army of
 high mechanization.
 
-The consequences of choices regarding mechanization are large. There is
+The consequences of mechanization are large. There is
 academic consensus that defense policy---including but not limited to
 mechanization---conditions battlefield effectiveness. 
 \cite{lyall2009rage} finds that highly mechanized militaries are less effective
@@ -56,8 +71,7 @@ pays to have an army that is designed to win the
 kinds of
 conflicts that a state is likely to face. Lacking a crystal ball, however,
 leaders cannot always forecast conflict, and armies are large, complex
-organizations that typically are held to change only infrequently and slowly at
-that, even if there is a pressing need (\cite{murray1998military},
+organizations that typically are held to change only infrequently and slowly (\cite{murray1998military},
 \cite{locher2004victory}, \cite{zegart2000flawed}). A state suddenly faced with
 a war for which its mechanization posture is ill-suited can either concede or
 pay a cost in blood and treasure; what it cannot do is
@@ -107,10 +121,9 @@ learn from defeat in insurgency by subsequently decreasing their mechanization.
 The findings of \cite{sechser2010army} are ripe for agentization. The
 conclusions drawn implicitly claim
 that states are autonomous agents; that they have
-cognition regarding how to perceive the outside world in terms of mechanization
-and how to adjust their own mechanization to it; that spatiality and
-neighborhood matter; that inter-agent relationships (e.g. whether you are my
-enemy or not) matter; and that
+cognition regarding how to perceive the outside world
+and how to react to it; that spatiality and
+neighborhood matter; that inter-agent relationships matter; and that
 agents learn from experience. Agent-based modeling is uniquely well-suited to
 represent such phenomena (\cite{gilbert2005simulation};
 \cite{miller2009complex}).
@@ -129,7 +142,7 @@ of agent-based modeling (\cite{schelling1960strategy};
 \subsection{Research question and strategy}
 
 I hypothesize that the arguments of \cite{sechser2010army} are incomplete and
-that some omitted variable or set of variables acts as a ``brake'' on military
+that some omitted variable(s) act(s) as a ``brake'' on 
 mechanization.\footnote{By ``omitted'', I mean that they conclude that the variable
 is not very important for mechanization, not that they do not address the
 variable at all.} An agent-based model is used to test this hypothesis. In broad
@@ -154,7 +167,15 @@ of \cite{grimm2006standard} but covers many of the same points.
 There is one agent type: states. Agents exist at a fixed location and do not
 move. The set of agents encompasses all diplomatically-recognized 
 states in the world at a particular point in time, minus microstates (defined as
-those with a population less than 750,000).
+those with a population less than 750,000). Some other states were excluded; for
+why, see the \textbf{Time}
+section. Figure 1 depicts the set of agents.
+
+\begin{figure}[h!]
+	\centering
+	\caption{Agents}
+\includegraphics[scale=0.05]{map.png}
+\end{figure}
 
 Agents have attributes. \textit{Name} is self-explanatory.
 \textit{Mechanization} is the agent's level of mechanization at a given
@@ -172,6 +193,7 @@ enemies. Agents also have attributes that affect their
 perception of other agents and cognition for changing their own behavior. These
 attributes are discussed in the \textbf{Cognition and Actions} section.
 
+
 \subsection{Environment}
 
 Agents exist in a spatial environment. Spatiality is represented by neighbor
@@ -184,7 +206,9 @@ detailed raster or vector GIS implementation, is justified on the basis that the
 academic literature on mechanization suggests that two states neighboring each
 other is the important factor, not more detailed geographic information (e.g.,
 topographical features along the border). As such, this paper's modeling choice
-captures the phenomenon of interest while avoiding the overhead of a full-blown GIS implementation.
+captures the phenomenon of interest while avoiding the overhead of a full-blown
+GIS implementation coupled with ABM
+(e.g., \cite{harper2002modeling}).
 
 \subsection{Cognition}
 
@@ -208,7 +232,43 @@ counter-insurgency conflict. Such events are scripted to occur for agents and
 years as per the historical record: e.g., the Soviet Union experienced such a
 lesson in the 1980s in Afghanistan. An agent experiencing such an event will
 decrease their own mechanization by some amount controlled by the agent's
-unique \textit{LessonSensitivity} attribute, again heterogenous across agents. 
+unique \textit{LessonSensitivity} attribute, again heterogenous across agents.
+Cognition for agent $i$ thus is:
+
+\begin{multline}
+\textrm{Mech}_i^{(t+1)} = \textrm{Mech}_i^{(t)} \\ 
++ (\textrm{NeighborMechSensitivity}_i \times \textrm{NeighborMech}_i^{(t)}) \\
++ (\textrm{EnemyMechSensitivity}_i \times \textrm{EnemyMech}_i^{(t)}) \\
+	+ (\textrm{LessonSensitivity}_i \times I_{\textrm{Lesson}}(t, i))
+\end{multline}
+
+with $(t)$ denoting timestep, $i$ indexing agents, and $I_{\textrm{Lesson}}(t,
+i)$ an indicator function of whether the agent experienced an anti-mechanization
+lesson. Table 1 summarizes agent attributes.
+
+\begin{table}[h]
+	\centering
+	\caption{Attributes, organized by theme}
+	\begin{tabular}{|l l|}
+		\hline
+		\textbf{Identity} & \textit{Name} \\
+		& \\
+		\textbf{Mechanization} & \textit{Mechanization} \\
+		& \\
+		\textbf{Spatiality} & \textit{Neighbors} \\
+		& \\
+		\textbf{Inter-agent Relationships} & \textit{Enemies} \\
+		& \\
+		\textbf{Perception} & \textit{EnemiesMech} \\
+		& \textit{NeighborsMech} \\
+		& \textit{Lesson} \\
+		& \\
+		\textbf{Cognition} & \textit{EnemyMechSensitivity} \\
+		& \textit{NeighborsMechSensitivity} \\
+		& \textit{LessonSensitivity} \\
+		\hline
+	\end{tabular}
+\end{table}
 
 An important note is that these three factors---neighbors, enemies, and
 defeat in counter-insurgency---correspond to the factors identified by 
@@ -225,16 +285,20 @@ Data for \textit{NeighborsMechSensitivity}, \textit{EnemiesMechSensitivity}, and
 estimate coefficients and standard errors for these three factors, thus defining
 a statistical distribution for each. Upon instantiation, every agent makes a
 random draw from each of the three distributions, the resulting values of are
-taken for these three attributes. This introduces a stochastic element to the
-model and variation across runs, providing a richer body of data to draw upon.
+taken for these three attributes. This modeling choice has two important
+elements. One, it further enhances agent heterogeneity. Agents already differ in
+their geographic neighbors, enemies, and experiences with anti-mechanization
+lessons; now, they also differ in the cognition used to update mechanization
+based on these factors. It also introduces a stochastic element to the
+model, meaning that each run differs and so multiple runs must be conducted for
+each specification.
 
 \subsection{Time}
 
 The model starts in 1979 and runs in 2-year time increments until 2001. This
 timespan and periodicity reflects data availability: a longer time period and
 more frequent updates would be ideal but is not practically achievable. Agent
-attributes are initialized, and then then the model iterates through timesteps.
-
+attributes are initialized, and then then the model iterates through timesteps. 
 In discussing what happens each timestep, it is useful to distinguish between
 things that depend on agents' actions and those that do not.
 
@@ -251,13 +315,43 @@ updates their mechanization level according to \textit{NeighborMechSensitivity}
 and \textit{EnemyMechSensitivity}; and updates their mechanization level
 according to \textit{LessonSensitivity} if an anti-mechanization lesson occured.
 
+An important caveat is that the set of agents represented in the model does not
+change over time: i.e., agents are the same from 1979 onwards. In real life,
+of course, the agent population was not static over this time period, with many
+states ceasing to exist in 1991 and new ones forming. Modeling these changes is
+beyond the scope of this model. How a collapsed state's military assets are divvied up
+among successor states is complex and not tractable to simple representation
+(e.g. averaging). For example, the Soviet Union deployed most of its modern
+military equipment in the far west of the country in anticipation of a conflict
+with NATO, and so when the USSR collapsed Ukraine inherited the lion's share, leaving
+little for successor states like Kazakhstan or Azerbaijan (\cite{roy1993military}). Such inheritance has
+a strong effect on the mechanization of of successor states. Designing
+complex and state-specific ``rules of inheritance'' was too much for this
+initial effort but is an area for further development.
 
-\subsection{Output Data}
+\subsection{Output Data, Verification, and Validation}
 
+The main model output of interest is data on military mechanization. It is provided for
+every agent and every time-step. These agent-level data also can be aggregated
+into system-level measures of military mechanization. Per the research design,
+the intent is to compare the model output to what actually occurred. If the
+model produces military mechanization levels much higher than reality, it means
+that Sechser and Saunder's findings do not stand up to agentization and there is
+some missing ``brake'' on military mechanization. Note that this research
+strategy has validation (comparison of model output to empirical data) at its
+core and so no separate validation is needed. Verification that the model is
+doing what it is intended was accomplished through manual inspection.
 
 \section{Results}
 
+\subsection{System-Level}
+
+\subsection{Agent-Level}
+
 \section{Discussion}
+
+Learning ala \cite{bennett2006modelling}
+
 \printbibliography[heading=bibnumbered]
 
 \end{document}

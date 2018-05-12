@@ -19,6 +19,71 @@
 
 \refsection{0}
   \datalist[entry]{nyt/global//global/global}
+    \entry{roy1993military}{book}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=be6767e18295c6b64042b43534dd5296}{%
+           family={Allison},
+           familyi={A\bibinitperiod},
+           given={Roy},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Brassey's}%
+      }
+      \strng{namehash}{be6767e18295c6b64042b43534dd5296}
+      \strng{fullhash}{be6767e18295c6b64042b43534dd5296}
+      \strng{bibnamehash}{be6767e18295c6b64042b43534dd5296}
+      \strng{authorbibnamehash}{be6767e18295c6b64042b43534dd5296}
+      \strng{authornamehash}{be6767e18295c6b64042b43534dd5296}
+      \strng{authorfullhash}{be6767e18295c6b64042b43534dd5296}
+      \field{sortinit}{A}
+      \field{sortinithash}{d77c7cdd82ff690d4c3ef13216f92f0b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Military Forces in the Soviet Successor States: Analysis of the Military Policies, Force Dispositions and Evolving Threat Perceptions of the Former Soviet States}
+      \field{year}{1993}
+    \endentry
+    \entry{bennett2006modelling}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=a77c9258fbfd3727c843aa18730e05bd}{%
+           family={Bennett},
+           familyi={B\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=a249cce259828e622b9aec126007476a}{%
+           family={Tang},
+           familyi={T\bibinitperiod},
+           given={Wenwu},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Taylor \& Francis}%
+      }
+      \strng{namehash}{9b71d3ac6dc89bc8446e8fc01a610ca3}
+      \strng{fullhash}{9b71d3ac6dc89bc8446e8fc01a610ca3}
+      \strng{bibnamehash}{9b71d3ac6dc89bc8446e8fc01a610ca3}
+      \strng{authorbibnamehash}{9b71d3ac6dc89bc8446e8fc01a610ca3}
+      \strng{authornamehash}{9b71d3ac6dc89bc8446e8fc01a610ca3}
+      \strng{authorfullhash}{9b71d3ac6dc89bc8446e8fc01a610ca3}
+      \field{sortinit}{B}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Geographical Information Science}
+      \field{number}{9}
+      \field{title}{Modelling Adaptive, Spatially Aware, and Mobile Agents: Elk Migration in Yellowstone}
+      \field{volume}{20}
+      \field{year}{2006}
+      \field{pages}{1039\bibrangedash 1066}
+      \range{pages}{28}
+    \endentry
     \entry{biddle2004military}{book}{}
       \name{author}{1}{}{%
         {{uniquename=0,uniquepart=base,hash=31c1b9830c6e483b748a507cfdfa935e}{%
@@ -289,6 +354,50 @@
       \field{year}{2006}
       \field{pages}{115\bibrangedash 126}
       \range{pages}{12}
+    \endentry
+    \entry{harper2002modeling}{article}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,uniquepart=base,hash=a750e2bf45b3774c7111f7545fc5ce59}{%
+           family={Harper},
+           familyi={H\bibinitperiod},
+           given={Steven},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=6cccc1239e0d53e0d8c513eb8133b78c}{%
+           family={Westervelt},
+           familyi={W\bibinitperiod},
+           given={James},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=b469f48a896829acaf5a1b09236d0749}{%
+           family={Shapiro},
+           familyi={S\bibinitperiod},
+           given={Ann},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{5f8e60eb380d72acfe465049295830ae}
+      \strng{fullhash}{5f8e60eb380d72acfe465049295830ae}
+      \strng{bibnamehash}{5f8e60eb380d72acfe465049295830ae}
+      \strng{authorbibnamehash}{5f8e60eb380d72acfe465049295830ae}
+      \strng{authornamehash}{5f8e60eb380d72acfe465049295830ae}
+      \strng{authorfullhash}{5f8e60eb380d72acfe465049295830ae}
+      \field{sortinit}{H}
+      \field{sortinithash}{5f15a7bc777ad49ff15aa4d2831b1681}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Natural Resource Modeling}
+      \field{number}{1}
+      \field{title}{Modeling the Movements of Cowbirds: Application Towards Management at the Landscape Scale}
+      \field{volume}{15}
+      \field{year}{2002}
+      \field{pages}{111\bibrangedash 131}
+      \range{pages}{21}
     \endentry
     \entry{huth1988extended}{book}{}
       \name{author}{1}{}{%

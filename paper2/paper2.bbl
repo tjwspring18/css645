@@ -46,6 +46,33 @@
       \field{title}{Military Forces in the Soviet Successor States: Analysis of the Military Policies, Force Dispositions and Evolving Threat Perceptions of the Former Soviet States}
       \field{year}{1993}
     \endentry
+    \entry{axelrod1997complexity}{book}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=e46fddf6d412d66cae997840c9ba5f34}{%
+           family={Axelrod},
+           familyi={A\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Princeton University Press}%
+      }
+      \strng{namehash}{e46fddf6d412d66cae997840c9ba5f34}
+      \strng{fullhash}{e46fddf6d412d66cae997840c9ba5f34}
+      \strng{bibnamehash}{e46fddf6d412d66cae997840c9ba5f34}
+      \strng{authorbibnamehash}{e46fddf6d412d66cae997840c9ba5f34}
+      \strng{authornamehash}{e46fddf6d412d66cae997840c9ba5f34}
+      \strng{authorfullhash}{e46fddf6d412d66cae997840c9ba5f34}
+      \field{sortinit}{A}
+      \field{sortinithash}{d77c7cdd82ff690d4c3ef13216f92f0b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The Complexity of Cooperation: Agent-based Models of Competition and Collaboration}
+      \field{year}{1997}
+    \endentry
     \entry{bennett2006modelling}{article}{}
       \name{author}{2}{}{%
         {{uniquename=0,uniquepart=base,hash=a77c9258fbfd3727c843aa18730e05bd}{%
@@ -137,6 +164,65 @@
       \field{labeltitlesource}{title}
       \field{title}{Shaping Strategy: the Civil-Military Politics of Strategic Assessment}
       \field{year}{2008}
+    \endentry
+    \entry{cederman1997emergent}{book}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=b4c274681a4039c77b32955c93369ac1}{%
+           family={Cederman},
+           familyi={C\bibinitperiod},
+           given={Lars-Erik},
+           giveni={L\bibinithyphendelim E\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Princeton University Press}%
+      }
+      \strng{namehash}{b4c274681a4039c77b32955c93369ac1}
+      \strng{fullhash}{b4c274681a4039c77b32955c93369ac1}
+      \strng{bibnamehash}{b4c274681a4039c77b32955c93369ac1}
+      \strng{authorbibnamehash}{b4c274681a4039c77b32955c93369ac1}
+      \strng{authornamehash}{b4c274681a4039c77b32955c93369ac1}
+      \strng{authorfullhash}{b4c274681a4039c77b32955c93369ac1}
+      \field{sortinit}{C}
+      \field{sortinithash}{963e9d84a3da2344e8833203de5aed05}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Emergent Actors in World Politics: How States and Nations Develop and Dissolve}
+      \field{year}{1997}
+    \endentry
+    \entry{epstein2002modeling}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=3fb07930d3a9751e5f04e8dc4e47d375}{%
+           family={Epstein},
+           familyi={E\bibinitperiod},
+           given={Joshua},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {National Acad Sciences}%
+      }
+      \strng{namehash}{3fb07930d3a9751e5f04e8dc4e47d375}
+      \strng{fullhash}{3fb07930d3a9751e5f04e8dc4e47d375}
+      \strng{bibnamehash}{3fb07930d3a9751e5f04e8dc4e47d375}
+      \strng{authorbibnamehash}{3fb07930d3a9751e5f04e8dc4e47d375}
+      \strng{authornamehash}{3fb07930d3a9751e5f04e8dc4e47d375}
+      \strng{authorfullhash}{3fb07930d3a9751e5f04e8dc4e47d375}
+      \field{sortinit}{E}
+      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the National Academy of Sciences}
+      \field{number}{3}
+      \field{title}{Modeling Civil Violence: An Agent-Based Computational Approach}
+      \field{volume}{99}
+      \field{year}{2002}
+      \field{pages}{7243\bibrangedash 7250}
+      \range{pages}{8}
     \endentry
     \entry{farrell1998professionalization}{article}{}
       \name{author}{1}{}{%

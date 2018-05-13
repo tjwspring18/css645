@@ -1958,10 +1958,21 @@
     <bcf:citekey order="32">cow_midb</bcf:citekey>
     <bcf:citekey order="33">cow_contiguity</bcf:citekey>
     <bcf:citekey order="34">harper2002modeling</bcf:citekey>
-    <bcf:citekey order="35">sechser2010army</bcf:citekey>
+    <bcf:citekey order="35">bennett2006modelling</bcf:citekey>
     <bcf:citekey order="36">sechser2010army</bcf:citekey>
-    <bcf:citekey order="37">roy1993military</bcf:citekey>
-    <bcf:citekey order="38">bennett2006modelling</bcf:citekey>
+    <bcf:citekey order="37">sechser2010army</bcf:citekey>
+    <bcf:citekey order="38">roy1993military</bcf:citekey>
+    <bcf:citekey order="39">sechser2010army</bcf:citekey>
+    <bcf:citekey order="40">sechser2010army</bcf:citekey>
+    <bcf:citekey order="41">sechser2010army</bcf:citekey>
+    <bcf:citekey order="42">sechser2010army</bcf:citekey>
+    <bcf:citekey order="43">sechser2010army</bcf:citekey>
+    <bcf:citekey order="44">epstein2002modeling</bcf:citekey>
+    <bcf:citekey order="45">cederman1997emergent</bcf:citekey>
+    <bcf:citekey order="46">axelrod1997complexity</bcf:citekey>
+    <bcf:citekey order="47">sechser2010army</bcf:citekey>
+    <bcf:citekey order="48">sechser2010army</bcf:citekey>
+    <bcf:citekey order="49">sechser2010army</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">

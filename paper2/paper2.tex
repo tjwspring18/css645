@@ -31,7 +31,9 @@ It presents an alternate agent-based model of military mechanization that has su
 \newpage
 
 Methodology studies
-\citep{pepinsky2005agents,de2014agent,gunitsky2013complexity,bousquet2011beyond,harrison2012complexity,jervis1998system,modelski1990world,modelski1999long}
+\citep{pepinsky2005agents,de2014agent,
+gunitsky2013complexity,bousquet2011beyond,
+harrison2012complexity,jervis1998system,modelski1990world,modelski1999long,cederman2001agent}
 
 Insurgency studies
 \citep{cioffi2010mason,weidmann2013violence,bhavnani2012modeling,bhavnani2014group}
@@ -44,6 +46,17 @@ Just because \citep{epstein1996growing}
 
 Maybe it's because states are not unitary. Not necessariy requirement: e.g.,
 household is agent in Schelling model. 
+
+Cite Cederman to say why I don't do inheritenace - reification of actor
+
+Why ABM:
+ - inadequacy of SS - VIF, linear model
+ - uncertainty of causation
+ - endogeneity
+ - GDP / capita explains this...but also everything else
+ - have to go with simulation
+ - bigger picture, world politics as complex system
+ - look at Axtell \citep{axtell2000agents}
 
 \section{Introduction}
 
@@ -381,21 +394,21 @@ Mechanization Index compiled by \citet{sechser2010army}.
 \begin{table}[h]
 	\centering
 	\caption{Comparison}
-	\begin{tabular}{|l r r|}
+	\begin{tabular}{|l r r r|}
 		\hline
-		\textbf{Year} & \textbf{Model} & \textbf{Reality} \\
-		1979 & 0.0156 & 0.0139 \\
-		1981 & 0.0189 & 0.0167 \\
-		1983 & 0.0229 & 0.0167 \\
-		1985 & 0.0280 & 0.0183 \\
-		1987 & 0.0351 & 0.0187 \\
-		1989 & 0.0415 & 0.0197 \\
-		1991 & 0.0512 & 0.0215 \\
-		1993 & 0.0636 & 0.0229 \\
-		1995 & 0.0804 & 0.0231 \\
-		1997 & 0.1014 & 0.0270 \\
-		1999 & 0.1319 & 0.0272 \\
-		2001 & 0.1730 & 0.0291 \\
+		\textbf{Year} & \textbf{Model} & \textbf{Reality} & \textbf{Difference}\\
+		1979 & 0.0156 & 0.0139 & 0.0017 \\
+		1981 & 0.0189 & 0.0167 & 0.0022 \\
+		1983 & 0.0229 & 0.0167 & 0.0062 \\
+		1985 & 0.0280 & 0.0183 & 0.0097 \\
+		1987 & 0.0351 & 0.0187 & 0.0164 \\
+		1989 & 0.0415 & 0.0197 & 0.0218 \\
+		1991 & 0.0512 & 0.0215 & 0.0297 \\
+		1993 & 0.0636 & 0.0229 & 0.0407 \\
+		1995 & 0.0804 & 0.0231 & 0.0573 \\
+		1997 & 0.1014 & 0.0270 & 0.0744 \\
+		1999 & 0.1319 & 0.0272 & 0.1047 \\
+		2001 & 0.1730 & 0.0291 & 0.1439 \\
 		\hline
 	\end{tabular}
 \end{table}
@@ -410,21 +423,21 @@ with Mexico serving as one example.
 \begin{table}[h]
 	\centering
 	\caption{Mexico}
-	\begin{tabular}{|l r r|}
+	\begin{tabular}{|l r r r|}
 		\hline
-		\textbf{Year} & \textbf{Model} & \textbf{Reality} \\
-		1979 & 0.0013 & 0.0012 \\
-		1981 & 0.0014 & 0.0012 \\
-		1983 & 0.0018 & 0.0026 \\
-		1985 & 0.0019 & 0.0013 \\
-		1987 & 0.0021 & 0.0019 \\
-		1989 & 0.0022 & 0.0027 \\
-		1991 & 0.0024 & 0.0030 \\
-		1993 & 0.0026 & 0.0033 \\
-		1995 & 0.0030 & 0.0035 \\
-		1997 & 0.0032 & 0.0074 \\
-		1999 & 0.0036 & 0.0082 \\
-		2001 & 0.0040 & 0.0075 \\
+		\textbf{Year} & \textbf{Model} & \textbf{Reality} & \textbf{Difference}\\
+		1979 & 0.0013 & 0.0012 & 0.0001  \\
+		1981 & 0.0014 & 0.0012 & 0.0002  \\
+		1983 & 0.0018 & 0.0026 & -0.0008 \\
+		1985 & 0.0019 & 0.0013 & 0.0006  \\
+		1987 & 0.0021 & 0.0019 & 0.0002  \\
+		1989 & 0.0022 & 0.0027 & -0.0005 \\
+		1991 & 0.0024 & 0.0030 & -0.0006 \\
+		1993 & 0.0026 & 0.0033 & -0.0007 \\
+		1995 & 0.0030 & 0.0035 & -0.0005 \\
+		1997 & 0.0032 & 0.0074 & -0.0042 \\
+		1999 & 0.0036 & 0.0082 & -0.0046 \\
+		2001 & 0.0040 & 0.0075 & -0.0035 \\
 		\hline
 	\end{tabular}
 \end{table}

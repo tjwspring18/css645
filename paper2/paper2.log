@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.12.24)  8 JUL 2018 18:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.12.24)  8 JUL 2018 19:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -436,14 +436,10 @@ Package biblatex Info: Reference segment=0 on input line 14.
 <map.png, id=25, 6484.225pt x 3493.05pt>
 File: map.png Graphic file (type png)
 <use map.png>
-Package pdftex.def Info: map.png  used on input line 200.
+Package pdftex.def Info: map.png  used on input line 207.
 (pdftex.def)             Requested size: 324.23024pt x 174.66273pt.
- [5 <./map.png>]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[6] [7] [8] [9] [10] [11] [12]
-Overfull \hbox (15.76077pt too wide) in paragraph at lines 555--555
+ [5 <./map.png>] [6] [7] [8] [9] [10] [11] [12]
+Overfull \hbox (15.76077pt too wide) in paragraph at lines 562--562
 [][]\OT1/cmr/m/n/10 Bhavnani, Ravi and Hyun Jin Choi (2012). ``Mod-el-ing Civil
  Vi-o-lence in Afghanistan:
  []
@@ -456,7 +452,7 @@ Package logreq Info: Writing requests to 'paper2.run.xml'.
 Here is how much of TeX's memory you used:
  8907 strings out of 494427
  156271 string characters out of 6167361
- 562220 words of memory out of 5000000
+ 561220 words of memory out of 5000000
  12186 multiletter control sequences out of 15000+600000
  9976 words of font info for 36 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
@@ -475,7 +471,7 @@ ve/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/
 2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/201
 7/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2017
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on paper2.pdf (15 pages, 1205468 bytes).
+Output written on paper2.pdf (15 pages, 1206204 bytes).
 PDF statistics:
  112 PDF objects out of 1000 (max. 8388607)
  78 compressed objects within 1 object stream

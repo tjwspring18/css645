@@ -1,12 +1,12 @@
 # Fdb version 3
-["biber paper2"] 1531087443 "paper2.bcf" "paper2.bbl" "paper2" 1531087472
+["biber paper2"] 1531090961 "paper2.bcf" "paper2.bbl" "paper2" 1531091824
   "ascii input as UTF-8" 0 -1 0 ""
-  "paper2.bcf" 1531087472 92436 d5dab9822a136bc81b73d932c553ba10 ""
-  "paper2.bib" 1531087406 12737 b1926f94cdc3fc14e03b4fbaf342bfd2 ""
+  "paper2.bcf" 1531091824 92436 d5dab9822a136bc81b73d932c553ba10 ""
+  "paper2.bib" 1531087762 13231 a2f70eabbcb8149f47dcb229fb53b740 ""
   (generated)
   "paper2.bbl"
   "paper2.blg"
-["pdflatex"] 1531087463 "paper2.tex" "paper2.pdf" "paper2" 1531087472
+["pdflatex"] 1531091815 "paper2.tex" "paper2.pdf" "paper2" 1531091824
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1480098698 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1480098698 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1480098701 1328 c834bbb027764024c09d3d2bf908b5f0 ""
@@ -87,13 +87,13 @@
   "/usr/local/texlive/2017/texmf-var/web2c/pdftex/pdflatex.fmt" 1514125355 2589344 e3e8f289402fb761e5a9dc94a585dc77 ""
   "/usr/local/texlive/2017/texmf.cnf" 1514125340 455 5b996dcaa0eb4ef14a83b026bc0a008c ""
   "map.png" 1526172837 1566957 b3ebae88356965a89ceff34d2c9f8164 ""
-  "paper2.aux" 1531087472 14146 9e40434590c2f27c12b7729230237e12 ""
-  "paper2.bbl" 1531087446 67409 c80480c1d899f8ef8252d8ad83a13fc6 "biber paper2"
-  "paper2.run.xml" 1531087472 2355 24d0c4828c081d8bb5730401452740f6 ""
-  "paper2.tex" 1531087430 28567 81124fe9adfd95dcf432543905096b7a ""
+  "paper2.aux" 1531091824 14146 7927d09e365c111c5d9e952483f2c699 ""
+  "paper2.bbl" 1531090971 67409 c80480c1d899f8ef8252d8ad83a13fc6 "biber paper2"
+  "paper2.run.xml" 1531091824 2355 24d0c4828c081d8bb5730401452740f6 ""
+  "paper2.tex" 1531091796 29020 92e98bc5bd1417ae0ce12f0528777faf ""
   (generated)
-  "paper2.pdf"
   "paper2.aux"
   "paper2.log"
   "paper2.bcf"
   "paper2.run.xml"
+  "paper2.pdf"

@@ -67,6 +67,8 @@ INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/biblatex/blx-compat.def
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/biblatex/blx-compat.def
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/biblatex/biblatex.def
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/biblatex/biblatex.def
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/biblatex/blx-natbib.def
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/biblatex/blx-natbib.def
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/biblatex/bbx/authoryear.bbx
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/biblatex/bbx/authoryear.bbx
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
@@ -107,14 +109,16 @@ INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmr9.tfm
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmbx9.tfm
+OUTPUT paper2.pdf
+INPUT /usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
-OUTPUT paper2.pdf
-INPUT /usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
 INPUT map.png
 INPUT ./map.png
@@ -124,6 +128,7 @@ INPUT paper2.run.xml
 OUTPUT paper2.run.xml
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
@@ -132,5 +137,6 @@ INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pf
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb

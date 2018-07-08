@@ -4,7 +4,7 @@
 \usepackage{graphicx}
 \graphicspath{}
 
-\usepackage[citestyle=authoryear, style=authoryear]{biblatex}
+\usepackage[citestyle=authoryear,style=authoryear,backend=biber,natbib]{biblatex}
 \addbibresource{paper2.bib}
 
 \title{An agent-based model of military mechanization}
@@ -15,9 +15,21 @@
 
 \maketitle
 
-\begin{center}
-	Word count: 4218
-\end{center}
+\begin{abstract}
+
+Military mechanization is the degree to which a state's army is comprised of
+ground combat vehicles as opposed to infantry. Mechanization is both a 
+theoretically important topic in international relations scholarship and a practical 
+concern for policymakers. \citet{sechser2010army} influentially argue that
+inter-state dynamics (e.g., rivalries) better explain mechanization choices than do
+intra-state factors (e.g., culture). This paper demonstrates that
+the multivariate statistical approach employed in \citet{sechser2010army} is inadequate. 
+It presents an alternate agent-based model of military mechanization that has superior explanatory power.
+
+\end{abstract}
+
+\newpage
+
 \section{Introduction}
 
 This paper presents an agent-based model of military mechanization. First, it
@@ -35,7 +47,7 @@ agentization. It implicitly argues for autonomous agents (states) that have
 cognition regarding mechanization that takes into account other agents (e.g.
 enemies), spatiality (e.g. neighbors), and learning from experience. This paper
 builds such a model and validates it against the empirical record, using the
-National Mechanization Index of \cite{sechser2010army}. It finds that the 
+National Mechanization Index of \citet{sechser2010army}. It finds that the 
 orthodox view of mechanization does not stand up to agentization. A positive feedback loop 
 causes states to
 mechanize much faster and to a greater degree than occurs in the real-world.
@@ -65,39 +77,38 @@ high mechanization.
 The consequences of mechanization are large. There is
 academic consensus that defense policy---including but not limited to
 mechanization---conditions battlefield effectiveness. 
-\cite{lyall2009rage} finds that highly mechanized militaries are less effective
-at counterinsurgency, while \cite{biddle2004military} argues that
+\citet{lyall2009rage} finds that highly mechanized militaries are less effective
+at counterinsurgency, while \citet{biddle2004military} argues that
 mechanization-enabled mobility aids conventional warfighting. It thus
 pays to have an army that is designed to win the
 kinds of
 conflicts that a state is likely to face. Lacking a crystal ball, however,
 leaders cannot always forecast conflict, and armies are large, complex
-organizations that typically are held to change only infrequently and slowly (\cite{murray1998military},
-\cite{locher2004victory}, \cite{zegart2000flawed}). A state suddenly faced with
+organizations that typically are held to change only infrequently and slowly
+\citep{murray1998military,locher2004victory,zegart2000flawed}. A state suddenly faced with
 a war for which its mechanization posture is ill-suited can either concede or
 pay a cost in blood and treasure; what it cannot do is
 quickly overcome the constraints imposed by past mechanization decisions. 
 A quote from then-Secretary of Defense Donald Rumsfeld---made in 2004, when the U.S. military
 was confronted in Iraq with the consequences of past choices regarding
 mechanization---emphasizes the point:
-``you go to war with the army you have'' (\cite{schmitt_2004}). 
+``you go to war with the army you have'' \citep{schmitt_2004}. 
 
 The causes of military mechanization are disputed. \textit{Realists} believe 
 that mechanization choices are driven by security environment. States
 choose mechanization policies that they believe will allow them to prevail against potential adversaries, or to send a
 signal of deterrence, or to learn from the perceived mistakes of the last war
-(\cite{mearsheimer1983conventional};
-\cite{huth1988extended}; \cite{murray2011military}). The other school of thought is more
+\citep{mearsheimer1983conventional,huth1988extended,murray2011military}. The other school of thought is more
 diverse and so harder to name, but may be termed 
 \textit{institutionalists}. They believe that factors other than 
 strategic calculation determine military mechanization. Domestic political
 institutions---e.g., democracy vs. autocracy, politically stable vs.
 coup-prone, the state of civil-military relations, and so on---may influence 
-force structure (\cite{reiter2002democracies}; \cite{quinlivan1999coup};
-\cite{talmadge2015dictator}; \cite{brooks2008shaping}). Economic factor
+force structure \citep{reiter2002democracies,quinlivan1999coup,talmadge2015dictator,brooks2008shaping}. 
+Economic factor
 endowments may play a role: e.g., capital-rich states may mechanize more
-than labor-rich states (\cite{gartzke2001democracy}). Lastly,
-ideology (\cite{van1984cult}) and culture (e.g., \cite{pollack2004arabs}) are
+than labor-rich states \citep{gartzke2001democracy}. Lastly,
+ideology \citep{van1984cult} and culture \citep[e.g.][]{pollack2004arabs} are
 hard-to-measure but perhaps influential. Consider Ireland: between the 1920s and
 1940s, it expended a large portion of its defense budget on building
 a small number of tanks. They were wholly insufficient to repel a British 
@@ -105,10 +116,9 @@ invasion (their ostensible purpose), and
 Ireland would have been better-served to pursue a low-mechanization guerrilla
 defense strategy, but tanks were seen as a prestigious signifier of a ``real''
 professional military, an important factor for the young Irish state
-(\cite{farrell1998professionalization};
-\cite{farrell2001transnational}).
+\citep{farrell1998professionalization,farrell2001transnational}.
 
-\cite{sechser2010army} is the landmark study on military mechanization. They
+\citet{sechser2010army} is the landmark study on military mechanization. They
 assemble a longitudinal dataset at the country-year level of the mechanization
 of all states between 1979 and 2001, and conduct regression analysis to identify
 the effect of covariates on mechanization. They conclude that ``choices about
@@ -119,38 +129,36 @@ learn from defeat in insurgency by subsequently decreasing their mechanization.
 
 \subsection{The case for agent-based modeling}
 
-The findings of \cite{sechser2010army} are ripe for agentization. The
+The findings of \citet{sechser2010army} are ripe for agentization. The
 conclusions drawn implicitly claim
 that states are autonomous agents; that they have
 cognition regarding how to perceive the outside world
 and how to react to it; that spatiality and
 neighborhood matter; that inter-agent relationships matter; and that
 agents learn from experience. Agent-based modeling is uniquely well-suited to
-represent such phenomena (\cite{gilbert2005simulation};
-\cite{miller2009complex}).
+represent such phenomena \citep{gilbert2005simulation,miller2009complex}.
 
-Importantly, the findings of \cite{sechser2010army} imply a positive feedback
+Importantly, the findings of \citet{sechser2010army} imply a positive feedback
 loop. State A has high
 mechanization, causing enemy State B to raise their mechanization, causing State
 A to raise their mechanization... and so on. Such feedback loops are a hallmark
 of complex systems and again are well-suited for representation by agent-based
 modeling. This specific feedback loop is often called
 the ``security dilemma'' and was a main research interest of Thomas Schelling, one of the pioneers
-of agent-based modeling (\cite{schelling1960strategy};
-\cite{schelling2006micromotives}).
+of agent-based modeling \citep{schelling1960strategy,schelling2006micromotives}.
 
 \subsection{Research question and strategy}
 
-I hypothesize that the arguments of \cite{sechser2010army} are incomplete and
+I hypothesize that the arguments of \citet{sechser2010army} are incomplete and
 that some omitted variable or set of variables acts as a ``brake'' on 
 mechanization.\footnote{By ``omitted'', I mean that Sechser and Saunders conclude that the variable
 is not very important for mechanization, not that they do not address the
 variable at all.} An agent-based model is used to test this hypothesis. In broad
 terms, agents (states) are defined to have the cognitive and learning behavior
-implicitly claimed by \cite{sechser2010army}. The model is initialized with
+implicitly claimed by \citet{sechser2010army}. The model is initialized with
 real-world data from 1979 and allowed to run until 2001. The micro- and
 macro-outcomes are then validated against real-world 2001 data. If
-\cite{sechser2010army} are correct, the model's 2001 outcomes should match
+\citet{sechser2010army} are correct, the model's 2001 outcomes should match
 real-world 2001 outcomes. If the model mechanization levels in 2001 are much
 higher, then their claimed behavioral rules are incomplete and fail to include
 some ``brake'' on mechanization, matching my hypothesis. Proving exactly what
@@ -160,7 +168,7 @@ and paper, though it is discussed.
 \section{Model}
 
 This section of the paper describes the model. It does not use the ODD protocol
-of \cite{grimm2006standard} but covers many of the same points.
+of \citet{grimm2006standard} but covers many of the same points.
 
 \subsection{Agents}
 
@@ -180,7 +188,7 @@ section. Figure 1 depicts the set of agents.
 Agents have attributes. \textit{Name} is self-explanatory.
 \textit{Mechanization} is the agent's level of mechanization at a given
 timestep. Mechanization is calculated as the number of armored vehicles per 100
-soldiers, per \cite{sechser2010army}. \textit{Neighbors} is a list containing
+soldiers, per \citet{sechser2010army}. \textit{Neighbors} is a list containing
 the \textit{Names} of an agent's geographic neighbors at a given point in
 time---more on this in the subsequent \textbf{Environment} section. \textit{NeighborsMech} is the
 average mechanization level of an agent's \textit{Neighbors} at a given point in
@@ -188,7 +196,7 @@ time. \textit{Enemies} is a list containing the \textit{Names} of an agent's
 enemies at a given point in time. An enemy is an agent with which the agent in
 question has had a militarized interstate dispute in the preceding ten years,
 per the Correlates of War (COW) Militarized Interstate Disputes Database (MIDB)
-(\cite{cow_midb}). \textit{EnemiesMech} is the average mechanization score of
+\citep{cow_midb}. \textit{EnemiesMech} is the average mechanization score of
 enemies. Agents also have attributes that affect their
 perception of other agents and cognition for changing their own behavior. These
 attributes are discussed in the \textbf{Cognition and Actions} section.
@@ -200,15 +208,14 @@ Agents exist in a spatial environment. Spatiality is represented by neighbor
 relationships. Two states are defined as
 being neighbors if they share a contiguous land border or a stretch of water
 less than 400 miles. Data on neighbor relationships is taken from the Correlates
-of War (COW) Direct Continuity dataset (\cite{cow_contiguity}).
+of War (COW) Direct Continuity dataset \citep{cow_contiguity}.
 Modeling spatiality as dyadic neighbor relationships, rather than a more
 detailed raster or vector GIS implementation, is justified on the basis that the
 academic literature on mechanization suggests that two states neighboring each
 other is the important factor, not more detailed geographic information (e.g.,
 topographical features along the border). As such, this paper's modeling choice
 captures the phenomenon of interest while avoiding the overhead of a full-blown
-GIS implementation coupled with ABM
-(e.g., \cite{harper2002modeling} or \cite{bennett2006modelling}).
+GIS implementation coupled with ABM \citep[e.g.][]{harper2002modeling,bennett2006modelling}.
 
 \subsection{Cognition}
 
@@ -272,7 +279,7 @@ lesson. Table 1 summarizes agent attributes.
 
 An important note is that these three factors---neighbors, enemies, and
 defeat in counter-insurgency---correspond to the factors identified by 
-\cite{sechser2010army} as most important for mechanization. Because the research
+\citet{sechser2010army} as most important for mechanization. Because the research
 goal is essentially to see whether their findings stand up to agentization,
 it is critical to make agent cognition work in about the way that their findings
 predict. Inclusion of other factors not identified as important for
@@ -281,7 +288,7 @@ culture, etc.---would be interesting but counter-productive to the research
 question. They are discussed along with this model's findings. 
 
 Data for \textit{NeighborsMechSensitivity}, \textit{EnemiesMechSensitivity}, and
-\textit{LessonSensitivity} come from \cite{sechser2010army}. Specifically, they
+\textit{LessonSensitivity} come from \citet{sechser2010army}. Specifically, they
 estimate coefficients and standard errors for these three factors, thus defining
 a statistical distribution for each. Upon instantiation, every agent makes a
 random draw from each of the three distributions, the resulting values of are
@@ -325,7 +332,7 @@ among successor states is complex and not tractable to simple representation
 military equipment in the far west of the country in anticipation of a conflict
 with NATO, and so when the USSR collapsed Ukraine inherited the lion's share, leaving
 little for successor states such as Azerbaijan that were not important military
-districts (\cite{roy1993military}). Such inheritance has
+districts \citep{roy1993military}. Such inheritance has
 a strong effect on the mechanization of of successor states. Designing
 complex and state-specific ``rules of inheritance'' was too much for this
 initial effort but is an area for further development.
@@ -353,8 +360,8 @@ model and reality (c.f. earlier issues with inheritance), this
 gross comparison still is a useful measure of comparison. Model results are
 the average of 100 runs, with all parameters (e.g.
 \textit{EnemyMechSensitivity}) drawn from the distributions claimed by
-\cite{sechser2010army}; empirical results are drawn from the National
-Mechanization Index compiled by \cite{sechser2010army}.
+\citet{sechser2010army}; empirical results are drawn from the National
+Mechanization Index compiled by \citet{sechser2010army}.
 
 \begin{table}[h]
 	\centering
@@ -478,21 +485,22 @@ enemies (e.g., the Middle East or Cold War-era Europe) will rapidly increase the
 mechanization.
 
 Three, because this model is a
-faithful representation of the factors that \cite{sechser2010army} claim are
+faithful representation of the factors that \citet{sechser2010army} claim are
 most important for mechanization, that model output fails to match reality
 indicates that their claimed model is incomplete. There must be some ``brake''
 on mechanization; put differently, some countervailing factor(s) must mitigate the
 effect of the positive feedback loop identified above. This model cannot
 conclusively identify what that ``brake'' is. The most plausible candidates are
-factors examined by \cite{sechser2010army} and deemed statistically
+factors examined by \citet{sechser2010army} and deemed statistically
 insignificant such as regime type and economy, and factors not examined by
-\cite{sechser2010army} at all such as culture.
+\citet{sechser2010army} at all such as culture.
 
 This paper is a novel contribution to the literature. Although agent-based
 models have found traction in the study of grievance, insurgency, and
-other population-centric security phenomena (e.g., \cite{epstein2002modeling}),
+other population-centric security phenomena \citep[e.g.][]{epstein2002modeling},
 they quite rarely are used to model international relations and state-centric security
-phenomena despite some early work on this front (e.g., \cite{cederman1997emergent} and \cite{axelrod1997complexity}). 
+phenomena despite some early work on this front
+\citep[see][]{cederman1997emergent,axelrod1997complexity}. 
 This paper's agentization of an orthodox security
 studies model thus is novel in method. Its findings also are important. They
 show that they show a solely ``external'', security
@@ -503,15 +511,15 @@ diverge from theoretical expectations of the orthodox view.
 
 \subsection{Areas for Improvement}
 
-Having taken a critical view of \cite{sechser2010army}, it only is fair that
+Having taken a critical view of \citet{sechser2010army}, it only is fair that
 this paper applies that lens to itself. There are two main areas for
 improvement.
 
-One, this model's representation of \cite{sechser2010army} could be tightened
+One, this model's representation of \citet{sechser2010army} could be tightened
 up, as there currently is divergence between the two. For example, this model
 examines a smaller agent set than their paper. Building ``inheritance''
 processes to allow new states to emerge is desirable. This paper's
-use of statistical coefficients from \cite{sechser2010army} also has some
+use of statistical coefficients from \citet{sechser2010army} also has some
 methodological problems, a full description of which is omitted here due to
 space constraints. It suffices to say that a better approach would be to conduct
 more extensive parameter sweeps of relevant cognitive factors.

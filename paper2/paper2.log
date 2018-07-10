@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.12.24)  8 JUL 2018 19:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.12.24)  9 JUL 2018 20:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -431,17 +431,36 @@ Package biblatex Info: Reference section=0 on input line 14.
 Package biblatex Info: Reference segment=0 on input line 14.
  [1
 
-{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
- [4]
-<map.png, id=25, 6484.225pt x 3493.05pt>
+{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.73 
+     
+? 
+
+Overfull \hbox (181.01428pt too wide) in paragraph at lines 67--73
+\OML/cmm/m/it/10 x[]; x[] [] x[] [] x[]$ $^^L[]believedtoaffectthisdependentvar
+iableandfitanordinaryleastsquares\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 OLS\OT1/cmr/
+m/n/10 )\OML/cmm/m/it/10 linearmodeloftheform$ 
+ []
+
+[2] [3] [4]
+<map.png, id=27, 6484.225pt x 3493.05pt>
 File: map.png Graphic file (type png)
 <use map.png>
-Package pdftex.def Info: map.png  used on input line 207.
+Package pdftex.def Info: map.png  used on input line 236.
 (pdftex.def)             Requested size: 324.23024pt x 174.66273pt.
  [5 <./map.png>] [6] [7] [8] [9] [10] [11] [12]
-Overfull \hbox (15.76077pt too wide) in paragraph at lines 562--562
+Overfull \hbox (15.76077pt too wide) in paragraph at lines 591--591
 [][]\OT1/cmr/m/n/10 Bhavnani, Ravi and Hyun Jin Choi (2012). ``Mod-el-ing Civil
  Vi-o-lence in Afghanistan:
+ []
+
+
+Overfull \hbox (1.11307pt too wide) in paragraph at lines 591--591
+[][][]\OT1/cmr/m/n/10 (2001). ``Agent-based mod-el-ing in po-lit-i-cal sci-ence
+''. In: \OT1/cmr/m/it/10 The Po-lit-i-cal Method-
  []
 
 [13] [14] [15] (./paper2.aux)
@@ -450,10 +469,10 @@ Package logreq Info: Writing requests to 'paper2.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 8907 strings out of 494427
- 156271 string characters out of 6167361
- 561220 words of memory out of 5000000
- 12186 multiletter control sequences out of 15000+600000
+ 8917 strings out of 494427
+ 156539 string characters out of 6167361
+ 561402 words of memory out of 5000000
+ 12196 multiletter control sequences out of 15000+600000
  9976 words of font info for 36 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
  41i,10n,51p,822b,1409s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -471,7 +490,7 @@ ve/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/
 2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/201
 7/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2017
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on paper2.pdf (15 pages, 1206204 bytes).
+Output written on paper2.pdf (15 pages, 1213919 bytes).
 PDF statistics:
  112 PDF objects out of 1000 (max. 8388607)
  78 compressed objects within 1 object stream

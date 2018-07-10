@@ -108,6 +108,30 @@
       \field{pages}{1390\bibrangedash 1396}
       \range{pages}{7}
     \endentry
+    \entry{axtell2000agents}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=72317533179c1028e7345021728f7612}{%
+           family={Axtell},
+           familyi={A\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{72317533179c1028e7345021728f7612}
+      \strng{fullhash}{72317533179c1028e7345021728f7612}
+      \strng{bibnamehash}{72317533179c1028e7345021728f7612}
+      \strng{authorbibnamehash}{72317533179c1028e7345021728f7612}
+      \strng{authornamehash}{72317533179c1028e7345021728f7612}
+      \strng{authorfullhash}{72317533179c1028e7345021728f7612}
+      \field{sortinit}{A}
+      \field{sortinithash}{d77c7cdd82ff690d4c3ef13216f92f0b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Why agents?: on the varied motivations for agent computing in the social sciences}
+      \field{year}{2000}
+    \endentry
     \entry{bennett2006modelling}{article}{}
       \name{author}{2}{}{%
         {{uniquename=0,uniquepart=base,hash=a77c9258fbfd3727c843aa18730e05bd}{%
@@ -349,6 +373,35 @@
       \field{labeltitlesource}{title}
       \field{title}{Emergent Actors in World Politics: How States and Nations Develop and Dissolve}
       \field{year}{1997}
+    \endentry
+    \entry{cederman2001agent}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=b4c274681a4039c77b32955c93369ac1}{%
+           family={Cederman},
+           familyi={C\bibinitperiod},
+           given={Lars-Erik},
+           giveni={L\bibinithyphendelim E\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b4c274681a4039c77b32955c93369ac1}
+      \strng{fullhash}{b4c274681a4039c77b32955c93369ac1}
+      \strng{bibnamehash}{b4c274681a4039c77b32955c93369ac1}
+      \strng{authorbibnamehash}{b4c274681a4039c77b32955c93369ac1}
+      \strng{authornamehash}{b4c274681a4039c77b32955c93369ac1}
+      \strng{authorfullhash}{b4c274681a4039c77b32955c93369ac1}
+      \field{sortinit}{C}
+      \field{sortinithash}{963e9d84a3da2344e8833203de5aed05}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Political Methodologist}
+      \field{number}{1}
+      \field{title}{Agent-based modeling in political science}
+      \field{volume}{10}
+      \field{year}{2001}
+      \field{pages}{16\bibrangedash 22}
+      \range{pages}{7}
     \endentry
     \entry{cederman2010growing}{article}{}
       \name{author}{2}{}{%

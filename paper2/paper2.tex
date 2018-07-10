@@ -23,8 +23,10 @@ theoretically important topic in international relations scholarship and a pract
 concern for policymakers. \citet{sechser2010army} influentially argue that
 inter-state dynamics (e.g., rivalries) better explain mechanization choices than do
 intra-state factors (e.g., culture). This paper demonstrates that
-the multivariate statistical approach employed in \citet{sechser2010army} is inadequate. 
-It presents an alternate agent-based model of military mechanization that has superior explanatory power.
+the multivariate statistical approach employed in \citet{sechser2010army} is
+	inadequate and that agent-based modeling is needed to capture
+	international security competition as a complex system. Candidate
+	agent-based models are presented.
 
 \end{abstract}
 
@@ -58,7 +60,30 @@ Why ABM:
  - bigger picture, world politics as complex system
  - look at Axtell \citep{axtell2000agents}
 
+Two central claims of this paper are that the multivariate statistical approach
+of \citet{sechser2010army} is inadequate and agent-based modeling is needed.
+They are addressed in turn.
+
+\citet{sechser2010army} gather observational panel data that consists of a measure 
+of military mechanization $y$ indexed by state $i$ and observation time $k$, as well as
+time-indexed covariates $x$. The association of covariates with mechanization is
+estimated via ordinary least squares (OLS) linear regression:
+
+\begin{equation}
+	y_{ik} = \beta_0 + \beta_j x_{ijk} + \epsilon \hspace{1em}
+\end{equation}
+
+Multicollinearity - everything correlated with each other
+
+The fitted model attempts to characterize the separate
+effect of each factor upon mechanization. However, evidence suggests that
+the covariates in fact are strongly cross-correlated. The problem of
+multi-collinearity can be expressed both 
+
 \section{Introduction}
+
+\subsection{Outline}
+
 
 This paper presents an agent-based model of military mechanization. First, it
 provides a theoretical discussion of military mechanization, states the research
@@ -101,6 +126,8 @@ solely of tank units, armored personnel carriers, artillery, and the like.
 Clearly, no modern state embodies either extreme, but the 1970s-era Vietcong are
 a good example of a low-mechanization army and the 1980s-era Israeli army of
 high mechanization.
+
+Practical and academic consequences
 
 The consequences of mechanization are large. There is
 academic consensus that defense policy---including but not limited to

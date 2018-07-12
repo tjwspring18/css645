@@ -1,12 +1,12 @@
 # Fdb version 3
-["biber paper2"] 1531183271 "paper2.bcf" "paper2.bbl" "paper2" 1531183573
+["biber paper2"] 1531362731 "paper2.bcf" "paper2.bbl" "paper2" 1531363257
   "ascii input as UTF-8" 0 -1 0 ""
-  "paper2.bcf" 1531183301 92670 a45b3ea717cec16837a20a5b8be1622a ""
-  "paper2.bib" 1531093130 13396 f74564fd497313368777eb4a3a049c2e ""
+  "paper2.bcf" 1531363257 93157 667330ac598ce8a18964b4e90cb857fb ""
+  "paper2.bib" 1531362624 15370 4948b37233b4b32a98ddf7d4226f3754 ""
   (generated)
   "paper2.bbl"
   "paper2.blg"
-["pdflatex"] 1531183573 "paper2.tex" "paper2.pdf" "paper2" 1531183573
+["pdflatex"] 1531363248 "paper2.tex" "paper2.pdf" "paper2" 1531363257
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1480098698 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1480098698 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1480098701 1328 c834bbb027764024c09d3d2bf908b5f0 ""
@@ -87,13 +87,13 @@
   "/usr/local/texlive/2017/texmf-var/web2c/pdftex/pdflatex.fmt" 1514125355 2589344 e3e8f289402fb761e5a9dc94a585dc77 ""
   "/usr/local/texlive/2017/texmf.cnf" 1514125340 455 5b996dcaa0eb4ef14a83b026bc0a008c ""
   "map.png" 1526172837 1566957 b3ebae88356965a89ceff34d2c9f8164 ""
-  "paper2.aux" 1531183301 14773 700d34df3b809ea91127dbc4613b545a ""
-  "paper2.bbl" 1531183274 69676 d5e0d263073d537081429da9f05d427c "biber paper2"
-  "paper2.run.xml" 1531183301 2355 24d0c4828c081d8bb5730401452740f6 ""
-  "paper2.tex" 1531183571 29947 b5e93028b7cafed83ad1b9c318628d7c ""
+  "paper2.aux" 1531363257 16203 1ea920750f728fd77af5c7b7caca7a21 ""
+  "paper2.bbl" 1531362734 78944 d3952cc91d6bdbd326e9d61868a9255c "biber paper2"
+  "paper2.run.xml" 1531363257 2355 24d0c4828c081d8bb5730401452740f6 ""
+  "paper2.tex" 1531363247 31174 ab72c00d5fdd36cfc392df8668d3bb8d ""
   (generated)
+  "paper2.bcf"
   "paper2.run.xml"
   "paper2.log"
   "paper2.pdf"
-  "paper2.bcf"
   "paper2.aux"

@@ -17,13 +17,13 @@
 
 \begin{abstract}
 
-Military mechanization is the degree to which a state's army is comprised of
-ground combat vehicles as opposed to infantry. Mechanization is both a 
-theoretically important topic in international relations scholarship and a practical 
-concern for policymakers. \citet{sechser2010army} influentially argue that
-inter-state dynamics (e.g., rivalries) better explain mechanization choices than do
-intra-state factors (e.g., culture). This paper demonstrates that
-the multivariate statistical approach employed in \citet{sechser2010army} is
+	Military mechanization is the degree to which a state's army is comprised of
+	ground combat vehicles as opposed to infantry. Mechanization is both a 
+	theoretically important topic in international relations scholarship and a practical 
+	concern for policymakers. \citet{sechser2010army} influentially argue that
+	inter-state dynamics (e.g., conflict) better explain mechanization choices than do
+	intra-state factors (e.g., culture). This paper demonstrates that
+	the multivariate statistical approach employed in \citet{sechser2010army} is
 	inadequate and that agent-based modeling is needed to capture
 	international security competition as a complex system. Candidate
 	agent-based models are presented.
@@ -60,6 +60,10 @@ Why ABM:
  - bigger picture, world politics as complex system
  - look at Axtell \citep{axtell2000agents}
 
+Things they don't capture: selection into war and deterrence, gdp / capita to
+political structure, institutional culture and choice, network effects and
+emulation
+
 Two central claims of this paper are that the multivariate statistical approach
 of \citet{sechser2010army} is inadequate and agent-based modeling is needed.
 They are addressed in turn.
@@ -73,7 +77,7 @@ estimated via ordinary least squares (OLS) linear regression:
 	y_{ik} = \beta_0 + \beta_j x_{ijk} + \epsilon \hspace{1em}
 \end{equation}
 
-Multicollinearity - everything correlated with each other
+Multicollinearity - everything correlated with each other. 
 
 The fitted model attempts to characterize the separate
 effect of each factor upon mechanization. However, evidence suggests that
@@ -84,14 +88,15 @@ multi-collinearity can be expressed both
 
 \subsection{Outline}
 
+This paper presents an agent-based model of military mechanization. It
+reviews the academic literature on military mechanization. It discusses why
+orthodox modeling strategies fail to capture international security competition
+as a complex system and why agent-based modeling is needed. In support of these
+claims, it ``agentizes'' the leading model of military mechanization and shows that the
+results of doing cast doubt on it. Finally, it presents a
+novel agent-based model that better represents military mechanization. 
 
-This paper presents an agent-based model of military mechanization. First, it
-provides a theoretical discussion of military mechanization, states the research
-hypothesis, and explains why agent-based modeling is an appropriate research strategy.
-Then, it details an original agent-based model; presents results; and discusses
-their implications for the academic debate on military mechanization.
-
-In summary, the orthodox view of military mechanization is that it is a
+In summary, the orthodox view of mechanization is that it is a
 reflexive process: states choose their mechanization posture largely based on
 that neighbors, enemies, and recent military experiences (e.g. defeat in
 counter-insurgency). This paper argues
@@ -110,81 +115,92 @@ this could be mostly center on ``internal'' factors---e.g., culture, economy,
 and so on---as opposed to the ``external'', security environment-centric
 orthodox view.
 
-\section{Background}
 
-\subsection{Military mechanization}
+\subsection{Background}
 
-States differ in the composition of their military ground forces.\footnote{States may have multiple organizations that
+States differ in the composition of their ground forces.\footnote{States may have multiple organizations that
 conduct ground combat operations: e.g., the United States operates both an Army
 and a Marine Corps as independent services. Henceforth, this paper uses the
 terms ``army'' and ``ground forces'' interchangeably.} One notable axis of comparison 
 is \textit{mechanization}: the degree to which an army consists of infantry 
 vs. combat vehicles. Treating mechanization as a continuous variable, 
 one extreme is an army consisting exclusively of dismounted, small 
-arms-wielding infantry units; the other extreme is an army consisting 
-solely of tank units, armored personnel carriers, artillery, and the like.
-Clearly, no modern state embodies either extreme, but the 1970s-era Vietcong are
+arms-wielding infantry units. The other extreme is an army consisting 
+solely of tanks, armored personnel carriers, and the like.
+No modern state fully embodies either extreme, but the 1970s-era Vietcong are
 a good example of a low-mechanization army and the 1980s-era Israeli army of
 high mechanization.
 
-Practical and academic consequences
+Mechanization is important for multiple academic literatures. A
+fundamental debate in international relations (IR) is whether state
+behavior is driven by structural insecurity and 
+competition \citep{waltz2001man, mearsheimer2001tragedy}; or, whether other
+factors such as domestic political structure \citep{russett1994grasping} and
+socially constructed beliefs \citep{wendt1992anarchy} can point states to more peaceful directions. 
+The extent to which patterns of mechanization do or do not correlate with
+\textit{realpolitik} preparation for war informs this debate.
+The security studies community is similarly split on the question of military
+change. Some view militaries (particularly large ones) as change-averse, 
+inertia-driven bureaucracies that can only be bestirred by major events (e.g.,
+war or political reform)
+\citep{posen1986sources,zegart2000flawed,locher2004victory,halperin2007bureaucratic}. 
+Others contend that militaries can and do radically self-transform in both composition and doctrine
+\citep{murray1998military,adamsky2010culture}. The patterns of
+mechanization---stable? punctuated by sudden change? constantly evolving?---thus
+have strong implications for this debate.
 
-The consequences of mechanization are large. There is
-academic consensus that defense policy---including but not limited to
-mechanization---conditions battlefield effectiveness. 
-\citet{lyall2009rage} finds that highly mechanized militaries are less effective
+Mechanization choices also have more visceral impact.
+\citet{lyall2009rage} find that highly mechanized militaries are less effective
 at counterinsurgency, while \citet{biddle2004military} argues that
 mechanization-enabled mobility aids conventional warfighting. It thus
-pays to have an army that is designed to win the
-kinds of
-conflicts that a state is likely to face. Lacking a crystal ball, however,
-leaders cannot always forecast conflict, and armies are large, complex
-organizations that typically are held to change only infrequently and slowly
-\citep{murray1998military,locher2004victory,zegart2000flawed}. A state suddenly faced with
-a war for which its mechanization posture is ill-suited can either concede or
-pay a cost in blood and treasure; what it cannot do is
-quickly overcome the constraints imposed by past mechanization decisions. 
-A quote from then-Secretary of Defense Donald Rumsfeld---made in 2004, when the U.S. military
-was confronted in Iraq with the consequences of past choices regarding
-mechanization---emphasizes the point:
-``you go to war with the army you have'' \citep{schmitt_2004}. 
+pays to have an army that is designed to win the kinds of conflicts that a state is 
+likely to face. Incorrect forecasting and choosing the wrong mechanization
+posture costs blood and treasure. The experience of the U.S. military in the early
+2000s, when it shifted under duress from a highly mechanized Cold War-legacy force to a less
+mechanized counter-insurgency one, provides a vivid example. A quote from then-Secretary of Defense 
+Donald Rumsfeld emphasizes the point:
+``you go to war with the army you have, not the army you might wish to have'' \citep{schmitt_2004}. 
 
-The causes of military mechanization are disputed. \textit{Realists} believe 
-that mechanization choices are driven by security environment. States
-choose mechanization policies that they believe will allow them to prevail against potential adversaries, or to send a
+There are many candidates for the causes of mechanization. Inter-state
+competition and war is one. States may choose choose mechanization policies 
+that they believe will allow them to prevail against potential adversaries, or to send a
 signal of deterrence, or to learn from the perceived mistakes of the last war
-\citep{mearsheimer1983conventional,huth1988extended,murray2011military}. The other school of thought is more
-diverse and so harder to name, but may be termed 
-\textit{institutionalists}. They believe that factors other than 
-strategic calculation determine military mechanization. Domestic political
-institutions---e.g., democracy vs. autocracy, politically stable vs.
-coup-prone, the state of civil-military relations, and so on---may influence 
-force structure \citep{reiter2002democracies,quinlivan1999coup,talmadge2015dictator,brooks2008shaping}. 
-Economic factor
-endowments may play a role: e.g., capital-rich states may mechanize more
-than labor-rich states \citep{gartzke2001democracy}. Lastly,
-ideology \citep{van1984cult} and culture \citep[e.g.][]{pollack2004arabs} are
-hard-to-measure but perhaps influential. Consider Ireland: between the 1920s and
-1940s, it expended a large portion of its defense budget on building
-a small number of tanks. They were wholly insufficient to repel a British 
-invasion (their ostensible purpose), and
-Ireland would have been better-served to pursue a low-mechanization guerrilla
-defense strategy, but tanks were seen as a prestigious signifier of a ``real''
-professional military, an important factor for the young Irish state
-\citep{farrell1998professionalization,farrell2001transnational}.
+\citep{mearsheimer1983conventional,huth1988extended,murray2011military}. 
+Economic endowments may play a role: e.g., capital-rich states may mechanize more
+than labor-rich states \citep{gartzke2001democracy}. Domestic political
+institutions may matter: e.g., autocracies may be more willing than democracies to adopt
+low-mechanization ``human wave'' tactics
+\citep{quinlivan1999coup,reiter2002democracies,brooks2008shaping,talmadge2015dictator}. 
+Ideology \citep{van1984cult} and national culture \citep[e.g.][]{pollack2004arabs} are
+hard-to-measure but perhaps influential. Lastly,
+organizational culture can play a role \citep{builder1989masks}. Militaries may pursue a
+certain mechanization posture because it aligns with their institutional
+objectives, which may or may not be coincident with rational strategy. 
+Consider Ireland: between the 1920s and 1940s, it seriously considered expending a 
+large portion of its defense budget on building a relatively small number of tanks. 
+They would have been wholly insufficient to repel a British invasion (their ostensible purpose), 
+and Ireland would have been better-served to pursue a low-mechanization guerrilla defense strategy, 
+but tanks were seen as a prestigious signifier of a ``real'' professional
+military and hence desirable
+\citep{farrell1998professionalization,farrell2001transnational}. 
 
 \citet{sechser2010army} is the landmark study on military mechanization. They
 assemble a longitudinal dataset at the country-year level of the mechanization
-of all states between 1979 and 2001, and conduct regression analysis to identify
-the effect of covariates on mechanization. They conclude that ``choices about
+of all states between 1979 and 2001. They conduct regression analysis to identify
+the effect of covariates on mechanization. They conclude that out of the
+aforementioned potential causes---security environment, economy, domestic
+politics, and ideology / culture---that the first is most important: ``choices about
 mechanization are strongly associated with a state's security environment.''
-The more mechanized a state's geographic neighbors and enemies, the higher the state's 
-own mechanization; also, states
-learn from defeat in insurgency by subsequently decreasing their mechanization.
 
 \subsection{The case for agent-based modeling}
 
-The findings of \citet{sechser2010army} are ripe for agentization. The
+There is reason to believe that the orthodox multivariate statistical modeling 
+approach employed in \citet{sechser2010army} is insufficient. Several factors point towards 
+agent-based modeling being a more appropriate choice. 
+
+One, from a stat
+
+are ripe for agentization. The
 conclusions drawn implicitly claim
 that states are autonomous agents; that they have
 cognition regarding how to perceive the outside world

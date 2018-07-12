@@ -19,6 +19,33 @@
 
 \refsection{0}
   \datalist[entry]{nyt/global//global/global}
+    \entry{adamsky2010culture}{book}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=0eb9582b94c0a5778d101b698f779a24}{%
+           family={Adamsky},
+           familyi={A\bibinitperiod},
+           given={Dima},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Stanford University Press}%
+      }
+      \strng{namehash}{0eb9582b94c0a5778d101b698f779a24}
+      \strng{fullhash}{0eb9582b94c0a5778d101b698f779a24}
+      \strng{bibnamehash}{0eb9582b94c0a5778d101b698f779a24}
+      \strng{authorbibnamehash}{0eb9582b94c0a5778d101b698f779a24}
+      \strng{authornamehash}{0eb9582b94c0a5778d101b698f779a24}
+      \strng{authorfullhash}{0eb9582b94c0a5778d101b698f779a24}
+      \field{sortinit}{A}
+      \field{sortinithash}{d77c7cdd82ff690d4c3ef13216f92f0b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The Culture of Military Innovation: The Impact of Cultural Factors on the Revolution in Military Affairs in Russia, the US, and Israel.}
+      \field{year}{2010}
+    \endentry
     \entry{roy1993military}{book}{}
       \name{author}{1}{}{%
         {{uniquename=0,uniquepart=base,hash=be6767e18295c6b64042b43534dd5296}{%
@@ -346,6 +373,33 @@
       \field{labeltitlesource}{title}
       \field{title}{Shaping Strategy: the Civil-Military Politics of Strategic Assessment}
       \field{year}{2008}
+    \endentry
+    \entry{builder1989masks}{book}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=768a4d2a8e457080974345a1aba0b02a}{%
+           family={Builder},
+           familyi={B\bibinitperiod},
+           given={Carl},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Johns Hopkins University Press}%
+      }
+      \strng{namehash}{768a4d2a8e457080974345a1aba0b02a}
+      \strng{fullhash}{768a4d2a8e457080974345a1aba0b02a}
+      \strng{bibnamehash}{768a4d2a8e457080974345a1aba0b02a}
+      \strng{authorbibnamehash}{768a4d2a8e457080974345a1aba0b02a}
+      \strng{authornamehash}{768a4d2a8e457080974345a1aba0b02a}
+      \strng{authorfullhash}{768a4d2a8e457080974345a1aba0b02a}
+      \field{sortinit}{B}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The masks of war: American military styles in strategy and analysis}
+      \field{year}{1989}
     \endentry
     \entry{cederman1997emergent}{book}{}
       \name{author}{1}{}{%
@@ -847,6 +901,39 @@
       \field{pages}{35\bibrangedash 63}
       \range{pages}{29}
     \endentry
+    \entry{halperin2007bureaucratic}{book}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=6ae6f6a3c5fe1b7c0368732ebe15681a}{%
+           family={Halperin},
+           familyi={H\bibinitperiod},
+           given={Morton},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=1877b4c6d2b4023a24e59469db210355}{%
+           family={Clapp},
+           familyi={C\bibinitperiod},
+           given={Priscilla},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Brookings Institution Press}%
+      }
+      \strng{namehash}{e8db93092f13a92f0cec793fe2e0a225}
+      \strng{fullhash}{e8db93092f13a92f0cec793fe2e0a225}
+      \strng{bibnamehash}{e8db93092f13a92f0cec793fe2e0a225}
+      \strng{authorbibnamehash}{e8db93092f13a92f0cec793fe2e0a225}
+      \strng{authornamehash}{e8db93092f13a92f0cec793fe2e0a225}
+      \strng{authorfullhash}{e8db93092f13a92f0cec793fe2e0a225}
+      \field{sortinit}{H}
+      \field{sortinithash}{5f15a7bc777ad49ff15aa4d2831b1681}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Bureaucratic politics and foreign policy}
+      \field{year}{2007}
+    \endentry
     \entry{harper2002modeling}{article}{}
       \name{author}{3}{}{%
         {{uniquename=0,uniquepart=base,hash=a750e2bf45b3774c7111f7545fc5ce59}{%
@@ -1091,6 +1178,33 @@
       \field{labeltitlesource}{title}
       \field{title}{Conventional Deterrence}
       \field{year}{1983}
+    \endentry
+    \entry{mearsheimer2001tragedy}{book}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=e10669b584cde1c14e7a974db35b7198}{%
+           family={Mearsheimer},
+           familyi={M\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {WW Norton \& Company}%
+      }
+      \strng{namehash}{e10669b584cde1c14e7a974db35b7198}
+      \strng{fullhash}{e10669b584cde1c14e7a974db35b7198}
+      \strng{bibnamehash}{e10669b584cde1c14e7a974db35b7198}
+      \strng{authorbibnamehash}{e10669b584cde1c14e7a974db35b7198}
+      \strng{authornamehash}{e10669b584cde1c14e7a974db35b7198}
+      \strng{authorfullhash}{e10669b584cde1c14e7a974db35b7198}
+      \field{sortinit}{M}
+      \field{sortinithash}{cfd219b90152c06204fab207bc6c7cab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The Tragedy of Great Power Politics}
+      \field{year}{2001}
     \endentry
     \entry{miller2009complex}{book}{}
       \name{author}{2}{}{%
@@ -1348,6 +1462,33 @@
       \field{title}{Arabs at War: Military Effectiveness, 1948-1991}
       \field{year}{2004}
     \endentry
+    \entry{posen1986sources}{book}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=0fbec82cc306f9c562d958faac918188}{%
+           family={Posen},
+           familyi={P\bibinitperiod},
+           given={Barry},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Cornell University Press}%
+      }
+      \strng{namehash}{0fbec82cc306f9c562d958faac918188}
+      \strng{fullhash}{0fbec82cc306f9c562d958faac918188}
+      \strng{bibnamehash}{0fbec82cc306f9c562d958faac918188}
+      \strng{authorbibnamehash}{0fbec82cc306f9c562d958faac918188}
+      \strng{authornamehash}{0fbec82cc306f9c562d958faac918188}
+      \strng{authorfullhash}{0fbec82cc306f9c562d958faac918188}
+      \field{sortinit}{P}
+      \field{sortinithash}{8d51b3d5b78d75b54308d706b9bbe285}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The sources of military doctrine: France, Britain, and Germany between the world wars}
+      \field{year}{1986}
+    \endentry
     \entry{quinlivan1999coup}{article}{}
       \name{author}{1}{}{%
         {{uniquename=0,uniquepart=base,hash=e6fe692b163a91f2104adc504252fb4e}{%
@@ -1412,6 +1553,33 @@
       \field{labeltitlesource}{title}
       \field{title}{Democracies at War}
       \field{year}{2002}
+    \endentry
+    \entry{russett1994grasping}{book}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=353296f408c957fabebeb9ea742faa2a}{%
+           family={Russett},
+           familyi={R\bibinitperiod},
+           given={Bruce},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Princeton university press}%
+      }
+      \strng{namehash}{353296f408c957fabebeb9ea742faa2a}
+      \strng{fullhash}{353296f408c957fabebeb9ea742faa2a}
+      \strng{bibnamehash}{353296f408c957fabebeb9ea742faa2a}
+      \strng{authorbibnamehash}{353296f408c957fabebeb9ea742faa2a}
+      \strng{authornamehash}{353296f408c957fabebeb9ea742faa2a}
+      \strng{authorfullhash}{353296f408c957fabebeb9ea742faa2a}
+      \field{sortinit}{R}
+      \field{sortinithash}{da6b42bd3ab22fee61abed031ee405f7}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Grasping the democratic peace: Principles for a post-Cold War world}
+      \field{year}{1994}
     \endentry
     \entry{schelling1960strategy}{book}{}
       \name{author}{1}{}{%
@@ -1637,6 +1805,33 @@
       \field{pages}{58\bibrangedash 107}
       \range{pages}{50}
     \endentry
+    \entry{waltz2001man}{book}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=d1eebe2c49305faa9694a233abfcc834}{%
+           family={Waltz},
+           familyi={W\bibinitperiod},
+           given={Kenneth},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Columbia University Press}%
+      }
+      \strng{namehash}{d1eebe2c49305faa9694a233abfcc834}
+      \strng{fullhash}{d1eebe2c49305faa9694a233abfcc834}
+      \strng{bibnamehash}{d1eebe2c49305faa9694a233abfcc834}
+      \strng{authorbibnamehash}{d1eebe2c49305faa9694a233abfcc834}
+      \strng{authornamehash}{d1eebe2c49305faa9694a233abfcc834}
+      \strng{authorfullhash}{d1eebe2c49305faa9694a233abfcc834}
+      \field{sortinit}{W}
+      \field{sortinithash}{ecb89ff85896a47dc313960773ac311d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Man, the state, and war: A theoretical analysis}
+      \field{year}{2001}
+    \endentry
     \entry{weidmann2013violence}{article}{}
       \name{author}{2}{}{%
         {{uniquename=0,uniquepart=base,hash=577cba419dedc0bcec3a55b2339881b6}{%
@@ -1671,6 +1866,35 @@
       \field{year}{2013}
       \field{pages}{52\bibrangedash 64}
       \range{pages}{13}
+    \endentry
+    \entry{wendt1992anarchy}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=a896daaf9c4a27db2aad528122402224}{%
+           family={Wendt},
+           familyi={W\bibinitperiod},
+           given={Alexander},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{a896daaf9c4a27db2aad528122402224}
+      \strng{fullhash}{a896daaf9c4a27db2aad528122402224}
+      \strng{bibnamehash}{a896daaf9c4a27db2aad528122402224}
+      \strng{authorbibnamehash}{a896daaf9c4a27db2aad528122402224}
+      \strng{authornamehash}{a896daaf9c4a27db2aad528122402224}
+      \strng{authorfullhash}{a896daaf9c4a27db2aad528122402224}
+      \field{sortinit}{W}
+      \field{sortinithash}{ecb89ff85896a47dc313960773ac311d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International organization}
+      \field{number}{2}
+      \field{title}{Anarchy is what states make of it: the social construction of power politics}
+      \field{volume}{46}
+      \field{year}{1992}
+      \field{pages}{391\bibrangedash 425}
+      \range{pages}{35}
     \endentry
     \entry{zegart2000flawed}{book}{}
       \name{author}{1}{}{%

@@ -1,19 +1,20 @@
 [0] Config.pm:302> INFO - This is Biber 2.10
 [1] Config.pm:305> INFO - Logfile is 'paper2.blg'
-[65] biber:313> INFO - === Mon Jul  9, 2018, 20:41:13
-[111] Biber.pm:371> INFO - Reading 'paper2.bcf'
-[281] Biber.pm:857> INFO - Found 51 citekeys in bib section 0
-[310] Biber.pm:3976> INFO - Processing section 0
-[332] Biber.pm:4136> INFO - Looking for bibtex format file 'paper2.bib' for section 0
-[333] bibtex.pm:1444> INFO - Reading ascii input as UTF-8
-[337] bibtex.pm:1490> INFO - LaTeX decoding ...
-[497] bibtex.pm:1306> INFO - Found BibTeX data source 'paper2.bib'
-[728] Utils.pm:193> WARN - month field 'Dec' in entry 'schmitt_2004' is not an integer - this will probably not sort properly.
-[898] Utils.pm:193> WARN - year field 'forthcoming' in entry 'cow_midb' is not an integer - this will probably not sort properly.
-[1113] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[1113] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[1113] Biber.pm:3804> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
-[1113] Biber.pm:3810> INFO - No sort tailoring available for locale 'en-US'
-[1223] bbl.pm:617> INFO - Writing 'paper2.bbl' with encoding 'ascii'
-[1307] bbl.pm:720> INFO - Output to paper2.bbl
-[1307] Biber.pm:110> INFO - WARNINGS: 2
+[66] biber:313> INFO - === Wed Jul 11, 2018, 22:32:13
+[113] Biber.pm:371> INFO - Reading 'paper2.bcf'
+[295] Biber.pm:857> INFO - Found 59 citekeys in bib section 0
+[330] Biber.pm:3976> INFO - Processing section 0
+[352] Biber.pm:4136> INFO - Looking for bibtex format file 'paper2.bib' for section 0
+[353] bibtex.pm:1444> INFO - Reading ascii input as UTF-8
+[363] bibtex.pm:1490> INFO - LaTeX decoding ...
+[540] bibtex.pm:1306> INFO - Found BibTeX data source 'paper2.bib'
+[550] Utils.pm:193> WARN - Duplicate entry key: 'mearsheimer2001tragedy' in file 'paper2.bib', skipping ...
+[807] Utils.pm:193> WARN - month field 'Dec' in entry 'schmitt_2004' is not an integer - this will probably not sort properly.
+[971] Utils.pm:193> WARN - year field 'forthcoming' in entry 'cow_midb' is not an integer - this will probably not sort properly.
+[1195] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1196] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1196] Biber.pm:3804> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
+[1196] Biber.pm:3810> INFO - No sort tailoring available for locale 'en-US'
+[1319] bbl.pm:617> INFO - Writing 'paper2.bbl' with encoding 'ascii'
+[1409] bbl.pm:720> INFO - Output to paper2.bbl
+[1409] Biber.pm:110> INFO - WARNINGS: 3

@@ -1,12 +1,12 @@
 # Fdb version 3
-["biber paper2"] 1531362731 "paper2.bcf" "paper2.bbl" "paper2" 1531363257
+["biber paper2"] 1531586425 "paper2.bcf" "paper2.bbl" "paper2" 1531586488
   "ascii input as UTF-8" 0 -1 0 ""
-  "paper2.bcf" 1531363257 93157 667330ac598ce8a18964b4e90cb857fb ""
-  "paper2.bib" 1531362624 15370 4948b37233b4b32a98ddf7d4226f3754 ""
+  "paper2.bcf" 1531586488 94467 58a7c3d4655e0e0ab97f533129f135d0 ""
+  "paper2.bib" 1531585650 18622 e585e4c5971496265ff9be70c3c35b51 ""
   (generated)
   "paper2.bbl"
   "paper2.blg"
-["pdflatex"] 1531363248 "paper2.tex" "paper2.pdf" "paper2" 1531363257
+["pdflatex"] 1531586478 "paper2.tex" "paper2.pdf" "paper2" 1531586488
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1480098698 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1480098698 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1480098701 1328 c834bbb027764024c09d3d2bf908b5f0 ""
@@ -28,8 +28,10 @@
   "/usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb" 1480098733 34811 78b52f49e893bcba91bd7581cdc144c0 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1480098733 32080 340ef9bf63678554ee606688e7b5339d ""
   "/usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb" 1480098733 32298 c6d25bb16d1eac01ebdc6d7084126a1e ""
+  "/usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb" 1480098733 30251 6afa5cb1d0204815a708a080681d4674 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1480098733 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
   "/usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb" 1480098733 36281 c355509802a035cadc5f15869451dcee ""
+  "/usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb" 1480098733 35469 70d41d2b9ea31d5d813066df7c99281c ""
   "/usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1480098733 35752 024fb6c41858982481f6968b5fc26508 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1480098733 32722 d7379af29a190c3f453aba36302ff5a9 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb" 1480098733 32362 179c33bbf43f19adbb3825bb4e36e57a ""
@@ -87,13 +89,13 @@
   "/usr/local/texlive/2017/texmf-var/web2c/pdftex/pdflatex.fmt" 1514125355 2589344 e3e8f289402fb761e5a9dc94a585dc77 ""
   "/usr/local/texlive/2017/texmf.cnf" 1514125340 455 5b996dcaa0eb4ef14a83b026bc0a008c ""
   "map.png" 1526172837 1566957 b3ebae88356965a89ceff34d2c9f8164 ""
-  "paper2.aux" 1531363257 16203 1ea920750f728fd77af5c7b7caca7a21 ""
-  "paper2.bbl" 1531362734 78944 d3952cc91d6bdbd326e9d61868a9255c "biber paper2"
-  "paper2.run.xml" 1531363257 2355 24d0c4828c081d8bb5730401452740f6 ""
-  "paper2.tex" 1531363247 31174 ab72c00d5fdd36cfc392df8668d3bb8d ""
+  "paper2.aux" 1531586488 19423 a8212c031475e0a7f442de6eb06ffafb ""
+  "paper2.bbl" 1531586428 96048 55e30147c0c694319c97809770418eb5 "biber paper2"
+  "paper2.run.xml" 1531586488 2355 24d0c4828c081d8bb5730401452740f6 ""
+  "paper2.tex" 1531586474 34768 25130216eb9b95925edd368dd47abb50 ""
   (generated)
-  "paper2.bcf"
-  "paper2.run.xml"
-  "paper2.log"
   "paper2.pdf"
   "paper2.aux"
+  "paper2.log"
+  "paper2.bcf"
+  "paper2.run.xml"

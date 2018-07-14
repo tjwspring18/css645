@@ -22,11 +22,11 @@
 	theoretically important topic in international relations scholarship and a practical 
 	concern for policymakers. \citet{sechser2010army} influentially argue that
 	inter-state dynamics (e.g., conflict) better explain mechanization choices than do
-	intra-state factors (e.g., culture). This paper demonstrates that
-	the multivariate statistical approach employed in \citet{sechser2010army} is
-	inadequate and that agent-based modeling is needed to capture
-	international security competition as a complex system. Candidate
-	agent-based models are presented.
+	intra-state factors (e.g., culture). This paper argues for the
+	necessity of agent-based modeling of mechanization. ``Agentizing'' the
+	model of \citet{sechser2010army} shows that their findings do not hold.
+	An alternate model that treats mechanization as a complex system is presented 
+	and discussed.
 
 \end{abstract}
 
@@ -38,70 +38,17 @@ household is agent in Schelling model.
 
 Cite Cederman to say why I don't do inheritenace - reification of actor
 
-Why ABM:
- - inadequacy of SS - VIF, linear model
- - uncertainty of causation
- - endogeneity
- - GDP / capita explains this...but also everything else
- - have to go with simulation
- - bigger picture, world politics as complex system
- - 
-
-Things they don't capture: selection into war and deterrence, gdp / capita to
-political structure, institutional culture and choice, network effects and
-emulation
-
-Two central claims of this paper are that the multivariate statistical approach
-of \citet{sechser2010army} is inadequate and agent-based modeling is needed.
-They are addressed in turn.
-
-\citet{sechser2010army} gather observational panel data that consists of a measure 
-of military mechanization $y$ indexed by state $i$ and observation time $k$, as well as
-time-indexed covariates $x$. The association of covariates with mechanization is
-estimated via ordinary least squares (OLS) linear regression:
-
-\begin{equation}
-	y_{ik} = \beta_0 + \beta_j x_{ijk} + \epsilon \hspace{1em}
-\end{equation}
-
-Multicollinearity - everything correlated with each other. 
-
-The fitted model attempts to characterize the separate
-effect of each factor upon mechanization. However, evidence suggests that
-the covariates in fact are strongly cross-correlated. The problem of
-multi-collinearity can be expressed both 
-
 \section{Introduction}
 
 \subsection{Outline}
 
 This paper presents an agent-based model of military mechanization. It
 reviews the academic literature on military mechanization. It discusses why
-orthodox modeling strategies fail to capture international security competition
+orthodox modeling strategies fail to fully describe international security competition
 as a complex system and why agent-based modeling is needed. In support of these
-claims, it ``agentizes'' the leading model of military mechanization and shows that the
-results of doing cast doubt on it. Finally, it presents a
+claims, it ``agentizes'' the leading model of military mechanization and shows
+that it does not hold. Finally, it presents a
 novel agent-based model that better represents military mechanization. 
-
-In summary, the orthodox view of mechanization is that it is a
-reflexive process: states choose their mechanization posture largely based on
-that neighbors, enemies, and recent military experiences (e.g. defeat in
-counter-insurgency). This paper argues
-that this view---based on traditional longitudinal data analysis---is ripe for
-agentization. It implicitly argues for autonomous agents (states) that have
-cognition regarding mechanization that takes into account other agents (e.g.
-enemies), spatiality (e.g. neighbors), and learning from experience. This paper
-builds such a model and validates it against the empirical record, using the
-National Mechanization Index of \citet{sechser2010army}. It finds that the 
-orthodox view of mechanization does not stand up to agentization. A positive feedback loop 
-causes states to
-mechanize much faster and to a greater degree than occurs in the real-world.
-This implies the existence of some countervailing factor (possibly a negative
-feedback loop) that mitigates the extent of mechanization. Candidates for what
-this could be mostly center on ``internal'' factors---e.g., culture, economy,
-and so on---as opposed to the ``external'', security environment-centric
-orthodox view.
-
 
 \subsection{Background}
 
@@ -148,8 +95,8 @@ mechanized counter-insurgency one, provides a vivid example. A quote from then-S
 Donald Rumsfeld emphasizes the point:
 ``you go to war with the army you have, not the army you might wish to have'' \citep{schmitt_2004}. 
 
-There are many candidates for the causes of mechanization. Inter-state
-competition and war is one. States may choose choose mechanization policies 
+There are many potential causes of mechanization. Inter-state
+competition and war is a prominent candidate. States may choose choose mechanization policies 
 that they believe will allow them to prevail against potential adversaries, or to send a
 signal of deterrence, or to learn from the perceived mistakes of the last war
 \citep{mearsheimer1983conventional,huth1988extended,murray2011military}. 
@@ -173,25 +120,110 @@ military and hence desirable
 
 \citet{sechser2010army} is the landmark study on military mechanization. They
 assemble a longitudinal dataset at the country-year level of the mechanization
-of all states between 1979 and 2001. They conduct regression analysis to identify
-the effect of covariates on mechanization. They conclude that out of the
+of all states between 1979 and 2001. They conduct regression analysis on this
+panel data. They use a ordinary least squares (OLS) linear regression model:
+
+\begin{equation}
+y_{ij} = \beta_0 + \sum_{k=1}^P \beta_{ijk}x_{ijk} + \epsilon
+\end{equation}
+
+with $y_{ij}$ the mechanization level of state $i$ in year $j$ (measured as the 
+ratio of ground combat vehicles to infantry in a state's army) and $x_1 \ldots
+x_j \ldots x_{P}$ as covariates hypothesized to be associated with
+mechanization. They conclude that out of the
 aforementioned potential causes---security environment, economy, domestic
 politics, and ideology / culture---that the first is most important: ``choices about
 mechanization are strongly associated with a state's security environment.''
 
-\subsection{The case for agent-based modeling}
+\section{The case for agent-based modeling}
 
-There is reason to believe that the orthodox multivariate statistical modeling 
-approach employed in \citet{sechser2010army} is insufficient and leads to
-incorrect conclusions. 
+Although \citet{sechser2010army} is a valuable contribution to the literature,
+its orthodox multivariate statistical modeling is insufficient. Agent-based
+modeling is needed to capture mechanization as a complex system. These two
+claims are addressed in turn. 
 
-One, from a statistical perspective, the ability of the model in
-\citet{sechser2010army} to produce reliable insight is questionable.
+\subsection{Inadequacy of statistical modeling}
+
+\citet{sechser2010army} operate on observational rather than experimental
+data. The assignment of treatments to subjects is not randomized, causing
+\textit{selection bias}. For example, \citet{sechser2010army} operationalize
+dyadic ``rivalry'' as whether two states recently engaged in a Militarized
+Interstate Dispute (MID) \citep{cow_midb}, and find significant association with mechanization
+(states match their mechanization level to that of their enemy). But interstate
+conflict is not randomly assigned; rather, at least one state must select
+themselves into it \citep{fearon2002selection}. States differ in their
+proclivity for conflict initiation based on many factors, e.g. certain kinds of autocracies may be
+especially war-prone \citep{de1995war}. Thus, correlation attributed to rivalry is in fact
+bundling in many uncontrolled-for covariates, casting doubt on the claimed
+finding. Natural experiments---a situation in which assignation of treatment is
+known to be random---are the typical econometric strategy to avoid bias. For
+example, \citet{angrist2002vouchers} exploit the fact that private school
+vouchers were distributed by lottery in Colombia to obtain unbiased estimates of
+the effect of schooling type (private vs. public) on educational achievement.
+But such situations are rare in international relations---e.g., one cannot
+even conceive of a way in which GDP per capita could be randomly assigned---and so
+\cite{sechser2010army} lack such a control. Given rife selection effects and few
+natural experiments, econometric modeling simply may not be an appropriate tool for mechanization. 
+
+The approach of \citet{sechser2010army} does not adequately represent complex interactions. First consider 
+\textit{system decomposibility}. The additive linear model in (1) implicitly assumes 
+that each covariate $x$ is separable and interpretation of the corresponding
+coefficient $\beta$ depends on independence (i.e. a lack of multicollinearity).
+It also assumes that mechanization $y$ is a function of those 
+$x$. But evidence contradicts both assumptions. Take as an example GDP per
+capita, which \citet{sechser2010army} find to be negatively correlated with
+mechanization at the $p < 0.05$ level. We can represent this finding as a causal
+diagram in the style of \citet{pearl2009causality}.\footnote{To be clear,
+\citet{sechser2010army} studiously avoid claiming causation in their text. But
+their choice in what is modeled as $y$ and what is modeled $x$ says a lot about the perceived
+direction of association.}
+
+But, a vast body of literature suggests that wealth is associated with
+democracy. Causality appears to flow in both directions, i.e. democracy causes wealth and wealth also
+causes democracy \citep{helliwell1994empirical,barro1996democracy,robinson2006economic,doucouliagos2008democracy}. 
+Democracy affects conflict propensity \citep{maoz1993normative,russett1994grasping}. 
+Conflict also affects democracy, e.g. a foreign-imposed regime change a la 1956
+Hungary or 2003 Iraq
+\citep{werner1996absolute,lo2008ensuring,downes2013forced}, and mechanization, 
+as claimed by \citet{sechser2010army}. Mechanization affects battlefield success in war
+\citep{biddle2004military,lyall2009rage}. War affects economic growth: 
+consider the contrasting examples of WWII-era United States and present-day
+Syria. If we represent these claims---which, it must be emphasized, do not even
+scratch the surface of the potential system complexity---as a causal diagram, we
+have:
+
+
+
+Wealth is 
+Interactions --> causal arrows, GDP per capita, democracy, war, mechanization
+--> decomposibility of system
+
+Path dependence
+
+Cognition
+
+ositive feedback loop
+
+Path dependence
+
+certain kinds of interactions
+
+\subsection{Unreliable data}
+
+Militarized Interstate Disputes Database (MIDB)
+\citep{cow_midb}
+to produce reliable insight is questionable.
 Observational data. Selection into war and deterrence. 
+
+MID data sucks
 
 Two, linear model poorly suited to represent the complex interactions. List
 some. GDP/capita to democracy to war to mechanization. Internal politics to
 external politics to mechanization. Emulation and network effects.
+
+Lag effects = path dependence
+
+Seeing what others are doing
 
 Agent-based modeling more appropriate.
 
@@ -623,4 +655,22 @@ capable of serving as one of two required papers for the comprehensive exams.
 
 \printbibliography[heading=bibnumbered]
 
+In summary, the orthodox view of mechanization is that it is a
+reflexive process: states choose their mechanization posture largely based on
+that neighbors, enemies, and recent military experiences (e.g. defeat in
+counter-insurgency). This paper argues
+that this view---based on traditional longitudinal data analysis---is ripe for
+agentization. It implicitly argues for autonomous agents (states) that have
+cognition regarding mechanization that takes into account other agents (e.g.
+enemies), spatiality (e.g. neighbors), and learning from experience. This paper
+builds such a model and validates it against the empirical record, using the
+National Mechanization Index of \citet{sechser2010army}. It finds that the 
+orthodox view of mechanization does not stand up to agentization. A positive feedback loop 
+causes states to
+mechanize much faster and to a greater degree than occurs in the real-world.
+This implies the existence of some countervailing factor (possibly a negative
+feedback loop) that mitigates the extent of mechanization. Candidates for what
+this could be mostly center on ``internal'' factors---e.g., culture, economy,
+and so on---as opposed to the ``external'', security environment-centric
+orthodox view.
 \end{document}

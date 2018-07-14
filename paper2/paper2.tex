@@ -3,11 +3,12 @@
 \usepackage{amsmath}
 \usepackage{graphicx}
 \graphicspath{}
+\usepackage{tikz}
 
 \usepackage[citestyle=authoryear,style=authoryear,backend=biber,natbib]{biblatex}
 \addbibresource{paper2.bib}
 
-\title{An agent-based model of military mechanization}
+\title{Military mechanization as a complex system}
 
 \author{Tom Wallace}
 
@@ -22,21 +23,11 @@
 	theoretically important topic in international relations scholarship and a practical 
 	concern for policymakers. \citet{sechser2010army} influentially argue that
 	inter-state dynamics (e.g., conflict) better explain mechanization choices than do
-	intra-state factors (e.g., culture). This paper argues for the
-	necessity of agent-based modeling of mechanization. ``Agentizing'' the
-	model of \citet{sechser2010army} shows that their findings do not hold.
-	An alternate model that treats mechanization as a complex system is presented 
-	and discussed.
+	intra-state factors (e.g., culture). 
 
 \end{abstract}
 
 \newpage
-
-
-Maybe it's because states are not unitary. Not necessariy requirement: e.g.,
-household is agent in Schelling model. 
-
-Cite Cederman to say why I don't do inheritenace - reification of actor
 
 \section{Introduction}
 
@@ -121,7 +112,8 @@ military and hence desirable
 \citet{sechser2010army} is the landmark study on military mechanization. They
 assemble a longitudinal dataset at the country-year level of the mechanization
 of all states between 1979 and 2001. They conduct regression analysis on this
-panel data. They use a ordinary least squares (OLS) linear regression model:
+panel data. They use a ordinary least squares (OLS) linear regression model with corrected standard
+errors,
 
 \begin{equation}
 y_{ij} = \beta_0 + \sum_{k=1}^P \beta_{ijk}x_{ijk} + \epsilon
@@ -129,18 +121,16 @@ y_{ij} = \beta_0 + \sum_{k=1}^P \beta_{ijk}x_{ijk} + \epsilon
 
 with $y_{ij}$ the mechanization level of state $i$ in year $j$ (measured as the 
 ratio of ground combat vehicles to infantry in a state's army) and $x_1 \ldots
-x_j \ldots x_{P}$ as covariates hypothesized to be associated with
-mechanization. They conclude that out of the
-aforementioned potential causes---security environment, economy, domestic
-politics, and ideology / culture---that the first is most important: ``choices about
+x_j \ldots x_{P}$ covariates hypothesized to be associated with
+mechanization. They conclude that, out of the
+aforementioned potential causes, the first mentioned is most important: ``choices about
 mechanization are strongly associated with a state's security environment.''
 
-\section{The case for agent-based modeling}
+\section{System complexity and agent-based modeling}
 
 Although \citet{sechser2010army} is a valuable contribution to the literature,
-its orthodox multivariate statistical modeling is insufficient. Agent-based
-modeling is needed to capture mechanization as a complex system. These two
-claims are addressed in turn. 
+its orthodox multivariate statistical modeling is insufficient. Mechanization is a complex system. 
+Agent-based modeling is a more appropriate paradigm for studying it. These three claims are addressed in turn. 
 
 \subsection{Inadequacy of statistical modeling}
 
@@ -148,88 +138,135 @@ claims are addressed in turn.
 data. The assignment of treatments to subjects is not randomized, causing
 \textit{selection bias}. For example, \citet{sechser2010army} operationalize
 dyadic ``rivalry'' as whether two states recently engaged in a Militarized
-Interstate Dispute (MID) \citep{cow_midb}, and find significant association with mechanization
-(states match their mechanization level to that of their enemy). But interstate
-conflict is not randomly assigned; rather, at least one state must select
+Interstate Dispute (MID) \citep{cow_midb}, and find significant association with mechanization. 
+But interstate conflict is not a randomly assigned treatment. Rather, at least one state must select
 themselves into it \citep{fearon2002selection}. States differ in their
-proclivity for conflict initiation based on many factors, e.g. certain kinds of autocracies may be
-especially war-prone \citep{de1995war}. Thus, correlation attributed to rivalry is in fact
-bundling in many uncontrolled-for covariates, casting doubt on the claimed
+proclivity for conflict initiation based on many distinct factors. 
+Thus, correlation attributed to rivalry is in fact
+bundling together many uncontrolled-for covariates, casting doubt on the claimed
 finding. Natural experiments---a situation in which assignation of treatment is
 known to be random---are the typical econometric strategy to avoid bias. For
 example, \citet{angrist2002vouchers} exploit the fact that private school
 vouchers were distributed by lottery in Colombia to obtain unbiased estimates of
 the effect of schooling type (private vs. public) on educational achievement.
-But such situations are rare in international relations---e.g., one cannot
-even conceive of a way in which GDP per capita could be randomly assigned---and so
-\cite{sechser2010army} lack such a control. Given rife selection effects and few
-natural experiments, econometric modeling simply may not be an appropriate tool for mechanization. 
+But such situations are rare in international relations---e.g., random assignation of war is an
+absurd proposition---and so
+\citet{sechser2010army} lack such a control. Given rife selection effects and few
+natural experiments, econometric modeling alone is an insufficient tool for studying mechanization. 
 
-The approach of \citet{sechser2010army} does not adequately represent complex interactions. First consider 
-\textit{system decomposibility}. The additive linear model in (1) implicitly assumes 
-that each covariate $x$ is separable and interpretation of the corresponding
-coefficient $\beta$ depends on independence (i.e. a lack of multicollinearity).
-It also assumes that mechanization $y$ is a function of those 
-$x$. But evidence contradicts both assumptions. Take as an example GDP per
-capita, which \citet{sechser2010army} find to be negatively correlated with
-mechanization at the $p < 0.05$ level. We can represent this finding as a causal
-diagram in the style of \citet{pearl2009causality}.\footnote{To be clear,
+\subsection{System complexity}
+
+\subsubsection{Decomposibility}
+
+The additive linear model in (1) assumes that each covariate $x$ is separable.  
+Interpretation of the corresponding coefficient $\beta$ requires an assumption of independence 
+(i.e. a lack of multicollinearity). It also makes an implicit claim about the direction of
+causation: that mechanization $y$ is a function of those 
+$x$.\footnote{To be clear,
 \citet{sechser2010army} studiously avoid claiming causation in their text. But
 their choice in what is modeled as $y$ and what is modeled $x$ says a lot about the perceived
-direction of association.}
+direction of association.} These assumptions do not hold. 
 
-But, a vast body of literature suggests that wealth is associated with
-democracy. Causality appears to flow in both directions, i.e. democracy causes wealth and wealth also
-causes democracy \citep{helliwell1994empirical,barro1996democracy,robinson2006economic,doucouliagos2008democracy}. 
-Democracy affects conflict propensity \citep{maoz1993normative,russett1994grasping}. 
-Conflict also affects democracy, e.g. a foreign-imposed regime change a la 1956
-Hungary or 2003 Iraq
-\citep{werner1996absolute,lo2008ensuring,downes2013forced}, and mechanization, 
-as claimed by \citet{sechser2010army}. Mechanization affects battlefield success in war
-\citep{biddle2004military,lyall2009rage}. War affects economic growth: 
-consider the contrasting examples of WWII-era United States and present-day
-Syria. If we represent these claims---which, it must be emphasized, do not even
-scratch the surface of the potential system complexity---as a causal diagram, we
-have:
+Let us take as an example GDP per capita. \citet{sechser2010army} find it negatively correlated with
+mechanization at the $p < 0.05$ level. Unbiased estimation of this individual coefficient
+requires lack of correlation between GDP per capita and other covariates, either individually or
+jointly. Put differently, \textit{it requires that the system can be neatly decomposed into constituent parts}. Figure 1 is a
+causal diagram depicting this logic. 
+\begin{figure}[h]
+	\centering
+	\caption{Decomposable system}
+	\begin{tikzpicture}
+		\node[draw, rectangle](Mechanization)  at  (0,0) {Mechanization};	
+		\node[draw, rectangle](GDP per capita)  at  (4,0) {GDP per capita};
+		\node[draw, rectangle](Other covariates)  at  (4,-2) {Other covariates};
+		\draw[->] (GDP per capita) -- (Mechanization);
+		\draw[->] (Other covariates) -- (Mechanization);
+	\end{tikzpicture}
+\end{figure}
+
+By standard statistical tests, the assumption of decomposability appears supported. The model's variance
+inflation factor generally does not rise above 2, indicating a lack of
+multicollinearity.\footnote{The high correlation between dummy variables}
+
+However, the literature suggests that (1) is not a correctly specified model. GDP per capita is associated with
+regime type (e.g., democracy vs. autocracy), and causality appears to flow in both directions, i.e. democracy
+causes wealth and wealth also causes democracy \citep{helliwell1994empirical,barro1996democracy,robinson2006economic,doucouliagos2008democracy}. 
+Regime type affects the probability of war: the closest thing to an empirical law in international relations is
+that democracies do not fight each other
+\citep{levy1988domestic}, while some kinds of autocracies are war-prone \citep{de1995war}. Regime type is widely argued to influence
+battlefield performance in war because it affects the quality of military institutions and hence
+capability of fielded forces \citep{reiter2002democracies,weeks2014dictators,talmadge2015dictator}. 
+Battlefield performance affects regime type, e.g. a losing side may be subject to foreign-imposed
+regime change a la 1939 France or 2003 Iraq
+\citep{werner1996absolute,lo2008ensuring,downes2013forced}. \citet{sechser2010army} claim that the observed
+historical probability of conflict (``rivalry'', in their terminology) affects mechanization; and claim that observed
+battlefield performance (``lessons'') also affect mechanization. Mechanization surely affects the
+probability of war, as it sends some kind of deterrent signal. Mechanization also surely affects
+battlefield performance in war (if it did not, we would not care about it).
+Mechanization also may affect GDP per capita in that states may over-spend on defense and 
+impoverish the country, with the Soviet Union as a prominent example. Deterrence theory requires that 
+battlefield performance affect the probability of war, i.e. militarily 
+potent states are unlikely to be attacked. The exact truth value of these claimed relationships is
+uncertain---in no small part due to the limitations of econometrics that were just addressed---but
+they are generally uncontroversial statements in their respective fields.
+
+\begin{figure}[h]
+	\centering
+	\caption{Complex system}
+	\begin{tikzpicture}
+		\node[draw, rectangle](Mechanization)            at  (0,0)  {Mechanization};	
+		\node[draw, rectangle](GDP per capita)           at  (4,0)  {GDP per capita};
+		\node[draw, rectangle](Democracy)                at  (8,0) {Democracy};
+		\node[draw, rectangle](Probability of war)       at  (0,-4)  {Probability of war};	
+		\node[draw, rectangle](Battlefield performance)  at  (8,-4)  {Battlefield performance};	
+		\draw[->] (Mechanization) to (GDP per capita);
+		\draw[->] (GDP per capita) to (Democracy);
+		\draw[->] (Democracy) to (Battlefield performance);
+		\draw[->] (Battlefield performance) to (Probability of war);
+		\draw[->] (Probability of war) to (Mechanization);
+		\draw[->] (GDP per capita) to[out=90,in=90] (Mechanization);
+		\draw[->] (Democracy) to[out=270,in=270] (GDP per capita);
+		\draw[->] (Battlefield performance) to[out=360,in=360] (Democracy);
+		\draw[->] (Mechanization) to (Battlefield performance);
+		\draw[->] (Mechanization) to[out=180,in=180] (Probability of war);
+		\draw[->] (Democracy) to (Probability of war);
+	\end{tikzpicture}
+\end{figure}
+
+Figure 2 is the logic diagram resulting from the above. It must be emphasized that we are only scratching the 
+surface of system complexity. For example, Figure 2 does not address the nature of relationships 
+between covariates: linear or non-linear? subject to multi-way
+interactions? But even as-is, Figure 2 visually conveys the essential point: \textit{the system is
+not tractable to decomposition}. Ascertaining cause and effect in this system through simple observation is 
+near-impossible. 
+One instead must perform ``causal surgery'' \citep{pearl2009causality}, i.e. modify the value at one
+of the nodes and observe the
+resultant system state. But, as previously covered, doing so in international relations is an
+absurd proposition: one cannot mete out international conflict in a real-world experimental
+setting to assess the effect on mechanization. A modeling paradigm that would let us do so is needed.
 
 
+\subsubsection{Cognition}
 
-Wealth is 
-Interactions --> causal arrows, GDP per capita, democracy, war, mechanization
---> decomposibility of system
+There is no law of nature dictating that an increase in one state's mechanization causes an adversary to 
+raise its own mechanization. It also cannot be claimed that many individual choices aggregate into something 
+akin to natural law---the sort of logic used 
+in economics to justify treating supply and demand in a physics-esque manner---because the number of
+people that decide mechanization choices is small. In a personalistic
+dictatorship, it might be $n=1$; even in polities with more dispersed authority, such decisions
+typically occur in the rarified and thinly populated realm of generals and cabinet ministers. 
+\textit{A state's mechanization level changes because someone decides to change it}.
 
-Path dependence
+If one takes the previous statement to be true, then a model of military mechanization must be in
+some sense a cognitive model. Some agent or set of agents perceives the outside world; 
 
-Cognition
+\subsection{The utility of agent-based modeling}
 
-ositive feedback loop
+Good for insurgency because its hidden, and 
 
-Path dependence
+In the typology of Axtell \citep{axtell2000agents}
 
-certain kinds of interactions
-
-\subsection{Unreliable data}
-
-Militarized Interstate Disputes Database (MIDB)
-\citep{cow_midb}
-to produce reliable insight is questionable.
-Observational data. Selection into war and deterrence. 
-
-MID data sucks
-
-Two, linear model poorly suited to represent the complex interactions. List
-some. GDP/capita to democracy to war to mechanization. Internal politics to
-external politics to mechanization. Emulation and network effects.
-
-Lag effects = path dependence
-
-Seeing what others are doing
-
-Agent-based modeling more appropriate.
-
-look at Axtell \citep{axtell2000agents}
-
-Other studies have already done it. 
+ABM is useful for exactly such settings.
 
 Methodology studies
 \citep{pepinsky2005agents,de2014agent,

@@ -1310,6 +1310,35 @@
       \field{title}{System Effects: Complexity in Political and Social Life}
       \field{year}{1998}
     \endentry
+    \entry{levy1988domestic}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=f366c8c60b102e7cf30a11e564ba5212}{%
+           family={Levy},
+           familyi={L\bibinitperiod},
+           given={Jack\bibnamedelima S},
+           giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f366c8c60b102e7cf30a11e564ba5212}
+      \strng{fullhash}{f366c8c60b102e7cf30a11e564ba5212}
+      \strng{bibnamehash}{f366c8c60b102e7cf30a11e564ba5212}
+      \strng{authorbibnamehash}{f366c8c60b102e7cf30a11e564ba5212}
+      \strng{authornamehash}{f366c8c60b102e7cf30a11e564ba5212}
+      \strng{authorfullhash}{f366c8c60b102e7cf30a11e564ba5212}
+      \field{sortinit}{L}
+      \field{sortinithash}{2c7981aaabc885868aba60f0c09ee20f}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Journal of Interdisciplinary History}
+      \field{number}{4}
+      \field{title}{Domestic politics and war}
+      \field{volume}{18}
+      \field{year}{1988}
+      \field{pages}{653\bibrangedash 673}
+      \range{pages}{21}
+    \endentry
     \entry{lo2008ensuring}{article}{}
       \name{author}{3}{}{%
         {{uniquename=0,uniquepart=base,hash=5b376a26e17271c785a4f84d86814e27}{%
@@ -1415,41 +1444,6 @@
       \field{year}{2009}
       \field{pages}{67\bibrangedash 106}
       \range{pages}{40}
-    \endentry
-    \entry{maoz1993normative}{article}{}
-      \name{author}{2}{}{%
-        {{uniquename=0,uniquepart=base,hash=391bc3879db6cc99448c1b767f61b388}{%
-           family={Maoz},
-           familyi={M\bibinitperiod},
-           given={Zeev},
-           giveni={Z\bibinitperiod},
-           givenun=0}}%
-        {{uniquename=0,uniquepart=base,hash=353296f408c957fabebeb9ea742faa2a}{%
-           family={Russett},
-           familyi={R\bibinitperiod},
-           given={Bruce},
-           giveni={B\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{18c4f3af619c766034f35fc2ef937d5b}
-      \strng{fullhash}{18c4f3af619c766034f35fc2ef937d5b}
-      \strng{bibnamehash}{18c4f3af619c766034f35fc2ef937d5b}
-      \strng{authorbibnamehash}{18c4f3af619c766034f35fc2ef937d5b}
-      \strng{authornamehash}{18c4f3af619c766034f35fc2ef937d5b}
-      \strng{authorfullhash}{18c4f3af619c766034f35fc2ef937d5b}
-      \field{sortinit}{M}
-      \field{sortinithash}{cfd219b90152c06204fab207bc6c7cab}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{American Political Science Review}
-      \field{number}{3}
-      \field{title}{Normative and structural causes of democratic peace, 1946--1986}
-      \field{volume}{87}
-      \field{year}{1993}
-      \field{pages}{624\bibrangedash 638}
-      \range{pages}{15}
     \endentry
     \entry{masad2016dissertation}{thesis}{}
       \name{author}{1}{}{%
@@ -2216,6 +2210,33 @@
       \field{labeltitlesource}{title}
       \field{title}{Man, the state, and war: A theoretical analysis}
       \field{year}{2001}
+    \endentry
+    \entry{weeks2014dictators}{book}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=98a746d1ce6a0e549d7525a843a79289}{%
+           family={Weeks},
+           familyi={W\bibinitperiod},
+           given={Jessica},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Cornell University Press}%
+      }
+      \strng{namehash}{98a746d1ce6a0e549d7525a843a79289}
+      \strng{fullhash}{98a746d1ce6a0e549d7525a843a79289}
+      \strng{bibnamehash}{98a746d1ce6a0e549d7525a843a79289}
+      \strng{authorbibnamehash}{98a746d1ce6a0e549d7525a843a79289}
+      \strng{authornamehash}{98a746d1ce6a0e549d7525a843a79289}
+      \strng{authorfullhash}{98a746d1ce6a0e549d7525a843a79289}
+      \field{sortinit}{W}
+      \field{sortinithash}{ecb89ff85896a47dc313960773ac311d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Dictators at war and peace}
+      \field{year}{2014}
     \endentry
     \entry{weidmann2013violence}{article}{}
       \name{author}{2}{}{%

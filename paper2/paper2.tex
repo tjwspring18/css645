@@ -8,7 +8,7 @@
 \usepackage[citestyle=authoryear,style=authoryear,backend=biber,natbib]{biblatex}
 \addbibresource{paper2.bib}
 
-\title{Military mechanization as a complex system}
+\title{Military mechanization as a complex adaptive system}
 
 \author{Tom Wallace}
 
@@ -22,12 +22,10 @@
 	ground combat vehicles as opposed to infantry. Mechanization is an important topic 
 	in international relations scholarship and a practical concern for
 	policymakers. This paper makes novel theoretical contributions by
-	re-envisioning mechanization as a complex system. It also implements an
+	re-envisioning mechanization as a complex adaptive system. It implements an
 	agent-based model of military mechanization. The results of this model
 	challenge the conventional wisdom that mechanization is primarily driven
-	by external factors such as security environment. They imply that
-	some internal factors (e.g. military culture or economic constraints)
-	act as a ``brake'' on mechanization.
+	by external factors such as security environment. 
 
 \end{abstract}
 
@@ -39,14 +37,15 @@
 
 This paper is divided into five sections. This \textbf{Introduction} gives
 background on military mechanization. The \textbf{Theory} section rigorously
-develops mechanization as a complex system best represented by
+develops mechanization as a complex adaptive system best represented by
 agent-based modeling. The \textbf{Model} section presents a hypothesis and
-implements an agent-based model in Python to test that hypothesis.
+implements an agent-based model to test that hypothesis.
 \textbf{Results} are shown. Implications are explored in \textbf{Discussion}.
 
 \subsection{Background}
 
-States differ in the composition of their ground forces.\footnote{States may have multiple organizations that
+States differ in the composition of their ground forces.\footnote{States may 
+have multiple organizations that
 conduct ground combat operations: e.g., the United States operates both an Army
 and a Marine Corps as independent services. Henceforth, this paper uses the
 terms ``army'' and ``ground forces'' interchangeably.} One notable axis of comparison 
@@ -112,26 +111,26 @@ panel data. They use a ordinary least squares (OLS) linear regression model with
 errors,
 
 \begin{equation}
-y_{ij} = \beta_0 + \sum_{k=1}^P \beta_{ijk}x_{ijk} + \epsilon
+	y_{ij} = \beta_0 + \sum_{k=1}^P \beta_{ijk}x_{ijk} + \epsilon
 \end{equation}
 
 with $y_{ij}$ the mechanization level of state $i$ in year $j$ (measured as the 
 ratio of ground combat vehicles to infantry in a state's army) and $x_1 \ldots
 x_j \ldots x_{P}$ covariates hypothesized to be associated with
 mechanization. They conclude that, out of the
-aforementioned potential causes, ``choices about
+potential causes mentioned above, ``choices about
 mechanization are strongly associated with a state's security environment.''
-Their dataset and conclusions have guided further scholarship on military
+States that have engaged in conflict with a highly-mechanized adversary and states
+with highly mechanized neighbors tend to higher mechanization; conversely, states facing
+domestic insurgency or that have lost counter-insurgency wars tend to have lower
+mechanization rates. Their dataset and conclusions have guided further scholarship on military
 mechanization, e.g. \citet{pilster2012democracies}, which mostly follow the same
 statistical approach.
 
-\newpage
-
 \section{Theory}
 
-Definition of complex system. 
 The orthodox multivariate statistical modeling approach is insufficient because
-mechanization is a complex system. Agent-based modeling (ABM) is a more 
+mechanization is a complex adaptive system. Agent-based modeling (ABM) is a more 
 appropriate paradigm for studying it. These three
 claims---insufficiency, complexity, and ABM---are addressed in turn. 
 
@@ -149,19 +148,23 @@ Thus, ``rivalry'' is in fact
 bundling together many uncontrolled covariates, casting doubt on the claimed
 finding. Similar problems arise for other variables included in the model.
 Natural experiments---a situation in which treatment is
-known to be randomly assigned---are the typical econometric strategy to avoid selection bias. For
+known to be randomly assigned---are the ideal strategy to avoid selection bias. For
 example, \citet{angrist2002vouchers} exploit the fact that private school
 vouchers were distributed by lottery in Colombia to obtain unbiased estimates of
 the effect of schooling type (private vs. public) on educational achievement.
 But such situations are rare in IR: e.g., random assignment of war is an
-absurd proposition. \citet{sechser2010army} lack a good control
-because it probably does not exist. Reliance on selection-riddled
-observational data means that econometrics are at best an incomplete
-tool for studying mechanization. 
+absurd proposition. There are statistical methods for correction of selection
+bias, such as Heckman correction and propensity score matching, but system
+complexity prevents their application, as covered in the following sub-section.
 
-\subsection{System complexity}
+\subsection{Complex adaptive system}
 
-\subsubsection{Decomposibility}
+There is no single universally accepted definition of a complex adaptive system
+\citep{miller2009complex}. However, two core features are
+that the system is non-decomposable, and that the system features cognitive
+agents. The following sections detail how mechanization meets this description. 
+
+\subsubsection{Decomposability}
 
 The additive linear model in (1) assumes that each covariate $x$ is separable. Take as an example 
 GDP per capita.\footnote{The example works as well with any
@@ -219,7 +222,7 @@ impoverish the country
 battlefield performance affect the probability of war in that militarily 
 potent states are unlikely to be attacked. The exact truth value of these claimed relationships is
 uncertain---in no small part due to the limitations of econometrics that were just addressed---but
-they are generally uncontroversial statements in their respective fields.
+they are generally mainstream statements in their respective fields.
 
 \begin{figure}[h]
 	\centering
@@ -247,16 +250,31 @@ they are generally uncontroversial statements in their respective fields.
 Figure 2 is the logic diagram resulting from the above. It must be emphasized that we are only scratching the 
 surface of system complexity. For example, Figure 2 does not address the nature of relationships 
 between covariates: linear or non-linear? subject to multi-way
-interactions? necessity and sufficiency distinctions? But even as-is, Figure 2 visually conveys the essential point: \textit{the system is
-not tractable to decomposition}. Ascertaining cause and effect in this system
-through simple observation is impossible because of endogeneity. Moreover, controlling for
-confounding variables breaks down when the controlled-for variable directly
-relates to the outcome of interest \citep[``post-treatment bias'',
-c.f.][]{king2010hard}. One would like to perform ``causal surgery'' \citep{pearl2009causality}, i.e. modify the value at one
-of the nodes and observe the resultant system state. But, as previously covered, one generally cannot conduct
+interactions? necessity and sufficiency distinctions? Moreover, it only includes 
+abstract variables and not individual agents (a point addressed in the following
+sub-section). But even as-is, Figure 2 visually conveys the essential point: \textit{the system is
+not tractable to decomposition}. We cannot isolate one component from the
+greater whole.  
+
+This system complexity disallows previously-mentioned statistical techniques
+for correction of selection bias. Both Heckman correction and propensity score
+matching boil down to using covariates to predict (and hence control for) the chances 
+of receiving treatment. For example, we might assess the effect of war on
+mechanization by controlling for the factors that affect propensity for war. 
+But these techniques break down if the confounding variables also directly
+relate to the outcome of interest, or if the direction of causality flows both
+wars. Both are true for mechanization 
+(c.f. Figure 2). This ``post-treatment bias'' \citep{king2010hard} means we need
+some technique other than econometrics to perform causal inference regarding
+mechanization.
+
+We would like to perform ``causal surgery'' \citep{pearl2009causality}, i.e. modify the value at one
+of the nodes and observe the resultant system state. This sort of
+experimentation might allow us observe the system's sensitivity (or lack thereof) to changes
+in input. But, as previously covered, one generally cannot conduct
 experimental trials in international relations.  A modeling paradigm that would let us do so is needed.
 
-\subsubsection{Cognition}
+\subsubsection{Cognitive agents}
 
 There is no law of nature dictating that an increase in one state's mechanization causes an adversary to 
 raise its own mechanization. It also is not the case that many individual choices aggregate into something 
@@ -265,12 +283,12 @@ in economics to justify treating supply and demand in a physics-esque manner---b
 people that decide mechanization choices is small. In a personalistic
 dictatorship, it might be $n=1$. Even in polities with more dispersed authority, such decisions
 typically occur in the rarified and thinly populated realm of generals and cabinet ministers. 
-\textit{A state's mechanization level changes because someone decides to change it}.
+\textit{A state's mechanization level changes because someone decides to change it}. If one takes 
+the previous statement to be true, then a model of military mechanization must be a model of 
+cognitive agents.  Some agent or set of agents perceives the outside
+world; processes that information; and takes action. 
 
-If one takes the previous statement to be true, then a model of military
-mechanization must be at least partly a cognitive model. Some agent or set of agents perceives the outside
-world; processes that information; and takes action. Orthodox studies of
-mechanization incorporate cognition to some degree. For example,
+Orthodox studies of mechanization incorporate cognition to some degree. For example,
 \citet{sechser2010army} test for learning: whether states that fail in
 counter-insurgency wars decrease their mechanization as a result of this
 ``anti-mechanization lesson.'' This depiction, however, fails to capture 
@@ -284,13 +302,13 @@ were not direct combatants to reform their own militaries
 works out. Consider Ireland: between the 1920s and 1940s, it sought to spend a
 large portion of its defense budget on building a small number of
 tanks, which at that time were novel technology being implemented by the leading
-European militaries.
-They would have been wholly insufficient to repel a British invasion (their ostensible purpose), 
+European militaries. They would have been wholly insufficient to repel a British invasion (their ostensible purpose), 
 and Ireland would have been better-served to pursue a low-mechanization guerrilla defense strategy, 
 but tanks were seen as a prestigious signifier of a ``real'' professional
 military and hence desirable
-\citep{farrell1998professionalization,farrell2001transnational}. Such learning
-is absent from orthodox models of military mechanization.
+\citep{farrell1998professionalization,farrell2001transnational}. A more
+sophisticated representation of cognition that incorporates such
+learning-from-others is needed.
 
 \subsection{The utility of agent-based modeling}
 
@@ -303,7 +321,7 @@ inference or at least insight even in highly complex, perhaps unsolvable systems
 \citep[c.f.][]{axtell2000agents}. ABM focuses on autonomous agents with
 cognition, for which even relatively simple behavioral rules can generate
 behavior at least as complex as mechanization
-\citep{gilbert2005simulation,miller2009complex}.
+\citep{gilbert2005simulation}.
 
 Complex systems and ABM have been used in IR. Many methodology-focused
 works have identified their utility to the field \citep[some prominent examples
@@ -331,6 +349,10 @@ certitude that a hypothesis is true---as is the case for mechanization---then th
 should be preferred for its advantages in experimentation, transparency, researcher control, 
 and amenability to complex systems.
 
+\section{Model}
+
+This section of the paper describes the model. It does not use the ODD protocol
+of \citet{grimm2006standard} but covers many of the same points.
 
 \subsection{Research question and strategy}
 
@@ -349,12 +371,6 @@ higher, then their claimed behavioral rules are incomplete and fail to include
 some ``brake'' on mechanization, matching my hypothesis. Proving exactly what
 that missing variable or set of variables is is outside the scope of this model
 and paper, though it is discussed.
-
-\section{Model}
-
-This section of the paper describes the model. It does not use the ODD protocol
-of \citet{grimm2006standard} but covers many of the same points.
-
 \subsection{Agents}
 
 There is one agent type: states. Agents exist at a fixed location and do not

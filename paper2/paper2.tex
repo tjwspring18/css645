@@ -19,11 +19,15 @@
 \begin{abstract}
 
 	Military mechanization is the degree to which a state's army is comprised of
-	ground combat vehicles as opposed to infantry. Mechanization is both a 
-	theoretically important topic in international relations scholarship and a practical 
-	concern for policymakers. \citet{sechser2010army} influentially argue that
-	inter-state dynamics (e.g., conflict) better explain mechanization choices than do
-	intra-state factors (e.g., culture). 
+	ground combat vehicles as opposed to infantry. Mechanization is an important topic 
+	in international relations scholarship and a practical concern for
+	policymakers. This paper makes novel theoretical contributions by
+	re-envisioning mechanization as a complex system. It also implements an
+	agent-based model of military mechanization. The results of this model
+	challenge the conventional wisdom that mechanization is primarily driven
+	by external factors such as security environment. They imply that
+	some internal factors (e.g. military culture or economic constraints)
+	act as a ``brake'' on mechanization.
 
 \end{abstract}
 
@@ -33,13 +37,12 @@
 
 \subsection{Outline}
 
-This paper presents an agent-based model of military mechanization. It
-reviews the academic literature on military mechanization. It discusses why
-orthodox modeling strategies fail to fully describe international security competition
-as a complex system and why agent-based modeling is needed. In support of these
-claims, it ``agentizes'' the leading model of military mechanization and shows
-that it does not hold. Finally, it presents a
-novel agent-based model that better represents military mechanization. 
+This paper is divided into five sections. This \textbf{Introduction} gives
+background on military mechanization. The \textbf{Theory} section rigorously
+develops mechanization as a complex system best represented by
+agent-based modeling. The \textbf{Model} section presents a hypothesis and
+implements an agent-based model in Python to test that hypothesis.
+\textbf{Results} are shown. Implications are explored in \textbf{Discussion}.
 
 \subsection{Background}
 
@@ -93,7 +96,7 @@ signal of deterrence, or to learn from the perceived mistakes of the last war
 \citep{mearsheimer1983conventional,huth1988extended,murray2011military}. 
 Economic endowments may play a role: e.g., capital-rich states may mechanize more
 than labor-rich states \citep{gartzke2001democracy}. Domestic political
-institutions may matter: e.g., autocracies may be more willing than democracies to adopt
+institutions may matter for military composition: e.g., autocracies may be more willing than democracies to adopt
 low-mechanization ``human wave'' tactics
 \citep{quinlivan1999coup,reiter2002democracies,brooks2008shaping,talmadge2015dictator}. 
 Ideology \citep{van1984cult} and national culture \citep[e.g.][]{pollack2004arabs} are
@@ -101,17 +104,10 @@ hard-to-measure but perhaps influential. Lastly,
 organizational culture can play a role \citep{builder1989masks}. Militaries may pursue a
 certain mechanization posture because it aligns with their institutional
 objectives, which may or may not be coincident with rational strategy. 
-Consider Ireland: between the 1920s and 1940s, it seriously considered expending a 
-large portion of its defense budget on building a relatively small number of tanks. 
-They would have been wholly insufficient to repel a British invasion (their ostensible purpose), 
-and Ireland would have been better-served to pursue a low-mechanization guerrilla defense strategy, 
-but tanks were seen as a prestigious signifier of a ``real'' professional
-military and hence desirable
-\citep{farrell1998professionalization,farrell2001transnational}. 
 
 \citet{sechser2010army} is the landmark study on military mechanization. They
 assemble a longitudinal dataset at the country-year level of the mechanization
-of all states between 1979 and 2001. They conduct regression analysis on this
+of most states between 1979 and 2001. They conduct regression analysis on this
 panel data. They use a ordinary least squares (OLS) linear regression model with corrected standard
 errors,
 
@@ -123,56 +119,64 @@ with $y_{ij}$ the mechanization level of state $i$ in year $j$ (measured as the
 ratio of ground combat vehicles to infantry in a state's army) and $x_1 \ldots
 x_j \ldots x_{P}$ covariates hypothesized to be associated with
 mechanization. They conclude that, out of the
-aforementioned potential causes, the first mentioned is most important: ``choices about
+aforementioned potential causes, ``choices about
 mechanization are strongly associated with a state's security environment.''
+Their dataset and conclusions have guided further scholarship on military
+mechanization, e.g. \citet{pilster2012democracies}, which mostly follow the same
+statistical approach.
 
-\section{System complexity and agent-based modeling}
+\newpage
 
-Although \citet{sechser2010army} is a valuable contribution to the literature,
-its orthodox multivariate statistical modeling is insufficient. Mechanization is a complex system. 
-Agent-based modeling is a more appropriate paradigm for studying it. These three claims are addressed in turn. 
+\section{Theory}
+
+Definition of complex system. 
+The orthodox multivariate statistical modeling approach is insufficient because
+mechanization is a complex system. Agent-based modeling (ABM) is a more 
+appropriate paradigm for studying it. These three
+claims---insufficiency, complexity, and ABM---are addressed in turn. 
 
 \subsection{Inadequacy of statistical modeling}
 
-\citet{sechser2010army} operate on observational rather than experimental
+\citet{sechser2010army} use observational rather than experimental
 data. The assignment of treatments to subjects is not randomized, causing
-\textit{selection bias}. For example, \citet{sechser2010army} operationalize
+\textit{selection bias}. For example, they operationalize
 dyadic ``rivalry'' as whether two states recently engaged in a Militarized
-Interstate Dispute (MID) \citep{cow_midb}, and find significant association with mechanization. 
+Interstate Dispute (MID), and find significant association with mechanization. 
 But interstate conflict is not a randomly assigned treatment. Rather, at least one state must select
-themselves into it \citep{fearon2002selection}. States differ in their
-proclivity for conflict initiation based on many distinct factors. 
-Thus, correlation attributed to rivalry is in fact
-bundling together many uncontrolled-for covariates, casting doubt on the claimed
-finding. Natural experiments---a situation in which assignation of treatment is
-known to be random---are the typical econometric strategy to avoid bias. For
+itself into it \citep{fearon2002selection}. States differ in their
+proclivity for conflict, based on many factors. 
+Thus, ``rivalry'' is in fact
+bundling together many uncontrolled covariates, casting doubt on the claimed
+finding. Similar problems arise for other variables included in the model.
+Natural experiments---a situation in which treatment is
+known to be randomly assigned---are the typical econometric strategy to avoid selection bias. For
 example, \citet{angrist2002vouchers} exploit the fact that private school
 vouchers were distributed by lottery in Colombia to obtain unbiased estimates of
 the effect of schooling type (private vs. public) on educational achievement.
-But such situations are rare in international relations---e.g., random assignation of war is an
-absurd proposition---and so
-\citet{sechser2010army} lack such a control. Given rife selection effects and few
-natural experiments, econometric modeling alone is an insufficient tool for studying mechanization. 
+But such situations are rare in IR: e.g., random assignment of war is an
+absurd proposition. \citet{sechser2010army} lack a good control
+because it probably does not exist. Reliance on selection-riddled
+observational data means that econometrics are at best an incomplete
+tool for studying mechanization. 
 
 \subsection{System complexity}
 
 \subsubsection{Decomposibility}
 
-The additive linear model in (1) assumes that each covariate $x$ is separable.  
-Interpretation of the corresponding coefficient $\beta$ requires an assumption of independence 
-(i.e. a lack of multicollinearity). It also makes an implicit claim about the direction of
-causation: that mechanization $y$ is a function of those 
-$x$.\footnote{To be clear,
-\citet{sechser2010army} studiously avoid claiming causation in their text. But
+The additive linear model in (1) assumes that each covariate $x$ is separable. Take as an example 
+GDP per capita.\footnote{The example works as well with any
+other covariate.} \citet{sechser2010army} find it negatively related with mechanization at the $p < 0.05$ level. 
+But a valid interpretation requires an assumption
+of its independence from other covariates (i.e. no multicollinearity).
+It also makes an implicit claim about causal direction: that
+mechanization $y$ is a function of various
+$x$, and not the other way around.\footnote{To be clear,
+\citet{sechser2010army} do not claim causation in their text. But
 their choice in what is modeled as $y$ and what is modeled $x$ says a lot about the perceived
-direction of association.} These assumptions do not hold. 
-
-Let us take as an example GDP per capita. \citet{sechser2010army} find it negatively correlated with
-mechanization at the $p < 0.05$ level. Unbiased estimation of this individual coefficient
-requires lack of correlation between GDP per capita and other covariates, either individually or
-jointly. Put differently, \textit{it requires that the system can be neatly decomposed into constituent parts}. Figure 1 is a
-causal diagram depicting this logic. 
-\begin{figure}[h]
+direction of association.} Put differently, \textit{it requires that the
+observed system can be neatly 
+decomposed into constituent parts}. Figure 1 is a causal diagram depicting this logic. 
+\begin{figure}[h!]
 	\centering
 	\caption{Decomposable system}
 	\begin{tikzpicture}
@@ -184,28 +188,35 @@ causal diagram depicting this logic.
 	\end{tikzpicture}
 \end{figure}
 
-By standard statistical tests, the assumption of decomposability appears supported. The model's variance
-inflation factor generally does not rise above 2, indicating a lack of
-multicollinearity.\footnote{The high correlation between dummy variables}
+Initial statistical testing seems to support this assumption. The model's variance
+inflation factor (VIF) does not indicate multicollinearity.\footnote{See the Appendix for
+a supporting table. Some coefficients have VIF $> 8$, which strongly
+indicates multicollinearity. However, this only occurs with ``dummy'' variables
+and the variable to which they relate, and so is not problematic.} However, VIF
+is contingent on the specific model being tested, and evidence suggests that 
+(1) is not a correctly specified model. It over-simplifies or omits key
+relationships.
 
-However, the literature suggests that (1) is not a correctly specified model. GDP per capita is associated with
-regime type (e.g., democracy vs. autocracy), and causality appears to flow in both directions, i.e. democracy
-causes wealth and wealth also causes democracy \citep{helliwell1994empirical,barro1996democracy,robinson2006economic,doucouliagos2008democracy}. 
+A large literature suggests that GDP per capita is associated with
+regime type (e.g., democracy vs. autocracy), and causality appears to flow in
+both directions. Democracy causes wealth and wealth also causes democracy \citep{helliwell1994empirical,barro1996democracy,robinson2006economic,doucouliagos2008democracy}. 
 Regime type affects the probability of war: the closest thing to an empirical law in international relations is
 that democracies do not fight each other
-\citep{levy1988domestic}, while some kinds of autocracies are war-prone \citep{de1995war}. Regime type is widely argued to influence
+\citep{levy1988domestic}, while some kinds of autocracies are war-prone \citep{de1995war}. 
+Regime type is widely argued to influence
 battlefield performance in war because it affects the quality of military institutions and hence
 capability of fielded forces \citep{reiter2002democracies,weeks2014dictators,talmadge2015dictator}. 
 Battlefield performance affects regime type, e.g. a losing side may be subject to foreign-imposed
 regime change a la 1939 France or 2003 Iraq
 \citep{werner1996absolute,lo2008ensuring,downes2013forced}. \citet{sechser2010army} claim that the observed
 historical probability of conflict (``rivalry'', in their terminology) affects mechanization; and claim that observed
-battlefield performance (``lessons'') also affect mechanization. Mechanization surely affects the
-probability of war, as it sends some kind of deterrent signal. Mechanization also surely affects
-battlefield performance in war (if it did not, we would not care about it).
-Mechanization also may affect GDP per capita in that states may over-spend on defense and 
-impoverish the country, with the Soviet Union as a prominent example. Deterrence theory requires that 
-battlefield performance affect the probability of war, i.e. militarily 
+battlefield performance (``lessons'') also affect mechanization. Mechanization surely affects
+battlefield performance in war; if it did not, we would not care about it
+\citep[see also][]{lyall2009rage}.
+Mechanization may affect GDP per capita in that states can over-spend on defense and 
+impoverish the country
+\citep{cappelen1984military,ward1992sizing,abu2003government}. Deterrence theory requires that 
+battlefield performance affect the probability of war in that militarily 
 potent states are unlikely to be attacked. The exact truth value of these claimed relationships is
 uncertain---in no small part due to the limitations of econometrics that were just addressed---but
 they are generally uncontroversial statements in their respective fields.
@@ -216,7 +227,7 @@ they are generally uncontroversial statements in their respective fields.
 	\begin{tikzpicture}
 		\node[draw, rectangle](Mechanization)            at  (0,0)  {Mechanization};	
 		\node[draw, rectangle](GDP per capita)           at  (4,0)  {GDP per capita};
-		\node[draw, rectangle](Democracy)                at  (8,0) {Democracy};
+		\node[draw, rectangle](Democracy)                at  (8,0)  {Democracy};
 		\node[draw, rectangle](Probability of war)       at  (0,-4)  {Probability of war};	
 		\node[draw, rectangle](Battlefield performance)  at  (8,-4)  {Battlefield performance};	
 		\draw[->] (Mechanization) to (GDP per capita);
@@ -236,69 +247,90 @@ they are generally uncontroversial statements in their respective fields.
 Figure 2 is the logic diagram resulting from the above. It must be emphasized that we are only scratching the 
 surface of system complexity. For example, Figure 2 does not address the nature of relationships 
 between covariates: linear or non-linear? subject to multi-way
-interactions? But even as-is, Figure 2 visually conveys the essential point: \textit{the system is
-not tractable to decomposition}. Ascertaining cause and effect in this system through simple observation is 
-near-impossible. 
-One instead must perform ``causal surgery'' \citep{pearl2009causality}, i.e. modify the value at one
-of the nodes and observe the
-resultant system state. But, as previously covered, doing so in international relations is an
-absurd proposition: one cannot mete out international conflict in a real-world experimental
-setting to assess the effect on mechanization. A modeling paradigm that would let us do so is needed.
-
+interactions? necessity and sufficiency distinctions? But even as-is, Figure 2 visually conveys the essential point: \textit{the system is
+not tractable to decomposition}. Ascertaining cause and effect in this system
+through simple observation is impossible because of endogeneity. Moreover, controlling for
+confounding variables breaks down when the controlled-for variable directly
+relates to the outcome of interest \citep[``post-treatment bias'',
+c.f.][]{king2010hard}. One would like to perform ``causal surgery'' \citep{pearl2009causality}, i.e. modify the value at one
+of the nodes and observe the resultant system state. But, as previously covered, one generally cannot conduct
+experimental trials in international relations.  A modeling paradigm that would let us do so is needed.
 
 \subsubsection{Cognition}
 
 There is no law of nature dictating that an increase in one state's mechanization causes an adversary to 
-raise its own mechanization. It also cannot be claimed that many individual choices aggregate into something 
-akin to natural law---the sort of logic used 
+raise its own mechanization. It also is not the case that many individual choices aggregate into something 
+akin to natural law---the logic used 
 in economics to justify treating supply and demand in a physics-esque manner---because the number of
 people that decide mechanization choices is small. In a personalistic
-dictatorship, it might be $n=1$; even in polities with more dispersed authority, such decisions
+dictatorship, it might be $n=1$. Even in polities with more dispersed authority, such decisions
 typically occur in the rarified and thinly populated realm of generals and cabinet ministers. 
 \textit{A state's mechanization level changes because someone decides to change it}.
 
-If one takes the previous statement to be true, then a model of military mechanization must be in
-some sense a cognitive model. Some agent or set of agents perceives the outside world; 
+If one takes the previous statement to be true, then a model of military
+mechanization must be at least partly a cognitive model. Some agent or set of agents perceives the outside
+world; processes that information; and takes action. Orthodox studies of
+mechanization incorporate cognition to some degree. For example,
+\citet{sechser2010army} test for learning: whether states that fail in
+counter-insurgency wars decrease their mechanization as a result of this
+``anti-mechanization lesson.'' This depiction, however, fails to capture 
+key phenomena. 
+
+Human beings learn not only from their own experiences, but also from observing others.
+State decisionmakers are no exception. For example, the stunning success of
+Coalition precision-guided munitions in the 1991 Gulf War led other states who
+were not direct combatants to reform their own militaries
+\citep{scobell2011chinese}. There is no guarantee that such emulation always
+works out. Consider Ireland: between the 1920s and 1940s, it sought to spend a
+large portion of its defense budget on building a small number of
+tanks, which at that time were novel technology being implemented by the leading
+European militaries.
+They would have been wholly insufficient to repel a British invasion (their ostensible purpose), 
+and Ireland would have been better-served to pursue a low-mechanization guerrilla defense strategy, 
+but tanks were seen as a prestigious signifier of a ``real'' professional
+military and hence desirable
+\citep{farrell1998professionalization,farrell2001transnational}. Such learning
+is absent from orthodox models of military mechanization.
 
 \subsection{The utility of agent-based modeling}
 
-Good for insurgency because its hidden, and 
+In light of the above, agent-based modeling (ABM) is 
+uniquely well-suited to study mechanization. Computer simulations provide the possibility 
+to conduct controlled experiments \textit{in silico} \citep{epstein1996growing} that are not possible 
+in the real world, freeing us from the tyranny of selection bias. Because the
+modeler can adjust various ``dials'' and observe the outcome, ABM allows causal
+inference or at least insight even in highly complex, perhaps unsolvable systems
+\citep[c.f.][]{axtell2000agents}. ABM focuses on autonomous agents with
+cognition, for which even relatively simple behavioral rules can generate
+behavior at least as complex as mechanization
+\citep{gilbert2005simulation,miller2009complex}.
 
-In the typology of Axtell \citep{axtell2000agents}
+Complex systems and ABM have been used in IR. Many methodology-focused
+works have identified their utility to the field \citep[some prominent examples
+are][]{modelski1990world,jervis1998system,pepinsky2005agents,de2014agent}.
+Although actual usage has somewhat lagged behind theoretical enthusiasm,
+ABM has been used to explore emergent 
+balance of power \citep{cederman1997emergent}, international negotiation
+\citep{earnest2008coordination}, and international crises and conflict
+\citep{masad2016dissertation}. It is especially popular for studying
+population-centric security phenomena such as terrorism and insurgency
+\citep{cioffi2010mason,bhavnani2012modeling,weidmann2013violence,bhavnani2014group}.
 
-ABM is useful for exactly such settings.
+The author's sense is that adoption of ABM in IR has lagged because it is
+regarded as non-empirical. ABM offers no guarantees: just
+because one's model ``works'' (internally consistent, externally plausible) 
+does not mean it is true. Econometrics are the dominant methodological approach 
+in quantitative IR because they seem to offer an objective yardstick for competing hypotheses: 
+does A or B best fit the data? This paper contends that
+epistemological limitations (most importantly, selection bias stemming from
+non-randomization, and system complexity) mean that econometrics do not
+provide reliable statistical inference for certain classes of IR problems, among
+them mechanization \citep[c.f.][for a concurring opinion]{king2010hard}. 
+If neither econometrics nor ABM can offer 
+certitude that a hypothesis is true---as is the case for mechanization---then the latter 
+should be preferred for its advantages in experimentation, transparency, researcher control, 
+and amenability to complex systems.
 
-Methodology studies
-\citep{pepinsky2005agents,de2014agent,
-gunitsky2013complexity,bousquet2011beyond,
-harrison2012complexity,jervis1998system,modelski1990world,modelski1999long,cederman2001agent}
-
-Insurgency studies
-\citep{cioffi2010mason,weidmann2013violence,bhavnani2012modeling,bhavnani2014group}
-
-Big IR \citep{cederman2010growing,earnest2008coordination,masad2016dissertation}
-
-Fundamentals, e.g. cooperation \citep{axelrod1981evolution}
-
-Just because \citep{epstein1996growing}
-
-are ripe for agentization. The
-conclusions drawn implicitly claim
-that states are autonomous agents; that they have
-cognition regarding how to perceive the outside world
-and how to react to it; that spatiality and
-neighborhood matter; that inter-agent relationships matter; and that
-agents learn from experience. Agent-based modeling is uniquely well-suited to
-represent such phenomena \citep{gilbert2005simulation,miller2009complex}.
-
-Importantly, the findings of \citet{sechser2010army} imply a positive feedback
-loop. State A has high
-mechanization, causing enemy State B to raise their mechanization, causing State
-A to raise their mechanization... and so on. Such feedback loops are a hallmark
-of complex systems and again are well-suited for representation by agent-based
-modeling. This specific feedback loop is often called
-the ``security dilemma'' and was a main research interest of Thomas Schelling, one of the pioneers
-of agent-based modeling \citep{schelling1960strategy,schelling2006micromotives}.
 
 \subsection{Research question and strategy}
 
@@ -335,7 +367,7 @@ section. Figure 1 depicts the set of agents.
 \begin{figure}[h!]
 	\centering
 	\caption{Agents}
-\includegraphics[scale=0.05]{map.png}
+	\includegraphics[scale=0.05]{map.png}
 \end{figure}
 
 Agents have attributes. \textit{Name} is self-explanatory.
@@ -396,9 +428,9 @@ unique \textit{LessonSensitivity} attribute, again heterogenous across agents.
 Cognition for agent $i$ thus is:
 
 \begin{multline}
-\textrm{Mech}_i^{(t+1)} = \textrm{Mech}_i^{(t)} \\ 
-+ (\textrm{NeighborMechSensitivity}_i \times \textrm{NeighborMech}_i^{(t)}) \\
-+ (\textrm{EnemyMechSensitivity}_i \times \textrm{EnemyMech}_i^{(t)}) \\
+	\textrm{Mech}_i^{(t+1)} = \textrm{Mech}_i^{(t)} \\ 
+	+ (\textrm{NeighborMechSensitivity}_i \times \textrm{NeighborMech}_i^{(t)}) \\
+	+ (\textrm{EnemyMechSensitivity}_i \times \textrm{EnemyMech}_i^{(t)}) \\
 	+ (\textrm{LessonSensitivity}_i \times I_{\textrm{Lesson}}(t, i))
 \end{multline}
 
@@ -653,7 +685,7 @@ models have found traction in the study of grievance, insurgency, and
 other population-centric security phenomena \citep[e.g.][]{epstein2002modeling},
 they quite rarely are used to model international relations and state-centric security
 phenomena despite some early work on this front
-\citep[see][]{cederman1997emergent,axelrod1997complexity}. 
+\citep[see][]{,axelrod1997complexity}. 
 This paper's agentization of an orthodox security
 studies model thus is novel in method. Its findings also are important. They
 show that they show a solely ``external'', security
@@ -710,4 +742,50 @@ feedback loop) that mitigates the extent of mechanization. Candidates for what
 this could be mostly center on ``internal'' factors---e.g., culture, economy,
 and so on---as opposed to the ``external'', security environment-centric
 orthodox view.
+
+are ripe for agentization. The
+conclusions drawn implicitly claim
+that states are autonomous agents; that they have
+cognition regarding how to perceive the outside world
+and how to react to it; that spatiality and
+neighborhood matter; that inter-agent relationships matter; and that
+agents learn from experience. Agent-based modeling is uniquely well-suited to
+represent such phenomena .
+
+Importantly, the findings of \citet{sechser2010army} imply a positive feedback
+loop. State A has high
+mechanization, causing enemy State B to raise their mechanization, causing State
+A to raise their mechanization... and so on. Such feedback loops are a hallmark
+of complex systems and again are well-suited for representation by agent-based
+modeling. This specific feedback loop is often called
+the ``security dilemma'' and was a main research interest of Thomas Schelling, one of the pioneers
+of agent-based modeling \citep{schelling1960strategy,schelling2006micromotives}.
+
+\begin{table}[h]
+	\centering
+	\begin{tabular}{l r}
+		\hline
+		\textbf{Variable} & \textbf{VIF} \\ 
+		\hline
+		log\_mech\_enemies & 8.76 \\ 
+		enemies\_dummy & 9.12 \\ 
+		log\_mech\_neighbors & 2.19 \\ 
+		neighbors\_dummy & 2.03 \\ 
+		log\_mountainous & 1.26 \\ 
+		antimech\_lesson\_2 & 1.21 \\ 
+		promech\_lesson\_2 & 1.11 \\ 
+		democracy & 1.69 \\ 
+		military\_govt & 1.13 \\ 
+		instability & 1.12 \\ 
+		log\_gdp\_cap & 2.10 \\ 
+		iron\_steel & 1.32 \\ 
+		log\_mech\_allies & 12.64 \\ 
+		allies\_dummy & 12.59 \\ 
+		cold\_war\_bloc & 1.48 \\ 
+		igos & 2.03 \\ 
+		post\_soviet & 1.33 \\ 
+		log\_mech\_lag2 & 1.57 \\ 
+		\hline
+	\end{tabular}
+\end{table}
 \end{document}

@@ -19,6 +19,41 @@
 
 \refsection{0}
   \datalist[entry]{nyt/global//global/global}
+    \entry{abu2003government}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=3bbda839da68ed93f0e174e54005f99f}{%
+           family={Abu-Bader},
+           familyi={A\bibinithyphendelim B\bibinitperiod},
+           given={Suleiman},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=0ce019d40def3ee067a7126e3fb704be}{%
+           family={Abu-Qarn},
+           familyi={A\bibinithyphendelim Q\bibinitperiod},
+           given={Aamer},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b12068727f23a194b4e4522b35eb7639}
+      \strng{fullhash}{b12068727f23a194b4e4522b35eb7639}
+      \strng{bibnamehash}{b12068727f23a194b4e4522b35eb7639}
+      \strng{authorbibnamehash}{b12068727f23a194b4e4522b35eb7639}
+      \strng{authornamehash}{b12068727f23a194b4e4522b35eb7639}
+      \strng{authorfullhash}{b12068727f23a194b4e4522b35eb7639}
+      \field{sortinit}{A}
+      \field{sortinithash}{d77c7cdd82ff690d4c3ef13216f92f0b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Policy Modeling}
+      \field{number}{6-7}
+      \field{title}{Government expenditures, military spending and economic growth: causality evidence from Egypt, Israel, and Syria}
+      \field{volume}{25}
+      \field{year}{2003}
+      \field{pages}{567\bibrangedash 583}
+      \range{pages}{17}
+    \endentry
     \entry{adamsky2010culture}{book}{}
       \name{author}{1}{}{%
         {{uniquename=0,uniquepart=base,hash=0eb9582b94c0a5778d101b698f779a24}{%
@@ -152,41 +187,6 @@
       \field{labeltitlesource}{title}
       \field{title}{The Complexity of Cooperation: Agent-based Models of Competition and Collaboration}
       \field{year}{1997}
-    \endentry
-    \entry{axelrod1981evolution}{article}{}
-      \name{author}{2}{}{%
-        {{uniquename=0,uniquepart=base,hash=e46fddf6d412d66cae997840c9ba5f34}{%
-           family={Axelrod},
-           familyi={A\bibinitperiod},
-           given={Robert},
-           giveni={R\bibinitperiod},
-           givenun=0}}%
-        {{uniquename=0,uniquepart=base,hash=531f787e90fa4595784b45207b1ad9b5}{%
-           family={Hamilton},
-           familyi={H\bibinitperiod},
-           given={William\bibnamedelima Donald},
-           giveni={W\bibinitperiod\bibinitdelim D\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{a0a70ced1fb638f29bbc236659c78339}
-      \strng{fullhash}{a0a70ced1fb638f29bbc236659c78339}
-      \strng{bibnamehash}{a0a70ced1fb638f29bbc236659c78339}
-      \strng{authorbibnamehash}{a0a70ced1fb638f29bbc236659c78339}
-      \strng{authornamehash}{a0a70ced1fb638f29bbc236659c78339}
-      \strng{authorfullhash}{a0a70ced1fb638f29bbc236659c78339}
-      \field{sortinit}{A}
-      \field{sortinithash}{d77c7cdd82ff690d4c3ef13216f92f0b}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Science}
-      \field{number}{4489}
-      \field{title}{The Evolution of Cooperation}
-      \field{volume}{211}
-      \field{year}{1981}
-      \field{pages}{1390\bibrangedash 1396}
-      \range{pages}{7}
     \endentry
     \entry{axtell2000agents}{article}{}
       \name{author}{1}{}{%
@@ -394,41 +394,6 @@
       \field{title}{Military Power: Explaining Victory and Defeat in Modern Battle}
       \field{year}{2004}
     \endentry
-    \entry{bousquet2011beyond}{article}{}
-      \name{author}{2}{}{%
-        {{uniquename=0,uniquepart=base,hash=4c3b06564de12473b073e84af3c78138}{%
-           family={Bousquet},
-           familyi={B\bibinitperiod},
-           given={Antoine},
-           giveni={A\bibinitperiod},
-           givenun=0}}%
-        {{uniquename=0,uniquepart=base,hash=c87db3967d05445e9b1d3e5f1517f549}{%
-           family={Curtis},
-           familyi={C\bibinitperiod},
-           given={Simon},
-           giveni={S\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{7d28b4e93ac9e8b4bf6947ff998fc71f}
-      \strng{fullhash}{7d28b4e93ac9e8b4bf6947ff998fc71f}
-      \strng{bibnamehash}{7d28b4e93ac9e8b4bf6947ff998fc71f}
-      \strng{authorbibnamehash}{7d28b4e93ac9e8b4bf6947ff998fc71f}
-      \strng{authornamehash}{7d28b4e93ac9e8b4bf6947ff998fc71f}
-      \strng{authorfullhash}{7d28b4e93ac9e8b4bf6947ff998fc71f}
-      \field{sortinit}{B}
-      \field{sortinithash}{276475738cc058478c1677046f857703}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Cambridge Review of International Affairs}
-      \field{number}{01}
-      \field{title}{Beyond Models and Metaphors: Complexity Theory, Systems Thinking and International Relations}
-      \field{volume}{24}
-      \field{year}{2011}
-      \field{pages}{43\bibrangedash 62}
-      \range{pages}{20}
-    \endentry
     \entry{brooks2008shaping}{book}{}
       \name{author}{1}{}{%
         {{uniquename=0,uniquepart=base,hash=3c4d29d43db656a9e28ca49e127ff771}{%
@@ -483,6 +448,47 @@
       \field{title}{The masks of war: American military styles in strategy and analysis}
       \field{year}{1989}
     \endentry
+    \entry{cappelen1984military}{article}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,uniquepart=base,hash=8ea36c38c86b7597c7246f463643e3c3}{%
+           family={Cappelen},
+           familyi={C\bibinitperiod},
+           given={{\r{A}}dne},
+           giveni={\r{A}\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=abaebaff7c5c6ab8caccfb0ed41896c1}{%
+           family={Gleditsch},
+           familyi={G\bibinitperiod},
+           given={Nils\bibnamedelima Petter},
+           giveni={N\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=23721bf5092ca16e3374ba77f2c8fcf9}{%
+           family={Bjerkholt},
+           familyi={B\bibinitperiod},
+           given={Olav},
+           giveni={O\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{a6d04aa20c41d5d6b5d40323227089c6}
+      \strng{fullhash}{a6d04aa20c41d5d6b5d40323227089c6}
+      \strng{bibnamehash}{a6d04aa20c41d5d6b5d40323227089c6}
+      \strng{authorbibnamehash}{a6d04aa20c41d5d6b5d40323227089c6}
+      \strng{authornamehash}{a6d04aa20c41d5d6b5d40323227089c6}
+      \strng{authorfullhash}{a6d04aa20c41d5d6b5d40323227089c6}
+      \field{sortinit}{C}
+      \field{sortinithash}{963e9d84a3da2344e8833203de5aed05}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Peace Research}
+      \field{number}{4}
+      \field{title}{Military spending and economic growth in the OECD countries}
+      \field{volume}{21}
+      \field{year}{1984}
+      \field{pages}{361\bibrangedash 373}
+      \range{pages}{13}
+    \endentry
     \entry{cederman1997emergent}{book}{}
       \name{author}{1}{}{%
         {{uniquename=0,uniquepart=base,hash=b4c274681a4039c77b32955c93369ac1}{%
@@ -509,70 +515,6 @@
       \field{labeltitlesource}{title}
       \field{title}{Emergent Actors in World Politics: How States and Nations Develop and Dissolve}
       \field{year}{1997}
-    \endentry
-    \entry{cederman2001agent}{article}{}
-      \name{author}{1}{}{%
-        {{uniquename=0,uniquepart=base,hash=b4c274681a4039c77b32955c93369ac1}{%
-           family={Cederman},
-           familyi={C\bibinitperiod},
-           given={Lars-Erik},
-           giveni={L\bibinithyphendelim E\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{b4c274681a4039c77b32955c93369ac1}
-      \strng{fullhash}{b4c274681a4039c77b32955c93369ac1}
-      \strng{bibnamehash}{b4c274681a4039c77b32955c93369ac1}
-      \strng{authorbibnamehash}{b4c274681a4039c77b32955c93369ac1}
-      \strng{authornamehash}{b4c274681a4039c77b32955c93369ac1}
-      \strng{authorfullhash}{b4c274681a4039c77b32955c93369ac1}
-      \field{sortinit}{C}
-      \field{sortinithash}{963e9d84a3da2344e8833203de5aed05}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{The Political Methodologist}
-      \field{number}{1}
-      \field{title}{Agent-based modeling in political science}
-      \field{volume}{10}
-      \field{year}{2001}
-      \field{pages}{16\bibrangedash 22}
-      \range{pages}{7}
-    \endentry
-    \entry{cederman2010growing}{article}{}
-      \name{author}{2}{}{%
-        {{uniquename=0,uniquepart=base,hash=b4c274681a4039c77b32955c93369ac1}{%
-           family={Cederman},
-           familyi={C\bibinitperiod},
-           given={Lars-Erik},
-           giveni={L\bibinithyphendelim E\bibinitperiod},
-           givenun=0}}%
-        {{uniquename=0,uniquepart=base,hash=1f60f9b0a23455af44be98baa626225a}{%
-           family={Girardin},
-           familyi={G\bibinitperiod},
-           given={Luc},
-           giveni={L\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{dffccaf73f213fd7d834dbcfc68b6dc4}
-      \strng{fullhash}{dffccaf73f213fd7d834dbcfc68b6dc4}
-      \strng{bibnamehash}{dffccaf73f213fd7d834dbcfc68b6dc4}
-      \strng{authorbibnamehash}{dffccaf73f213fd7d834dbcfc68b6dc4}
-      \strng{authornamehash}{dffccaf73f213fd7d834dbcfc68b6dc4}
-      \strng{authorfullhash}{dffccaf73f213fd7d834dbcfc68b6dc4}
-      \field{sortinit}{C}
-      \field{sortinithash}{963e9d84a3da2344e8833203de5aed05}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{International Studies Quarterly}
-      \field{number}{1}
-      \field{title}{Growing sovereignty: modeling the shift from indirect to direct rule}
-      \field{volume}{54}
-      \field{year}{2010}
-      \field{pages}{27\bibrangedash 48}
-      \range{pages}{22}
     \endentry
     \entry{cioffi2010mason}{article}{}
       \name{author}{2}{}{%
@@ -753,19 +695,19 @@
     \endentry
     \entry{earnest2008coordination}{article}{}
       \name{author}{1}{}{%
-        {{uniquename=0,uniquepart=base,hash=00debb5dc87bb905669962e240dc1745}{%
+        {{uniquename=0,uniquepart=base,hash=fef45c95fdbcba439d6dc6d34e8f0df3}{%
            family={Earnest},
            familyi={E\bibinitperiod},
-           given={David\bibnamedelima C},
-           giveni={D\bibinitperiod\bibinitdelim C\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
            givenun=0}}%
       }
-      \strng{namehash}{00debb5dc87bb905669962e240dc1745}
-      \strng{fullhash}{00debb5dc87bb905669962e240dc1745}
-      \strng{bibnamehash}{00debb5dc87bb905669962e240dc1745}
-      \strng{authorbibnamehash}{00debb5dc87bb905669962e240dc1745}
-      \strng{authornamehash}{00debb5dc87bb905669962e240dc1745}
-      \strng{authorfullhash}{00debb5dc87bb905669962e240dc1745}
+      \strng{namehash}{fef45c95fdbcba439d6dc6d34e8f0df3}
+      \strng{fullhash}{fef45c95fdbcba439d6dc6d34e8f0df3}
+      \strng{bibnamehash}{fef45c95fdbcba439d6dc6d34e8f0df3}
+      \strng{authorbibnamehash}{fef45c95fdbcba439d6dc6d34e8f0df3}
+      \strng{authornamehash}{fef45c95fdbcba439d6dc6d34e8f0df3}
+      \strng{authorfullhash}{fef45c95fdbcba439d6dc6d34e8f0df3}
       \field{sortinit}{E}
       \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
       \field{extradatescope}{labelyear}
@@ -1094,35 +1036,6 @@
       \field{pages}{115\bibrangedash 126}
       \range{pages}{12}
     \endentry
-    \entry{gunitsky2013complexity}{article}{}
-      \name{author}{1}{}{%
-        {{uniquename=0,uniquepart=base,hash=a900ef782ce9c904e36d3e4fa066fd14}{%
-           family={Gunitsky},
-           familyi={G\bibinitperiod},
-           given={Seva},
-           giveni={S\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{a900ef782ce9c904e36d3e4fa066fd14}
-      \strng{fullhash}{a900ef782ce9c904e36d3e4fa066fd14}
-      \strng{bibnamehash}{a900ef782ce9c904e36d3e4fa066fd14}
-      \strng{authorbibnamehash}{a900ef782ce9c904e36d3e4fa066fd14}
-      \strng{authornamehash}{a900ef782ce9c904e36d3e4fa066fd14}
-      \strng{authorfullhash}{a900ef782ce9c904e36d3e4fa066fd14}
-      \field{sortinit}{G}
-      \field{sortinithash}{5e8d2bf9d38de41b1528bd307546008f}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{International Theory}
-      \field{number}{1}
-      \field{title}{Complexity and Theories of Change in International Politics}
-      \field{volume}{5}
-      \field{year}{2013}
-      \field{pages}{35\bibrangedash 63}
-      \range{pages}{29}
-    \endentry
     \entry{halperin2007bureaucratic}{book}{}
       \name{author}{2}{}{%
         {{uniquename=0,uniquepart=base,hash=6ae6f6a3c5fe1b7c0368732ebe15681a}{%
@@ -1199,33 +1112,6 @@
       \field{year}{2002}
       \field{pages}{111\bibrangedash 131}
       \range{pages}{21}
-    \endentry
-    \entry{harrison2012complexity}{book}{}
-      \name{author}{1}{}{%
-        {{uniquename=0,uniquepart=base,hash=2913a796784b90c2dfc51f167f80ea3d}{%
-           family={Harrison},
-           familyi={H\bibinitperiod},
-           given={Neil},
-           giveni={N\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{publisher}{1}{%
-        {SUNY Press}%
-      }
-      \strng{namehash}{2913a796784b90c2dfc51f167f80ea3d}
-      \strng{fullhash}{2913a796784b90c2dfc51f167f80ea3d}
-      \strng{bibnamehash}{2913a796784b90c2dfc51f167f80ea3d}
-      \strng{authorbibnamehash}{2913a796784b90c2dfc51f167f80ea3d}
-      \strng{authornamehash}{2913a796784b90c2dfc51f167f80ea3d}
-      \strng{authorfullhash}{2913a796784b90c2dfc51f167f80ea3d}
-      \field{sortinit}{H}
-      \field{sortinithash}{5f15a7bc777ad49ff15aa4d2831b1681}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Complexity in World Politics: Concepts and Methods of a New Paradigm}
-      \field{year}{2012}
     \endentry
     \entry{helliwell1994empirical}{article}{}
       \name{author}{1}{}{%
@@ -1309,6 +1195,34 @@
       \field{labeltitlesource}{title}
       \field{title}{System Effects: Complexity in Political and Social Life}
       \field{year}{1998}
+    \endentry
+    \entry{king2010hard}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=e62a3c431989b28a48ea18aa5cfcfbed}{%
+           family={King},
+           familyi={K\bibinitperiod},
+           given={Gary},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {Harvard University}%
+      }
+      \strng{namehash}{e62a3c431989b28a48ea18aa5cfcfbed}
+      \strng{fullhash}{e62a3c431989b28a48ea18aa5cfcfbed}
+      \strng{bibnamehash}{e62a3c431989b28a48ea18aa5cfcfbed}
+      \strng{authorbibnamehash}{e62a3c431989b28a48ea18aa5cfcfbed}
+      \strng{authornamehash}{e62a3c431989b28a48ea18aa5cfcfbed}
+      \strng{authorfullhash}{e62a3c431989b28a48ea18aa5cfcfbed}
+      \field{sortinit}{K}
+      \field{sortinithash}{9fd838a31ba64d981e8f44562bd33f89}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Hard Problems in Social Science Symposium}
+      \field{title}{A hard unsolved problem? Post-treatment bias in big social science questions}
+      \field{year}{2010}
     \endentry
     \entry{levy1988domestic}{article}{}
       \name{author}{1}{}{%
@@ -1589,41 +1503,6 @@
       \field{pages}{1\bibrangedash 24}
       \range{pages}{24}
     \endentry
-    \entry{modelski1999long}{article}{}
-      \name{author}{2}{}{%
-        {{uniquename=0,uniquepart=base,hash=9bd0b8b5c5df7871cfc34f6d9f815afb}{%
-           family={Modelski},
-           familyi={M\bibinitperiod},
-           given={George},
-           giveni={G\bibinitperiod},
-           givenun=0}}%
-        {{uniquename=0,uniquepart=base,hash=731fc2b676de6209c526df614583dd53}{%
-           family={Thompson},
-           familyi={T\bibinitperiod},
-           given={William},
-           giveni={W\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{e324a52c90428360ed87f18c9e5e0c25}
-      \strng{fullhash}{e324a52c90428360ed87f18c9e5e0c25}
-      \strng{bibnamehash}{e324a52c90428360ed87f18c9e5e0c25}
-      \strng{authorbibnamehash}{e324a52c90428360ed87f18c9e5e0c25}
-      \strng{authornamehash}{e324a52c90428360ed87f18c9e5e0c25}
-      \strng{authorfullhash}{e324a52c90428360ed87f18c9e5e0c25}
-      \field{sortinit}{M}
-      \field{sortinithash}{cfd219b90152c06204fab207bc6c7cab}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{International Studies Review}
-      \field{number}{2}
-      \field{title}{The Long and the Short of Global Politics in the Twenty-First Century: An Evolutionary Approach}
-      \field{volume}{1}
-      \field{year}{1999}
-      \field{pages}{110\bibrangedash 140}
-      \range{pages}{31}
-    \endentry
     \entry{murray2011military}{book}{}
       \name{author}{1}{}{%
         {{uniquename=0,uniquepart=base,hash=b37dad8205dbf844b892cb389dae5586}{%
@@ -1782,6 +1661,41 @@
       \field{year}{2005}
       \field{pages}{367\bibrangedash 394}
       \range{pages}{28}
+    \endentry
+    \entry{pilster2012democracies}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=658f3f63b0ba516ac9ef22082108ebfa}{%
+           family={Pilster},
+           familyi={P\bibinitperiod},
+           given={Ulrich},
+           giveni={U\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=fe49ef4696c3795c2bc1eeddf3faff22}{%
+           family={B{\"{o}}hmelt},
+           familyi={B\bibinitperiod},
+           given={Tobias},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{8767ea25ad8587e71c1cfc88cafa86ec}
+      \strng{fullhash}{8767ea25ad8587e71c1cfc88cafa86ec}
+      \strng{bibnamehash}{8767ea25ad8587e71c1cfc88cafa86ec}
+      \strng{authorbibnamehash}{8767ea25ad8587e71c1cfc88cafa86ec}
+      \strng{authornamehash}{8767ea25ad8587e71c1cfc88cafa86ec}
+      \strng{authorfullhash}{8767ea25ad8587e71c1cfc88cafa86ec}
+      \field{sortinit}{P}
+      \field{sortinithash}{8d51b3d5b78d75b54308d706b9bbe285}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Foreign Policy Analysis}
+      \field{number}{4}
+      \field{title}{Do Democracies Engage Less in Coup-Proofing? On the Relationship between Regime Type and Civil--Military Relations 1}
+      \field{volume}{8}
+      \field{year}{2012}
+      \field{pages}{355\bibrangedash 372}
+      \range{pages}{18}
     \endentry
     \entry{pollack2004arabs}{book}{}
       \name{author}{1}{}{%
@@ -2040,6 +1954,46 @@
       \field{title}{Iraq-Bound Troops Confront Rumsfeld Over Lack of Armor}
       \field{year}{2004}
     \endentry
+    \entry{scobell2011chinese}{report}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,uniquepart=base,hash=d3de571ea4757ed98c3f553dc8dd82a8}{%
+           family={Scobell},
+           familyi={S\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=142dc805fc7fa6422b84249f8aaa0600}{%
+           family={Lai},
+           familyi={L\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=cd4faf9a9b2242609db3e36e5b79d849}{%
+           family={Kamphausen},
+           familyi={K\bibinitperiod},
+           given={Roy},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {Army War College}%
+      }
+      \strng{namehash}{c7dae27a0dd8f0b756af381fe83f2555}
+      \strng{fullhash}{c7dae27a0dd8f0b756af381fe83f2555}
+      \strng{bibnamehash}{c7dae27a0dd8f0b756af381fe83f2555}
+      \strng{authorbibnamehash}{c7dae27a0dd8f0b756af381fe83f2555}
+      \strng{authornamehash}{c7dae27a0dd8f0b756af381fe83f2555}
+      \strng{authorfullhash}{c7dae27a0dd8f0b756af381fe83f2555}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Chinese Lessons from Other Peoples' Wars}
+      \field{type}{techreport}
+      \field{year}{2011}
+    \endentry
     \entry{sechser2010army}{article}{}
       \name{author}{2}{}{%
         {{uniquename=0,uniquepart=base,hash=d7e0e1493b1c920614cc6547717b447c}{%
@@ -2210,6 +2164,41 @@
       \field{labeltitlesource}{title}
       \field{title}{Man, the state, and war: A theoretical analysis}
       \field{year}{2001}
+    \endentry
+    \entry{ward1992sizing}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=5bd571537ae2a4e994f43161961eef24}{%
+           family={Ward},
+           familyi={W\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=33a6c36cb3ec1179af1d1ecb8bd2f166}{%
+           family={Davis},
+           familyi={D\bibinitperiod},
+           given={Davi},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{a213851882e7032d5ea8b8cb14c1769a}
+      \strng{fullhash}{a213851882e7032d5ea8b8cb14c1769a}
+      \strng{bibnamehash}{a213851882e7032d5ea8b8cb14c1769a}
+      \strng{authorbibnamehash}{a213851882e7032d5ea8b8cb14c1769a}
+      \strng{authornamehash}{a213851882e7032d5ea8b8cb14c1769a}
+      \strng{authorfullhash}{a213851882e7032d5ea8b8cb14c1769a}
+      \field{sortinit}{W}
+      \field{sortinithash}{ecb89ff85896a47dc313960773ac311d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{American Political Science Review}
+      \field{number}{3}
+      \field{title}{Sizing up the peace dividend: economic growth and military spending in the United States, 1948--1996}
+      \field{volume}{86}
+      \field{year}{1992}
+      \field{pages}{748\bibrangedash 755}
+      \range{pages}{8}
     \endentry
     \entry{weeks2014dictators}{book}{}
       \name{author}{1}{}{%

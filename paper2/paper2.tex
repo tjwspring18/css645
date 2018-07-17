@@ -24,6 +24,7 @@
 	policymakers. This paper makes novel theoretical contributions by
 	re-envisioning mechanization as a complex adaptive system. It implements an
 	agent-based model of military mechanization. The results of this model
+	both confirm that mechanization is a complex adaptive system and
 	challenge the conventional wisdom that mechanization is primarily driven
 	by external factors such as security environment. 
 
@@ -160,9 +161,12 @@ complexity prevents their application, as covered in the following sub-section.
 \subsection{Complex adaptive system}
 
 There is no single universally accepted definition of a complex adaptive system
-\citep{miller2009complex}. However, two core features are
-that the system is non-decomposable, and that the system features cognitive
-agents. The following sections detail how mechanization meets this description. 
+\citep{miller2009complex}. However, some core features are
+that the system is non-decomposable; that the system features autonomous, cognitive
+agents; and that the individual behaviors of these agents aggregate upwards into
+complex system behavior (e.g., stability, chaos, feedback loops, and the like). 
+The following sections detail how mechanization meets the first two parts of
+this description (later sections deal with system behavior). 
 
 \subsubsection{Decomposability}
 
@@ -306,9 +310,7 @@ European militaries. They would have been wholly insufficient to repel a British
 and Ireland would have been better-served to pursue a low-mechanization guerrilla defense strategy, 
 but tanks were seen as a prestigious signifier of a ``real'' professional
 military and hence desirable
-\citep{farrell1998professionalization,farrell2001transnational}. A more
-sophisticated representation of cognition that incorporates such
-learning-from-others is needed.
+\citep{farrell1998professionalization,farrell2001transnational}.
 
 \subsection{The utility of agent-based modeling}
 
@@ -351,10 +353,10 @@ and amenability to complex systems.
 
 \section{Model}
 
-This section of the paper describes the model. It does not use the ODD protocol
-of \citet{grimm2006standard} but covers many of the same points.
+This section of the paper describes research hypotheses and an agent-based
+model used to test them. 
 
-\subsection{Research question and strategy}
+\subsection{Research hypotheses}
 
 I hypothesize that the arguments of \citet{sechser2010army} are incomplete and
 that some omitted variable or set of variables acts as a ``brake'' on 
@@ -371,7 +373,10 @@ higher, then their claimed behavioral rules are incomplete and fail to include
 some ``brake'' on mechanization, matching my hypothesis. Proving exactly what
 that missing variable or set of variables is is outside the scope of this model
 and paper, though it is discussed.
-\subsection{Agents}
+
+\subsection{Model}
+
+\subsubsection{Agents}
 
 There is one agent type: states. Agents exist at a fixed location and do not
 move. The set of agents encompasses all diplomatically-recognized 
@@ -403,7 +408,7 @@ perception of other agents and cognition for changing their own behavior. These
 attributes are discussed in the \textbf{Cognition and Actions} section.
 
 
-\subsection{Environment}
+\subsubsection{Environment}
 
 Agents exist in a spatial environment. Spatiality is represented by neighbor
 relationships. Two states are defined as
@@ -418,7 +423,7 @@ topographical features along the border). As such, this paper's modeling choice
 captures the phenomenon of interest while avoiding the overhead of a full-blown
 GIS implementation coupled with ABM \citep[e.g.][]{harper2002modeling,bennett2006modelling}.
 
-\subsection{Cognition}
+\subsubsection{Cognition}
 
 Agents have global perception of other agents: they can ``see'' the
 mechanization state of all other agents. This modeling choice is reflective of
@@ -501,7 +506,7 @@ based on these factors. It also introduces a stochastic element to the
 model, meaning that each run differs and so multiple runs must be conducted for
 each specification.
 
-\subsection{Time}
+\subsubsection{Time}
 
 The model starts in 1979 and runs in 2-year time increments until 2001. This
 timespan and periodicity reflects data availability: a longer time period and
@@ -538,7 +543,7 @@ a strong effect on the mechanization of of successor states. Designing
 complex and state-specific ``rules of inheritance'' was too much for this
 initial effort but is an area for further development.
 
-\subsection{Output Data, Verification, and Validation}
+\subsubsection{Output Data, Verification, and Validation}
 
 The main model output of interest is data on military mechanization. It is provided for
 every agent and every time-step. These agent-level data also can be aggregated

@@ -1,25 +1,26 @@
-[6] Config.pm:302> INFO - This is Biber 2.10
-[6] Config.pm:305> INFO - Logfile is 'paper2.blg'
-[75] biber:313> INFO - === Sun Jul 15, 2018, 18:15:32
-[127] Biber.pm:371> INFO - Reading 'paper2.bcf'
-[317] Biber.pm:857> INFO - Found 71 citekeys in bib section 0
-[349] Biber.pm:3976> INFO - Processing section 0
-[372] Biber.pm:4136> INFO - Looking for bibtex format file 'paper2.bib' for section 0
-[373] bibtex.pm:1444> INFO - Reading ascii input as UTF-8
-[379] bibtex.pm:1490> INFO - LaTeX decoding ...
-[631] bibtex.pm:1306> INFO - Found BibTeX data source 'paper2.bib'
-[641] Utils.pm:193> WARN - Duplicate entry key: 'mearsheimer2001tragedy' in file 'paper2.bib', skipping ...
-[645] Utils.pm:193> WARN - Duplicate entry key: 'russett1994grasping' in file 'paper2.bib', skipping ...
-[647] Utils.pm:193> WARN - Duplicate entry key: 'epstein1996growing' in file 'paper2.bib', skipping ...
-[744] Utils.pm:193> WARN - month field 'Dec' in entry 'schmitt_2004' is not an integer - this will probably not sort properly.
-[1201] Utils.pm:193> WARN - year field 'forthcoming' in entry 'cow_midb' is not an integer - this will probably not sort properly.
-[1477] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[1478] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[1478] Biber.pm:3804> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
-[1478] Biber.pm:3810> INFO - No sort tailoring available for locale 'en-US'
-[1628] bbl.pm:617> INFO - Writing 'paper2.bbl' with encoding 'ascii'
-[1656] Utils.pm:193> WARN - The entry 'cappelen1984military' has characters which cannot be encoded in 'ascii'. Recoding problematic characters into macros.
-[1667] Utils.pm:193> WARN - The entry 'doucouliagos2008democracy' has characters which cannot be encoded in 'ascii'. Recoding problematic characters into macros.
-[1719] Utils.pm:193> WARN - The entry 'pilster2012democracies' has characters which cannot be encoded in 'ascii'. Recoding problematic characters into macros.
-[1750] bbl.pm:720> INFO - Output to paper2.bbl
-[1750] Biber.pm:110> INFO - WARNINGS: 8
+[0] Config.pm:302> INFO - This is Biber 2.10
+[1] Config.pm:305> INFO - Logfile is 'paper2.blg'
+[67] biber:313> INFO - === Tue Jul 17, 2018, 20:25:19
+[113] Biber.pm:371> INFO - Reading 'paper2.bcf'
+[290] Biber.pm:857> INFO - Found 71 citekeys in bib section 0
+[319] Biber.pm:3976> INFO - Processing section 0
+[340] Biber.pm:4136> INFO - Looking for bibtex format file 'paper2.bib' for section 0
+[341] bibtex.pm:1444> INFO - Reading ascii input as UTF-8
+[347] bibtex.pm:1490> INFO - LaTeX decoding ...
+[589] bibtex.pm:1306> INFO - Found BibTeX data source 'paper2.bib'
+[600] Utils.pm:193> WARN - Duplicate entry key: 'mearsheimer2001tragedy' in file 'paper2.bib', skipping ...
+[603] Utils.pm:193> WARN - Duplicate entry key: 'russett1994grasping' in file 'paper2.bib', skipping ...
+[605] Utils.pm:193> WARN - Duplicate entry key: 'epstein1996growing' in file 'paper2.bib', skipping ...
+[697] Utils.pm:193> WARN - month field 'Dec' in entry 'schmitt_2004' is not an integer - this will probably not sort properly.
+[1098] Utils.pm:193> WARN - year field 'forthcoming' in entry 'cow_midb' is not an integer - this will probably not sort properly.
+[1175] Utils.pm:193> WARN - I didn't find a database entry for 'simon1996artificial' (section 0)
+[1387] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1388] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1388] Biber.pm:3804> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
+[1388] Biber.pm:3810> INFO - No sort tailoring available for locale 'en-US'
+[1542] bbl.pm:617> INFO - Writing 'paper2.bbl' with encoding 'ascii'
+[1571] Utils.pm:193> WARN - The entry 'cappelen1984military' has characters which cannot be encoded in 'ascii'. Recoding problematic characters into macros.
+[1581] Utils.pm:193> WARN - The entry 'doucouliagos2008democracy' has characters which cannot be encoded in 'ascii'. Recoding problematic characters into macros.
+[1627] Utils.pm:193> WARN - The entry 'pilster2012democracies' has characters which cannot be encoded in 'ascii'. Recoding problematic characters into macros.
+[1658] bbl.pm:720> INFO - Output to paper2.bbl
+[1658] Biber.pm:110> INFO - WARNINGS: 9

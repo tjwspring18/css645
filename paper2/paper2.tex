@@ -39,8 +39,8 @@
 This paper is divided into five sections. This \textbf{Introduction} gives
 background on military mechanization. The \textbf{Theory} section rigorously
 develops mechanization as a complex adaptive system best represented by
-agent-based modeling. The \textbf{Model} section presents a hypothesis and
-implements an agent-based model to test that hypothesis.
+agent-based modeling. The \textbf{Model} section presents hypotheses and
+implements an agent-based model to test them.
 \textbf{Results} are shown. Implications are explored in \textbf{Discussion}.
 
 \subsection{Background}
@@ -117,7 +117,7 @@ errors,
 
 with $y_{ij}$ the mechanization level of state $i$ in year $j$ (measured as the 
 ratio of ground combat vehicles to infantry in a state's army) and $x_1 \ldots
-x_j \ldots x_{P}$ covariates hypothesized to be associated with
+x_k \ldots x_{P}$ covariates hypothesized to be associated with
 mechanization. They conclude that, out of the
 potential causes mentioned above, ``choices about
 mechanization are strongly associated with a state's security environment.''
@@ -125,8 +125,7 @@ States that have engaged in conflict with a highly-mechanized adversary and stat
 with highly mechanized neighbors tend to higher mechanization; conversely, states facing
 domestic insurgency or that have lost counter-insurgency wars tend to have lower
 mechanization rates. Their dataset and conclusions have guided further scholarship on military
-mechanization, e.g. \citet{pilster2012democracies}, which mostly follow the same
-statistical approach.
+mechanization \citep[e.g.][]{pilster2012democracies}, 
 
 \section{Theory}
 
@@ -162,8 +161,9 @@ complexity prevents their application, as covered in the following sub-section.
 
 There is no single universally accepted definition of a complex adaptive system
 \citep{miller2009complex}. However, some core features are
-that the system is non-decomposable; that the system features autonomous, cognitive
-agents; and that the individual behaviors of these agents aggregate upwards into
+that the system comprises many constituent parts that interact to form a
+non-decomposable whole; that the system features autonomous, cognitive
+agents; and that the relatively simple interactions of these agents aggregate upwards into
 complex system behavior (e.g., stability, chaos, feedback loops, and the like). 
 The following sections detail how mechanization meets the first two parts of
 this description (later sections deal with system behavior). 
@@ -253,27 +253,30 @@ they are generally mainstream statements in their respective fields.
 
 Figure 2 is the logic diagram resulting from the above. It must be emphasized that we are only scratching the 
 surface of system complexity. For example, Figure 2 does not address the nature of relationships 
-between covariates: linear or non-linear? subject to multi-way
-interactions? necessity and sufficiency distinctions? Moreover, it only includes 
+between covariates: linear or non-linear? Subject to multi-way
+interactions? Necessity vs. sufficiency distinctions? Moreover, it only includes 
 abstract variables and not individual agents (a point addressed in the following
 sub-section). But even as-is, Figure 2 visually conveys the essential point: \textit{the system is
 not tractable to decomposition}. We cannot isolate one component from the
-greater whole.  
+greater whole. Separating cause from effect in such a system is challenging even
+at the most basic conceptual level
+\citep{pearl2009causality}. It also becomes statistically intractable.
 
-This system complexity disallows previously-mentioned statistical techniques
-for correction of selection bias. Both Heckman correction and propensity score
+This system complexity disallows previously-mentioned
+techniques for mitigating selection bias. Both Heckman correction and propensity score
 matching boil down to using covariates to predict (and hence control for) the chances 
 of receiving treatment. For example, we might assess the effect of war on
 mechanization by controlling for the factors that affect propensity for war. 
 But these techniques break down if the confounding variables also directly
 relate to the outcome of interest, or if the direction of causality flows both
-wars. Both are true for mechanization 
+ways. Both are true for mechanization 
 (c.f. Figure 2). This ``post-treatment bias'' \citep{king2010hard} means we need
 some technique other than econometrics to perform causal inference regarding
 mechanization.
 
-We would like to perform ``causal surgery'' \citep{pearl2009causality}, i.e. modify the value at one
-of the nodes and observe the resultant system state. This sort of
+Complex systems theory \citep[ultimately stemming to][]{simon1996artificial}
+offers a way forward. Although we cannot separate the many parts from the whole,
+we would like to modify the value at one of the nodes and observe the resultant system state. This sort of
 experimentation might allow us observe the system's sensitivity (or lack thereof) to changes
 in input. But, as previously covered, one generally cannot conduct
 experimental trials in international relations.  A modeling paradigm that would let us do so is needed.
@@ -292,25 +295,25 @@ the previous statement to be true, then a model of military mechanization must b
 cognitive agents.  Some agent or set of agents perceives the outside
 world; processes that information; and takes action. 
 
-Orthodox studies of mechanization incorporate cognition to some degree. For example,
-\citet{sechser2010army} test for learning: whether states that fail in
-counter-insurgency wars decrease their mechanization as a result of this
-``anti-mechanization lesson.'' This depiction, however, fails to capture 
-key phenomena. 
-
-Human beings learn not only from their own experiences, but also from observing others.
+Moreover, human beings learn not only from their own experiences, but also from observing others.
 State decisionmakers are no exception. For example, the stunning success of
 Coalition precision-guided munitions in the 1991 Gulf War led other states who
 were not direct combatants to reform their own militaries
-\citep{scobell2011chinese}. There is no guarantee that such emulation always
-works out. Consider Ireland: between the 1920s and 1940s, it sought to spend a
+\citep{scobell2011chinese}. There also is no guarantee that such cognition
+follows typical assumptions of bounded rationality. 
+Consider Ireland: between the 1920s and 1940s, it sought to spend a
 large portion of its defense budget on building a small number of
-tanks, which at that time were novel technology being implemented by the leading
-European militaries. They would have been wholly insufficient to repel a British invasion (their ostensible purpose), 
-and Ireland would have been better-served to pursue a low-mechanization guerrilla defense strategy, 
-but tanks were seen as a prestigious signifier of a ``real'' professional
-military and hence desirable
-\citep{farrell1998professionalization,farrell2001transnational}.
+tanks. This was a near-suicidal defense posture, given Ireland's
+conventional weakness relative to the United Kingdom (the main object of Irish
+defense thought). Rationally, Ireland should have pursued a low-mechanization,
+guerrilla defense strategy given their weakness and given that exactly such a
+strategy defeated the British in the 1919-22 war of independence. However,  
+tanks at the time were novel technology being implemented by the leading
+European militaries, and so were seen as a prestigious signifier of a ``real'' professional
+military \citep{farrell1998professionalization,farrell2001transnational}. These examples
+support the larger point that perception and cognition are fundamental to
+understanding mechanization. A modeling framework that explicitly represents these factors
+thus would be useful.
 
 \subsection{The utility of agent-based modeling}
 
@@ -328,8 +331,8 @@ behavior at least as complex as mechanization
 Complex systems and ABM have been used in IR. Many methodology-focused
 works have identified their utility to the field \citep[some prominent examples
 are][]{modelski1990world,jervis1998system,pepinsky2005agents,de2014agent}.
-Although actual usage has somewhat lagged behind theoretical enthusiasm,
-ABM has been used to explore emergent 
+Although actual usage has somewhat lagged behind theoretical
+enthusiasm---a point addressed in more detail below---ABM has been used to explore emergent 
 balance of power \citep{cederman1997emergent}, international negotiation
 \citep{earnest2008coordination}, and international crises and conflict
 \citep{masad2016dissertation}. It is especially popular for studying
@@ -338,43 +341,54 @@ population-centric security phenomena such as terrorism and insurgency
 
 The author's sense is that adoption of ABM in IR has lagged because it is
 regarded as non-empirical. ABM offers no guarantees: just
-because one's model ``works'' (internally consistent, externally plausible) 
-does not mean it is true. Econometrics are the dominant methodological approach 
-in quantitative IR because they seem to offer an objective yardstick for competing hypotheses: 
-does A or B best fit the data? This paper contends that
-epistemological limitations (most importantly, selection bias stemming from
-non-randomization, and system complexity) mean that econometrics do not
-provide reliable statistical inference for certain classes of IR problems, among
-them mechanization \citep[c.f.][for a concurring opinion]{king2010hard}. 
-If neither econometrics nor ABM can offer 
-certitude that a hypothesis is true---as is the case for mechanization---then the latter 
-should be preferred for its advantages in experimentation, transparency, researcher control, 
-and amenability to complex systems.
+because one's model ``works''  does not mean it is true. Econometrics dominate quantitative 
+IR because they offer an objective yardstick for competing hypotheses. 
+This paper has demonstrated that econometrics, although useful in many situation, do not
+provide reliable statistical inference for certain classes of IR problems \citep[c.f.][for a concurring opinion]{king2010hard}. 
+For such cases (and mechanization is one of them), ABM no longer is at the
+disadvantage in causal inference, and has important advantages in experimentation, 
+researcher control, and amenability to complex systems
 
 \section{Model}
 
-This section of the paper describes research hypotheses and an agent-based
-model used to test them. 
+This section of the paper describes the research strategy and specific
+hypotheses, and an agent-based model used to test them. 
 
-\subsection{Research hypotheses}
+\subsection{Research strategy and hypotheses}
 
-I hypothesize that the arguments of \citet{sechser2010army} are incomplete and
-that some omitted variable or set of variables acts as a ``brake'' on 
-mechanization.\footnote{By ``omitted'', I mean that Sechser and Saunders conclude that the variable
+This paper's strategy is not to propose a master
+model of mechanization that incorporates all factors raised in Figure 2 and
+the subsequent discussion. Rather, it is to start with a relatively simple
+agent-based model of military mechanization that ``agentizes'' extant
+traditional scholarship on mechanization. This research strategy is deliberate. 
+The goal is to maintain maximum correspondence with extant scholarship on mechanization 
+so that the results of an agentized version of it can be fairly compared. 
+
+The primary hypothesis is that the arguments of \citet{sechser2010army}, which
+center on security environment, are incomplete; some omitted variable or set of
+variables must act 
+as a ``brake'' on  mechanization.\footnote{By ``omitted'', I mean that Sechser and Saunders conclude that the variable
 is not very important for mechanization, not that they do not address the
-variable at all.} An agent-based model is used to test this hypothesis. In broad
+variable at all.} If mechanization is externally-driven, then one agent raising their
+mechanization causes another agent to do so, causes another agent to do so\ldots
+and so on. This \textit{positive feedback loop} would reverbate through the
+system and drive mechanization upward. Importantly, it acts constantly, whereas
+the ``anti-mechanization lessons'' identified by \citet{sechser2010army} (e.g.,
+defeat in counter-insurgency) are episodic. This paper thus hypothesizes that a
+faithful agentization of this orthodox model will result in too-high
+mechanization levels as compared to the historical record. 
+
+\subsection{Model overview}
+
+An agent-based model is used to test this hypothesis. In broad
 terms, agents (states) are defined to have the cognitive and learning behavior
 implicitly claimed by \citet{sechser2010army}. The model is initialized with
 real-world data from 1979 and allowed to run until 2001. The micro- and
-macro-outcomes are then validated against real-world 2001 data. If
-\citet{sechser2010army} are correct, the model's 2001 outcomes should match
+macro-outcomes then are validated against real-world 2001 data. If
+orthodox theory is correct, the model's 2001 outcomes should match
 real-world 2001 outcomes. If the model mechanization levels in 2001 are much
 higher, then their claimed behavioral rules are incomplete and fail to include
-some ``brake'' on mechanization, matching my hypothesis. Proving exactly what
-that missing variable or set of variables is is outside the scope of this model
-and paper, though it is discussed.
-
-\subsection{Model}
+some ``brake'' on mechanization, matching the hypothesis. 
 
 \subsubsection{Agents}
 
@@ -382,8 +396,7 @@ There is one agent type: states. Agents exist at a fixed location and do not
 move. The set of agents encompasses all diplomatically-recognized 
 states in the world at a particular point in time, minus microstates (defined as
 those with a population less than 750,000). Some other states were excluded; for
-why, see the \textbf{Time}
-section. Figure 1 depicts the set of agents.
+why, see the \textbf{Time} section. Figure 1 depicts the set of agents.
 
 \begin{figure}[h!]
 	\centering
@@ -406,7 +419,6 @@ per the Correlates of War (COW) Militarized Interstate Disputes Database (MIDB)
 enemies. Agents also have attributes that affect their
 perception of other agents and cognition for changing their own behavior. These
 attributes are discussed in the \textbf{Cognition and Actions} section.
-
 
 \subsubsection{Environment}
 
@@ -539,11 +551,12 @@ military equipment in the far west of the country in anticipation of a conflict
 with NATO, and so when the USSR collapsed Ukraine inherited the lion's share, leaving
 little for successor states such as Azerbaijan that were not important military
 districts \citep{roy1993military}. Such inheritance has
-a strong effect on the mechanization of of successor states. Designing
-complex and state-specific ``rules of inheritance'' was too much for this
-initial effort but is an area for further development.
+a strong effect on the mechanization of of successor states. Building a separate
+sub-model for  complex ``rules of inheritance'' is beyond this initial effort.
 
 \subsubsection{Output Data, Verification, and Validation}
+
+MORE ON VERIFICATION
 
 The main model output of interest is data on military mechanization. It is provided for
 every agent and every time-step. These agent-level data also can be aggregated
@@ -621,7 +634,7 @@ with Mexico serving as one example.
 \end{table}
 
 For some agents, however, mechanization levels are extremely high. 
-Mechanization score is a percentage, and so values over 1 do not make sense, 
+Mechanization score is a ratio, and so values over 1 do not make sense, 
 yet some countries end the simulation with mechanization scores over 1. Note
 that one could easily right-bound values at 1, but this was not done in order to
 see what values would be organically converged to.
@@ -676,6 +689,29 @@ state in the top 20.
 	\end{tabular}
 \end{table}
 
+A parameter sweep reveals that this pattern is relatively insensitive
+to input values. That is to say, changing \textit{NeighborsMechSensitivity}, 
+\textit{EnemiesMechSensitivity}, and \textit{LessonSensitivity} alter the
+magnitude of mechanization but not the overall trend of it being most pronounced
+in states with many neighbors, enemies, and neighbor-enemies. For example, Table
+6 shows the effect of lowering \textit{NeighborsMechSensitivity} and 
+\textit{EnemiesMechSensitivity} to values lower than that used in the baseline
+run. Doing so does not change what state ends up as the most mechanized at
+simulation end, suggesting that the fundamental system behavior is unaltered. 
+
+\begin{table}[h]
+	\centering
+	\caption{Parameter sweep}
+	\begin{tabular}{|l r|}
+		\hline
+		\textbf{Parameter Values} & \textbf{Most Mechanized State} \\ 
+		1.0 (baseline) & Israel \\
+		0.75 & Israel \\
+		0.5 & Israel \\
+		0.25 & Israel \\
+		\hline
+	\end{tabular}
+\end{table}
 \section{Discussion}
 
 \subsection{Findings}
@@ -714,32 +750,6 @@ environment-focused view of mechanization does not stand up to agentization.
 Spatiality, inter-agent relations, autonomous agents with cognition, and positive feedback
 loops---all hallmarks of a complex system---drive results that significantly
 diverge from theoretical expectations of the orthodox view.
-
-\subsection{Areas for Improvement}
-
-Having taken a critical view of \citet{sechser2010army}, it only is fair that
-this paper applies that lens to itself. There are two main areas for
-improvement.
-
-One, this model's representation of \citet{sechser2010army} could be tightened
-up, as there currently is divergence between the two. For example, this model
-examines a smaller agent set than their paper. Building ``inheritance''
-processes to allow new states to emerge is desirable. This paper's
-use of statistical coefficients from \citet{sechser2010army} also has some
-methodological problems, a full description of which is omitted here due to
-space constraints. It suffices to say that a better approach would be to conduct
-more extensive parameter sweeps of relevant cognitive factors.
-
-Two, this model could incorporate potential explanations of what the missing
-``brake'' on mechanization might be. Economy and culture could be included in
-the model. Doing so would allow exploration of whether these factors are
-logically consistent and can act as a countervailing factor that controls the
-positive feedback loop of mechanization. It cannot \textit{prove} that these or
-any other factors actually exist in reality, but they can demonstrate how they
-are or are not consistent in a simulated reality.
-
-My hope is that making these changes will make this a publication-quality paper
-capable of serving as one of two required papers for the comprehensive exams.
 
 \newpage
 

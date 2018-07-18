@@ -948,94 +948,6 @@
       \field{title}{Simulation for the Social Scientist}
       \field{year}{2005}
     \endentry
-    \entry{grimm2006standard}{article}{}
-      \true{moreauthor}
-      \true{morelabelname}
-      \name{author}{10}{}{%
-        {{uniquename=0,uniquepart=base,hash=1afed3b8eacb2219efb8bbe1f6581962}{%
-           family={Grimm},
-           familyi={G\bibinitperiod},
-           given={Volker},
-           giveni={V\bibinitperiod},
-           givenun=0}}%
-        {{uniquename=0,uniquepart=base,hash=9384d3112d3d8d7a6daa243142b7d01c}{%
-           family={Berger},
-           familyi={B\bibinitperiod},
-           given={Uta},
-           giveni={U\bibinitperiod},
-           givenun=0}}%
-        {{uniquename=0,uniquepart=base,hash=995f9f8ee0aa73f01614844750eac8c2}{%
-           family={Bastiansen},
-           familyi={B\bibinitperiod},
-           given={Finn},
-           giveni={F\bibinitperiod},
-           givenun=0}}%
-        {{uniquename=0,uniquepart=base,hash=8fb11fb91e321b7bcdcbae06ee54ce0a}{%
-           family={Eliassen},
-           familyi={E\bibinitperiod},
-           given={Sigrunn},
-           giveni={S\bibinitperiod},
-           givenun=0}}%
-        {{uniquename=0,uniquepart=base,hash=7ffaba11f339629ba3d20279ea897357}{%
-           family={Ginot},
-           familyi={G\bibinitperiod},
-           given={Vincent},
-           giveni={V\bibinitperiod},
-           givenun=0}}%
-        {{uniquename=0,uniquepart=base,hash=cebe364b2f95bcb284778ec7095dc684}{%
-           family={Giske},
-           familyi={G\bibinitperiod},
-           given={Jarl},
-           giveni={J\bibinitperiod},
-           givenun=0}}%
-        {{uniquename=0,uniquepart=base,hash=fb679efcf8e3dbdb7411b73b83db1ea3}{%
-           family={Goss-Custard},
-           familyi={G\bibinithyphendelim C\bibinitperiod},
-           given={John},
-           giveni={J\bibinitperiod},
-           givenun=0}}%
-        {{uniquename=0,uniquepart=base,hash=16fd1c53690e29cb0f3c0ee6d9558497}{%
-           family={Grand},
-           familyi={G\bibinitperiod},
-           given={Tamara},
-           giveni={T\bibinitperiod},
-           givenun=0}}%
-        {{uniquename=0,uniquepart=base,hash=6c26100b26d94b37adb8764e5b182898}{%
-           family={Heinz},
-           familyi={H\bibinitperiod},
-           given={Simone\bibnamedelima K},
-           giveni={S\bibinitperiod\bibinitdelim K\bibinitperiod},
-           givenun=0}}%
-        {{uniquename=0,uniquepart=base,hash=ab495b7c316f1c0a596d335857a1d28f}{%
-           family={Huse},
-           familyi={H\bibinitperiod},
-           given={Geir},
-           giveni={G\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{publisher}{1}{%
-        {Elsevier}%
-      }
-      \strng{namehash}{34a4de0c97c67c80ceb4801a22916c07}
-      \strng{fullhash}{1bba0f3f445973ae990338236b311aa3}
-      \strng{bibnamehash}{34a4de0c97c67c80ceb4801a22916c07}
-      \strng{authorbibnamehash}{34a4de0c97c67c80ceb4801a22916c07}
-      \strng{authornamehash}{34a4de0c97c67c80ceb4801a22916c07}
-      \strng{authorfullhash}{1bba0f3f445973ae990338236b311aa3}
-      \field{sortinit}{G}
-      \field{sortinithash}{5e8d2bf9d38de41b1528bd307546008f}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Ecological Modelling}
-      \field{number}{1-2}
-      \field{title}{A Standard Protocol for Describing Individual-Based and Agent-Based Models}
-      \field{volume}{198}
-      \field{year}{2006}
-      \field{pages}{115\bibrangedash 126}
-      \range{pages}{12}
-    \endentry
     \entry{halperin2007bureaucratic}{book}{}
       \name{author}{2}{}{%
         {{uniquename=0,uniquepart=base,hash=6ae6f6a3c5fe1b7c0368732ebe15681a}{%
@@ -2173,19 +2085,19 @@
            given={Michael},
            giveni={M\bibinitperiod},
            givenun=0}}%
-        {{uniquename=0,uniquepart=base,hash=33a6c36cb3ec1179af1d1ecb8bd2f166}{%
+        {{uniquename=0,uniquepart=base,hash=917fe0b0e11b7c3cf80efe811c24a63f}{%
            family={Davis},
            familyi={D\bibinitperiod},
-           given={Davi},
+           given={David},
            giveni={D\bibinitperiod},
            givenun=0}}%
       }
-      \strng{namehash}{a213851882e7032d5ea8b8cb14c1769a}
-      \strng{fullhash}{a213851882e7032d5ea8b8cb14c1769a}
-      \strng{bibnamehash}{a213851882e7032d5ea8b8cb14c1769a}
-      \strng{authorbibnamehash}{a213851882e7032d5ea8b8cb14c1769a}
-      \strng{authornamehash}{a213851882e7032d5ea8b8cb14c1769a}
-      \strng{authorfullhash}{a213851882e7032d5ea8b8cb14c1769a}
+      \strng{namehash}{c16f7e12f63a8de25d80386f8471cdb2}
+      \strng{fullhash}{c16f7e12f63a8de25d80386f8471cdb2}
+      \strng{bibnamehash}{c16f7e12f63a8de25d80386f8471cdb2}
+      \strng{authorbibnamehash}{c16f7e12f63a8de25d80386f8471cdb2}
+      \strng{authornamehash}{c16f7e12f63a8de25d80386f8471cdb2}
+      \strng{authorfullhash}{c16f7e12f63a8de25d80386f8471cdb2}
       \field{sortinit}{W}
       \field{sortinithash}{ecb89ff85896a47dc313960773ac311d}
       \field{extradatescope}{labelyear}
@@ -2348,6 +2260,7 @@
       \field{year}{2000}
     \endentry
   \enddatalist
+  \missing{simon1996artificial}
 \endrefsection
 \endinput
 

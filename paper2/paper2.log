@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.12.24)  15 JUL 2018 18:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.12.24)  17 JUL 2018 20:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -714,18 +714,26 @@ Package biblatex Info: Automatic encoding selection.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'paper2.bbl' found.
- (./paper2.bbl)
+ (./paper2.bbl
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                simon1996artificial
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+)
 Package biblatex Info: Reference section=0 on input line 15.
 Package biblatex Info: Reference segment=0 on input line 15.
  [1
 
-{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
-
+{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+[2] [3]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [4]
-Overfull \hbox (71.43675pt too wide) in paragraph at lines 247--248
+Overfull \hbox (71.43675pt too wide) in paragraph at lines 251--252
  [][] 
  []
 
@@ -733,67 +741,57 @@ Overfull \hbox (71.43675pt too wide) in paragraph at lines 247--248
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [5] [6] [7]
-<map.png, id=43, 6484.225pt x 3493.05pt>
+Overfull \hbox (1.58398pt too wide) in paragraph at lines 383--392
+\OT1/cmr/m/n/10 (states) are de-fined to have the cog-ni-tive and learn-ing be-
+hav-ior im-plic-itly claimed
+ []
+
+[8]
+<map.png, id=46, 6484.225pt x 3493.05pt>
 File: map.png Graphic file (type png)
 <use map.png>
-Package pdftex.def Info: map.png  used on input line 386.
+Package pdftex.def Info: map.png  used on input line 404.
 (pdftex.def)             Requested size: 324.23024pt x 174.66273pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[8] [9 <./map.png>]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[10] [11]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[12]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[13] [14] [15]
-Overfull \hbox (15.76077pt too wide) in paragraph at lines 741--741
+ [9 <./map.png>] [10] [11] [12] [13] [14] [15] [16]
+Overfull \hbox (15.76077pt too wide) in paragraph at lines 756--756
 [][]\OT1/cmr/m/n/10 Bhavnani, Ravi and Hyun Jin Choi (2012). ``Mod-el-ing Civil
  Vi-o-lence in Afghanistan:
  []
 
-[16]
-Overfull \hbox (1.1273pt too wide) in paragraph at lines 741--741
+[17]
+Overfull \hbox (1.1273pt too wide) in paragraph at lines 756--756
 [][]\OT1/cmr/m/n/10 Earnest, David (2008). ``Co-or-di-na-tion in Large Num-bers
 : An Agent-Based Model
  []
 
 
-Overfull \hbox (15.4909pt too wide) in paragraph at lines 741--741
+Overfull \hbox (15.4909pt too wide) in paragraph at lines 756--756
 \OT1/cmr/m/n/10 of In-ter-na-tional Ne-go-ti-a-tions''. In: \OT1/cmr/m/it/10 In
 -ter-na-tional Stud-ies Quar-terly \OT1/cmr/m/n/10 52.2, pp. 363{
  []
 
-[17]
-Overfull \hbox (5.81502pt too wide) in paragraph at lines 741--741
+[18]
+Overfull \hbox (5.81502pt too wide) in paragraph at lines 756--756
 \OT1/cmr/m/n/10 Coup-Proofing? On the Re-la-tion-ship be-tween Regime Type and 
 Civil--Military
  []
 
-[18]
-Overfull \hbox (2.84906pt too wide) in paragraph at lines 741--741
+[19]
+Overfull \hbox (2.84906pt too wide) in paragraph at lines 756--756
 [][]\OT1/cmr/m/n/10 Waltz, Ken-neth (2001). \OT1/cmr/m/it/10 Man, the state, an
 d war: A the-o-ret-i-cal anal-y-sis\OT1/cmr/m/n/10 . Columbia
  []
 
-[19] [20] (./paper2.aux)
+[20] [21] (./paper2.aux)
 Package logreq Info: Writing requests to 'paper2.run.xml'.
 \openout1 = `paper2.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 18948 strings out of 494427
- 372471 string characters out of 6167361
- 749453 words of memory out of 5000000
- 22019 multiletter control sequences out of 15000+600000
+ 18942 strings out of 494427
+ 372326 string characters out of 6167361
+ 748342 words of memory out of 5000000
+ 22013 multiletter control sequences out of 15000+600000
  9976 words of font info for 36 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
  55i,10n,54p,822b,1409s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -813,10 +811,10 @@ ve/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/
 7/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2017/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2017/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on paper2.pdf (20 pages, 1246606 bytes).
+Output written on paper2.pdf (21 pages, 1248767 bytes).
 PDF statistics:
- 139 PDF objects out of 1000 (max. 8388607)
- 98 compressed objects within 1 object stream
+ 142 PDF objects out of 1000 (max. 8388607)
+ 100 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  18 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,12 +1,12 @@
 # Fdb version 3
-["biber paper2"] 1531873518 "paper2.bcf" "paper2.bbl" "paper2" 1531873554
+["biber paper2"] 1531963692 "paper2.bcf" "paper2.bbl" "paper2" 1531963901
   "ascii input as UTF-8" 0 -1 0 ""
-  "paper2.bcf" 1531873554 93888 0f16fdb899b0cfea8c02380c0d744b21 ""
-  "paper2.bib" 1531869106 21131 916974585c59ccd7c6b3e69ee04b6fcd ""
+  "paper2.bcf" 1531963901 93696 fb23f70fe5a49de453b274400d15c343 ""
+  "paper2.bib" 1531963688 21056 07e9855a361d194c2b80d256dee81aae ""
   (generated)
-  "paper2.blg"
   "paper2.bbl"
-["pdflatex"] 1531873543 "paper2.tex" "paper2.pdf" "paper2" 1531873554
+  "paper2.blg"
+["pdflatex"] 1531963890 "paper2.tex" "paper2.pdf" "paper2" 1531963901
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1480098698 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1480098698 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1480098701 1328 c834bbb027764024c09d3d2bf908b5f0 ""
@@ -152,13 +152,13 @@
   "/usr/local/texlive/2017/texmf-var/web2c/pdftex/pdflatex.fmt" 1514125355 2589344 e3e8f289402fb761e5a9dc94a585dc77 ""
   "/usr/local/texlive/2017/texmf.cnf" 1514125340 455 5b996dcaa0eb4ef14a83b026bc0a008c ""
   "map.png" 1526172837 1566957 b3ebae88356965a89ceff34d2c9f8164 ""
-  "paper2.aux" 1531873554 19566 43af23190d002f2ca8f15336ebed7500 ""
-  "paper2.bbl" 1531873521 93006 8b7ee17422473813d135169f14a5e285 "biber paper2"
-  "paper2.run.xml" 1531873554 2355 24d0c4828c081d8bb5730401452740f6 ""
-  "paper2.tex" 1531873505 44301 2ea38264a8d3ec191956dc790b6a1886 ""
+  "paper2.aux" 1531963900 19491 5ce46b374c7ff7ea317c4c4749e953f7 ""
+  "paper2.bbl" 1531963696 91774 9328fcdeed30ee3ac77e2db2d59cc995 "biber paper2"
+  "paper2.run.xml" 1531963901 2355 24d0c4828c081d8bb5730401452740f6 ""
+  "paper2.tex" 1531963877 42235 112143211e076c0ebd8622bb25084c10 ""
   (generated)
-  "paper2.run.xml"
-  "paper2.log"
-  "paper2.aux"
   "paper2.bcf"
+  "paper2.run.xml"
+  "paper2.aux"
   "paper2.pdf"
+  "paper2.log"

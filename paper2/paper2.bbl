@@ -48,7 +48,7 @@
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Policy Modeling}
       \field{number}{6-7}
-      \field{title}{Government expenditures, military spending and economic growth: causality evidence from Egypt, Israel, and Syria}
+      \field{title}{Government Expenditures, Military Spending and Economic Growth: Causality Evidence from Egypt, Israel, and Syria}
       \field{volume}{25}
       \field{year}{2003}
       \field{pages}{567\bibrangedash 583}
@@ -155,7 +155,7 @@
       \field{labeltitlesource}{title}
       \field{journaltitle}{American Economic Review}
       \field{number}{5}
-      \field{title}{Vouchers for private schooling in Colombia: Evidence from a randomized natural experiment}
+      \field{title}{Vouchers for Private Schooling in Colombia: Evidence From a Randomized Natural Experiment}
       \field{volume}{92}
       \field{year}{2002}
       \field{pages}{1535\bibrangedash 1558}
@@ -188,7 +188,7 @@
       \field{title}{The Complexity of Cooperation: Agent-based Models of Competition and Collaboration}
       \field{year}{1997}
     \endentry
-    \entry{axtell2000agents}{article}{}
+    \entry{axtell2000agents}{report}{}
       \name{author}{1}{}{%
         {{uniquename=0,uniquepart=base,hash=72317533179c1028e7345021728f7612}{%
            family={Axtell},
@@ -196,6 +196,9 @@
            given={Robert},
            giveni={R\bibinitperiod},
            givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Brookings}%
       }
       \strng{namehash}{72317533179c1028e7345021728f7612}
       \strng{fullhash}{72317533179c1028e7345021728f7612}
@@ -209,7 +212,8 @@
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Why agents?: on the varied motivations for agent computing in the social sciences}
+      \field{title}{Why Agents?: On the Varied Motivations for Agent Computing in the Social Sciences}
+      \field{type}{techreport}
       \field{year}{2000}
     \endentry
     \entry{barro1996democracy}{article}{}
@@ -233,9 +237,9 @@
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of economic growth}
+      \field{journaltitle}{Journal of Economic Growth}
       \field{number}{1}
-      \field{title}{Democracy and growth}
+      \field{title}{Democracy and Growth}
       \field{volume}{1}
       \field{year}{1996}
       \field{pages}{1\bibrangedash 27}
@@ -445,7 +449,7 @@
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{The masks of war: American military styles in strategy and analysis}
+      \field{title}{The Masks of War: American Military Styles in Strategy and Analysis}
       \field{year}{1989}
     \endentry
     \entry{cappelen1984military}{article}{}
@@ -483,7 +487,7 @@
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Peace Research}
       \field{number}{4}
-      \field{title}{Military spending and economic growth in the OECD countries}
+      \field{title}{Military Spending and Economic Growth in the OECD Countries}
       \field{volume}{21}
       \field{year}{1984}
       \field{pages}{361\bibrangedash 373}
@@ -579,7 +583,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Annual Review of Political Science}
-      \field{title}{Agent-based models}
+      \field{title}{Agent-Based Models}
       \field{volume}{17}
       \field{year}{2014}
       \field{pages}{1\bibrangedash 20}
@@ -600,9 +604,6 @@
            giveni={R\bibinitperiod},
            givenun=0}}%
       }
-      \list{publisher}{1}{%
-        {Cambridge University Press}%
-      }
       \strng{namehash}{b079d6c9b085793e1990715bf018a28e}
       \strng{fullhash}{b079d6c9b085793e1990715bf018a28e}
       \strng{bibnamehash}{b079d6c9b085793e1990715bf018a28e}
@@ -617,7 +618,7 @@
       \field{labeltitlesource}{title}
       \field{journaltitle}{American Political Science Review}
       \field{number}{4}
-      \field{title}{War and the survival of political leaders: A comparative study of regime types and political accountability}
+      \field{title}{War and the Survival of Political Leaders: A Comparative Study of Regime Types and Political Accountability}
       \field{volume}{89}
       \field{year}{1995}
       \field{pages}{841\bibrangedash 855}
@@ -652,7 +653,7 @@
       \field{labeltitlesource}{title}
       \field{journaltitle}{American Journal of Political Science}
       \field{number}{1}
-      \field{title}{Democracy and economic growth: a meta-analysis}
+      \field{title}{Democracy and Economic Growth: A Meta-Analysis}
       \field{volume}{52}
       \field{year}{2008}
       \field{pages}{61\bibrangedash 83}
@@ -687,7 +688,7 @@
       \field{labeltitlesource}{title}
       \field{journaltitle}{International Security}
       \field{number}{4}
-      \field{title}{Forced to be free?: Why foreign-imposed regime change rarely leads to democratization}
+      \field{title}{Forced to be Free?: Why Foreign-Imposed Regime Change Rarely Leads to Democratization}
       \field{volume}{37}
       \field{year}{2013}
       \field{pages}{90\bibrangedash 131}
@@ -860,9 +861,6 @@
            giveni={J\bibinitperiod},
            givenun=0}}%
       }
-      \list{publisher}{1}{%
-        {Taylor \& Francis}%
-      }
       \strng{namehash}{a6ecf02076b78fe244ff77a7edef32da}
       \strng{fullhash}{a6ecf02076b78fe244ff77a7edef32da}
       \strng{bibnamehash}{a6ecf02076b78fe244ff77a7edef32da}
@@ -877,7 +875,7 @@
       \field{labeltitlesource}{title}
       \field{journaltitle}{International Interactions}
       \field{number}{1}
-      \field{title}{Selection effects and deterrence}
+      \field{title}{Selection Effects and Deterrence}
       \field{volume}{28}
       \field{year}{2002}
       \field{pages}{5\bibrangedash 29}
@@ -978,7 +976,7 @@
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Bureaucratic politics and foreign policy}
+      \field{title}{Bureaucratic Politics and Foreign Policy}
       \field{year}{2007}
     \endentry
     \entry{harper2002modeling}{article}{}
@@ -1046,9 +1044,9 @@
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{British journal of political science}
+      \field{journaltitle}{British Journal of Political Science}
       \field{number}{2}
-      \field{title}{Empirical linkages between democracy and economic growth}
+      \field{title}{Empirical Linkages Between Democracy and Economic Growth}
       \field{volume}{24}
       \field{year}{1994}
       \field{pages}{225\bibrangedash 248}
@@ -1133,7 +1131,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Hard Problems in Social Science Symposium}
-      \field{title}{A hard unsolved problem? Post-treatment bias in big social science questions}
+      \field{title}{A Hard Unsolved Problem? Post-Treatment Bias in Big Social Science Questions}
       \field{year}{2010}
     \endentry
     \entry{levy1988domestic}{article}{}
@@ -1159,7 +1157,7 @@
       \field{labeltitlesource}{title}
       \field{journaltitle}{The Journal of Interdisciplinary History}
       \field{number}{4}
-      \field{title}{Domestic politics and war}
+      \field{title}{Domestic Politics and War}
       \field{volume}{18}
       \field{year}{1988}
       \field{pages}{653\bibrangedash 673}
@@ -1200,7 +1198,7 @@
       \field{labeltitlesource}{title}
       \field{journaltitle}{International Organization}
       \field{number}{4}
-      \field{title}{Ensuring peace: Foreign-imposed regime change and postwar peace duration, 1914--2001}
+      \field{title}{Ensuring peace: Foreign-Imposed Regime Change and Postwar Peace Duration, 1914--2001}
       \field{volume}{62}
       \field{year}{2008}
       \field{pages}{717\bibrangedash 736}
@@ -1528,7 +1526,7 @@
            givenun=0}}%
       }
       \list{publisher}{1}{%
-        {Cambridge university press}%
+        {Cambridge University Press}%
       }
       \strng{namehash}{809f695b398afbb54b544c49e8d1bbbb}
       \strng{fullhash}{809f695b398afbb54b544c49e8d1bbbb}
@@ -1660,7 +1658,7 @@
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{The sources of military doctrine: France, Britain, and Germany between the world wars}
+      \field{title}{The Sources of Military Doctrine: France, Britain, and Germany Between the World Wars}
       \field{year}{1986}
     \endentry
     \entry{quinlivan1999coup}{article}{}
@@ -1737,9 +1735,6 @@
            giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod},
            givenun=0}}%
       }
-      \list{publisher}{1}{%
-        {Annual Reviews}%
-      }
       \strng{namehash}{c2ab1a921104de2c2dc232d6b9dce11d}
       \strng{fullhash}{c2ab1a921104de2c2dc232d6b9dce11d}
       \strng{bibnamehash}{c2ab1a921104de2c2dc232d6b9dce11d}
@@ -1752,8 +1747,8 @@
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Annu. Rev. Polit. Sci.}
-      \field{title}{Economic development and democracy}
+      \field{journaltitle}{Annual Review of Political Science}
+      \field{title}{Economic Development and Democracy}
       \field{volume}{9}
       \field{year}{2006}
       \field{pages}{503\bibrangedash 527}
@@ -1769,7 +1764,7 @@
            givenun=0}}%
       }
       \list{publisher}{1}{%
-        {Princeton university press}%
+        {Princeton University Press}%
       }
       \strng{namehash}{353296f408c957fabebeb9ea742faa2a}
       \strng{fullhash}{353296f408c957fabebeb9ea742faa2a}
@@ -1783,62 +1778,8 @@
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Grasping the democratic peace: Principles for a post-Cold War world}
+      \field{title}{Grasping the Democratic Peace: Principles for a Post-Cold War World}
       \field{year}{1994}
-    \endentry
-    \entry{schelling1960strategy}{book}{}
-      \name{author}{1}{}{%
-        {{uniquename=0,uniquepart=base,hash=8a5ff3fc3a49e5bab380e2ddabc8b9d4}{%
-           family={Schelling},
-           familyi={S\bibinitperiod},
-           given={Thomas},
-           giveni={T\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{publisher}{1}{%
-        {Harvard University Press}%
-      }
-      \strng{namehash}{8a5ff3fc3a49e5bab380e2ddabc8b9d4}
-      \strng{fullhash}{8a5ff3fc3a49e5bab380e2ddabc8b9d4}
-      \strng{bibnamehash}{8a5ff3fc3a49e5bab380e2ddabc8b9d4}
-      \strng{authorbibnamehash}{8a5ff3fc3a49e5bab380e2ddabc8b9d4}
-      \strng{authornamehash}{8a5ff3fc3a49e5bab380e2ddabc8b9d4}
-      \strng{authorfullhash}{8a5ff3fc3a49e5bab380e2ddabc8b9d4}
-      \field{sortinit}{S}
-      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{The Strategy of Conflict}
-      \field{year}{1960}
-    \endentry
-    \entry{schelling2006micromotives}{book}{}
-      \name{author}{1}{}{%
-        {{uniquename=0,uniquepart=base,hash=8a5ff3fc3a49e5bab380e2ddabc8b9d4}{%
-           family={Schelling},
-           familyi={S\bibinitperiod},
-           given={Thomas},
-           giveni={T\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{publisher}{1}{%
-        {WW Norton \& Company}%
-      }
-      \strng{namehash}{8a5ff3fc3a49e5bab380e2ddabc8b9d4}
-      \strng{fullhash}{8a5ff3fc3a49e5bab380e2ddabc8b9d4}
-      \strng{bibnamehash}{8a5ff3fc3a49e5bab380e2ddabc8b9d4}
-      \strng{authorbibnamehash}{8a5ff3fc3a49e5bab380e2ddabc8b9d4}
-      \strng{authornamehash}{8a5ff3fc3a49e5bab380e2ddabc8b9d4}
-      \strng{authorfullhash}{8a5ff3fc3a49e5bab380e2ddabc8b9d4}
-      \field{sortinit}{S}
-      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Micromotives and Macrobehavior}
-      \field{year}{2006}
     \endentry
     \entry{schmitt_2004}{article}{}
       \name{author}{1}{}{%
@@ -1943,6 +1884,33 @@
       \field{year}{2010}
       \field{pages}{481\bibrangedash 511}
       \range{pages}{31}
+    \endentry
+    \entry{simon1996sciences}{book}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=80bd7010b965c112afc55f6699003232}{%
+           family={Simon},
+           familyi={S\bibinitperiod},
+           given={Herbert},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {MIT Press}%
+      }
+      \strng{namehash}{80bd7010b965c112afc55f6699003232}
+      \strng{fullhash}{80bd7010b965c112afc55f6699003232}
+      \strng{bibnamehash}{80bd7010b965c112afc55f6699003232}
+      \strng{authorbibnamehash}{80bd7010b965c112afc55f6699003232}
+      \strng{authornamehash}{80bd7010b965c112afc55f6699003232}
+      \strng{authorfullhash}{80bd7010b965c112afc55f6699003232}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The Sciences of the Artificial}
+      \field{year}{1996}
     \endentry
     \entry{cow_contiguity}{article}{}
       \name{author}{4}{}{%
@@ -2074,7 +2042,7 @@
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Man, the state, and war: A theoretical analysis}
+      \field{title}{Man, the State, and War: A Theoretical Analysis}
       \field{year}{2001}
     \endentry
     \entry{ward1992sizing}{article}{}
@@ -2106,7 +2074,7 @@
       \field{labeltitlesource}{title}
       \field{journaltitle}{American Political Science Review}
       \field{number}{3}
-      \field{title}{Sizing up the peace dividend: economic growth and military spending in the United States, 1948--1996}
+      \field{title}{Sizing Up the Peace Dividend: Economic Growth and Military Spending in the United States, 1948--1996}
       \field{volume}{86}
       \field{year}{1992}
       \field{pages}{748\bibrangedash 755}
@@ -2136,7 +2104,7 @@
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Dictators at war and peace}
+      \field{title}{Dictators at War and Peace}
       \field{year}{2014}
     \endentry
     \entry{weidmann2013violence}{article}{}
@@ -2195,9 +2163,9 @@
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{International organization}
+      \field{journaltitle}{International Organization}
       \field{number}{2}
-      \field{title}{Anarchy is what states make of it: the social construction of power politics}
+      \field{title}{Anarchy is What States Make of It: the Social Construction of Power Politics}
       \field{volume}{46}
       \field{year}{1992}
       \field{pages}{391\bibrangedash 425}
@@ -2226,7 +2194,7 @@
       \field{labeltitlesource}{title}
       \field{journaltitle}{International Interactions}
       \field{number}{1}
-      \field{title}{Absolute and limited war: The possibility of foreign-imposed regime change}
+      \field{title}{Absolute and Limited war: The Possibility of Foreign-Imposed Regime Change}
       \field{volume}{22}
       \field{year}{1996}
       \field{pages}{67\bibrangedash 88}
@@ -2260,7 +2228,6 @@
       \field{year}{2000}
     \endentry
   \enddatalist
-  \missing{simon1996artificial}
 \endrefsection
 \endinput
 

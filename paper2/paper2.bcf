@@ -1975,7 +1975,7 @@
     <bcf:citekey order="30">abu2003government</bcf:citekey>
     <bcf:citekey order="31">pearl2009causality</bcf:citekey>
     <bcf:citekey order="32">king2010hard</bcf:citekey>
-    <bcf:citekey order="33">simon1996artificial</bcf:citekey>
+    <bcf:citekey order="33">simon1996sciences</bcf:citekey>
     <bcf:citekey order="34">scobell2011chinese</bcf:citekey>
     <bcf:citekey order="35">farrell1998professionalization</bcf:citekey>
     <bcf:citekey order="35">farrell2001transnational</bcf:citekey>
@@ -2013,9 +2013,6 @@
     <bcf:citekey order="60">epstein2002modeling</bcf:citekey>
     <bcf:citekey order="61">axelrod1997complexity</bcf:citekey>
     <bcf:citekey order="62">sechser2010army</bcf:citekey>
-    <bcf:citekey order="63">sechser2010army</bcf:citekey>
-    <bcf:citekey order="64">schelling1960strategy</bcf:citekey>
-    <bcf:citekey order="64">schelling2006micromotives</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">

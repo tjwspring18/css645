@@ -556,18 +556,33 @@ sub-model for  complex ``rules of inheritance'' is beyond this initial effort.
 
 \subsubsection{Output Data, Verification, and Validation}
 
-MORE ON VERIFICATION
-
 The main model output of interest is data on military mechanization. It is provided for
 every agent and every time-step. These agent-level data also can be aggregated
-into system-level measures of military mechanization. Per the research design,
-the intent is to compare the model output to what actually occurred. If the
-model produces military mechanization levels much higher than reality, it means
-that Sechser and Saunder's findings do not stand up to agentization and there is
-some missing ``brake'' on military mechanization. Note that this research
-strategy has validation (comparison of model output to empirical data) at its
-core and so no separate validation is needed. Verification that the model is
-doing what it is intended was accomplished through manual inspection.
+into system-level measures of military mechanization. 
+
+Verification--—i.e., making sure that the model does what it is intended to
+do---is a relative activity, not absolute. It is intended to increase confidence in the correctness
+of the model, not to prove that it is perfect \citep{robinson1997simulation}.
+During model development, the model was configured for verbose run-time output. Manual
+inspection of this output confirmed that the model was working as intended. For
+example, output of each actor's \textit{Enemies} at each timestep allowed
+confirmation that the actor was updating its perception in response to scripted
+international conflict in line with the historical record.
+
+Validation---i.e., assessing the correspondence between the model and empirical
+data---is central to the research strategy. The National Mechanization Index
+(NMI) compiled by \citet{sechser2010army} provides empirical data on
+mechanization at the country-year level between 1979 and 2001. In the following
+\textbf{Results} section, model output is compared to this data in
+order to test the hypothesis that the orthodox view of mechanization does
+not stand up to agentization. Because the
+model and empirical data are at the country-year level, validation can take
+place at both the micro-level (i.e., individual state-agents) and at the
+macro-level (i.e., the aggregate mechanization levels of the whole international
+system); and, validation is longitudinal rather than static. 
+Thus, this paper pursues Level 3 validation in the taxonomy of
+\citet{axtell1994understanding}: ``cross-sectional and longitudinal analysis of
+the agent population.''
 
 \section{Results}
 
@@ -634,7 +649,8 @@ with Mexico serving as one example.
 \end{table}
 
 For some agents, however, mechanization levels are extremely high. 
-Mechanization score is a ratio, and so values over 1 do not make sense, 
+Mechanization score is a ratio, and so values over 1 do not make sense in
+context, 
 yet some countries end the simulation with mechanization scores over 1. Note
 that one could easily right-bound values at 1, but this was not done in order to
 see what values would be organically converged to.
@@ -716,11 +732,11 @@ simulation end, suggesting that the fundamental system behavior is unaltered.
 
 \subsection{Findings}
 
-BEEF UP THIS SECTION
+BEEF THIS UP AND YOU'RE DONE
 
-Two conclusions should be drawn. One, the model results in much higher
-system-level mechanization than occurred in reality. Two, this higher
-mechanization is not evenly distributed across agents; rather, a small number of
+The model results in much higher
+system-level mechanization than occurred in reality. This higher
+mechanization is not evenly distributed across agents. Rather, a small number of
 agents with many enemies and that all border each other become outliers and
 hence drive the global average far upward. The explanation for both phenomena
 lies in a positive feedback loop. Enemies and neighbors adjust their
@@ -728,8 +744,7 @@ mechanization scores in response to each other; hence, a geographic cluster of
 enemies (e.g., the Middle East or Cold War-era Europe) will rapidly increase their
 mechanization.
 
-Three, because this model is a
-faithful representation of the factors that \citet{sechser2010army} claim are
+Because this model is a faithful representation of the factors that \citet{sechser2010army} claim are
 most important for mechanization, that model output fails to match reality
 indicates that their claimed model is incomplete. There must be some ``brake''
 on mechanization; put differently, some countervailing factor(s) must mitigate the

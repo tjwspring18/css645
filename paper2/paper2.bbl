@@ -216,6 +216,37 @@
       \field{type}{techreport}
       \field{year}{2000}
     \endentry
+    \entry{axtell1994understanding}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=72317533179c1028e7345021728f7612}{%
+           family={Axtell},
+           familyi={A\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=3fb07930d3a9751e5f04e8dc4e47d375}{%
+           family={Epstein},
+           familyi={E\bibinitperiod},
+           given={Joshua},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{c61c7e9858841641ad8adc35dab0b97b}
+      \strng{fullhash}{c61c7e9858841641ad8adc35dab0b97b}
+      \strng{bibnamehash}{c61c7e9858841641ad8adc35dab0b97b}
+      \strng{authorbibnamehash}{c61c7e9858841641ad8adc35dab0b97b}
+      \strng{authornamehash}{c61c7e9858841641ad8adc35dab0b97b}
+      \strng{authorfullhash}{c61c7e9858841641ad8adc35dab0b97b}
+      \field{sortinit}{A}
+      \field{sortinithash}{d77c7cdd82ff690d4c3ef13216f92f0b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Bulletin of the Santa Fe Institute}
+      \field{title}{Agent-Based Modeling: Understanding Our Creations}
+      \field{year}{1994}
+    \endentry
     \entry{barro1996democracy}{article}{}
       \name{author}{1}{}{%
         {{uniquename=0,uniquepart=base,hash=c117f919d8bb809c17b8781eecf89fa3}{%
@@ -1728,12 +1759,12 @@
     \endentry
     \entry{robinson2006economic}{article}{}
       \name{author}{1}{}{%
-        {{uniquename=0,uniquepart=base,hash=c2ab1a921104de2c2dc232d6b9dce11d}{%
+        {{uniquename=1,uniquepart=given,hash=c2ab1a921104de2c2dc232d6b9dce11d}{%
            family={Robinson},
            familyi={R\bibinitperiod},
            given={James\bibnamedelima A},
            giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod},
-           givenun=0}}%
+           givenun=1}}%
       }
       \strng{namehash}{c2ab1a921104de2c2dc232d6b9dce11d}
       \strng{fullhash}{c2ab1a921104de2c2dc232d6b9dce11d}
@@ -1753,6 +1784,36 @@
       \field{year}{2006}
       \field{pages}{503\bibrangedash 527}
       \range{pages}{25}
+    \endentry
+    \entry{robinson1997simulation}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{uniquename=1,uniquepart=given,hash=90fa1029c52f5ea6bd1a8937ac5a4175}{%
+           family={Robinson},
+           familyi={R\bibinitperiod},
+           given={Stewart},
+           giveni={S\bibinitperiod},
+           givenun=1}}%
+      }
+      \list{organization}{1}{%
+        {IEEE Computer Society}%
+      }
+      \strng{namehash}{90fa1029c52f5ea6bd1a8937ac5a4175}
+      \strng{fullhash}{90fa1029c52f5ea6bd1a8937ac5a4175}
+      \strng{bibnamehash}{90fa1029c52f5ea6bd1a8937ac5a4175}
+      \strng{authorbibnamehash}{90fa1029c52f5ea6bd1a8937ac5a4175}
+      \strng{authornamehash}{90fa1029c52f5ea6bd1a8937ac5a4175}
+      \strng{authorfullhash}{90fa1029c52f5ea6bd1a8937ac5a4175}
+      \field{sortinit}{R}
+      \field{sortinithash}{da6b42bd3ab22fee61abed031ee405f7}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 29th Conference on Winter Simulation}
+      \field{title}{Simulation Model Verification and Validation: Increasing the Users' Confidence}
+      \field{year}{1997}
+      \field{pages}{53\bibrangedash 59}
+      \range{pages}{7}
     \endentry
     \entry{russett1994grasping}{book}{}
       \name{author}{1}{}{%

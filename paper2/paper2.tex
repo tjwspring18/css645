@@ -732,43 +732,59 @@ simulation end, suggesting that the fundamental system behavior is unaltered.
 
 \subsection{Findings}
 
-BEEF THIS UP AND YOU'RE DONE
-
-The model results in much higher
-system-level mechanization than occurred in reality. This higher
+The model results in much higher system-level mechanization than occurred in reality. This higher
 mechanization is not evenly distributed across agents. Rather, a small number of
 agents with many enemies and that all border each other become outliers and
 hence drive the global average far upward. The explanation for both phenomena
 lies in a positive feedback loop. Enemies and neighbors adjust their
 mechanization scores in response to each other; hence, a geographic cluster of
-enemies (e.g., the Middle East or Cold War-era Europe) will rapidly increase their
-mechanization.
+enemies (e.g., the Middle East or Cold War-era Europe) will rapidly increase their mechanization
+and drive system-level mechanization upwards. Modeled sources of anti-mechanization (e.g.,
+defeat in counter-insurgency) are insufficient to hold mechanization to historical levels.
 
-Because this model is a faithful representation of the factors that \citet{sechser2010army} claim are
-most important for mechanization, that model output fails to match reality
-indicates that their claimed model is incomplete. There must be some ``brake''
-on mechanization; put differently, some countervailing factor(s) must mitigate the
-effect of the positive feedback loop identified above. This model cannot
-conclusively identify what that ``brake'' is. The most plausible candidates are
-factors examined by \citet{sechser2010army} and deemed statistically
-insignificant such as regime type and economy, and factors not examined by
-\citet{sechser2010army} at all such as culture.
+Because this model is a faithful representation of the factors that the orthodox
+literature claim are most important for mechanization, that model output fails to match reality
+indicates that the orthodox view of mechanization is incomplete. It must not be
+near-solely driven by external security factors. There must be some additional ``brake''
+on mechanization. Put differently, some countervailing factor(s) must mitigate the
+effect of the positive feedback loop identified above. This model cannot conclusively 
+identify what that ``brake'' is, but preliminary extensions to the model provide
+some insight, as described in the \textbf{Future Research} section. 
 
-This paper is a novel contribution to the literature. Although agent-based
-models have found traction in the study of grievance, insurgency, and
-other population-centric security phenomena \citep[e.g.][]{epstein2002modeling},
-they quite rarely are used to model international relations and state-centric security
-phenomena despite some early work on this front
-\citep[see][]{,axelrod1997complexity}. 
-This paper's agentization of an orthodox security
-studies model thus is novel in method. Its findings also are important. They
-show that they show a solely ``external'', security
-environment-focused view of mechanization does not stand up to agentization.
-Spatiality, inter-agent relations, autonomous agents with cognition, and positive feedback
-loops---all hallmarks of a complex system---drive results that significantly
-diverge from theoretical expectations of the orthodox view.
+The model's behavior recreates IR phenomena from the bottom
+up. The aforementioned positive feedback loop is well-studied in IR as the
+``security dilemma'' \citep{jervis1978cooperation}. Note that there is no model
+logic explicitly dictating this behavior. Rather, the model endows agents with 
+only simple rules---e.g., \textit{if my neighbor increases mechanization, 
+then increase my own}---that nevertheless cause the emergence of this behavior.
+That it does so increases confidence in the correctness of the model since
+it in this specific area corresponds to theoretically-expected behavior despite
+not being programmed to do so. 
+
+More broadly, model behavior supports the argument that mechanization is
+a complex system. There is no definitive checklist for what constitutes
+complexity, but this model's behavior meets at least four core criteria. One,
+as previously described, agent cognition and interactions cause behavior 
+to emerge in a bottom-up fashion. Two, because the model's macro-behavior derives from
+micro-interactions, one cannot causally separate the part from the whole. For
+example, suppose that State A increases its mechanization, and therefore neighboring
+State B also does so. One cannot say that State A \textit{caused} State B to
+raise its mechanization since State A's original increase itself derives from
+interaction with other neighbors, enemies, historical experiences, and the like. 
+Three, a positive feedback loop emerges. Four, system behavior is in some ways 
+resilient to variation in input parameter values. As shown in Table 6's parameter sweep, very
+different input values lead to about the same behavior: e.g., the same states
+are always relatively the most mechanized. That the model's behavior matches so
+many attributes of complex systems strengthens the belief that real-world
+mechanization is a complex system (put differently, that these findings are not
+just artifacts of a particular model).
 
 \subsection{Future Research}
+
+This paper's findings raise an obvious and important question: what is the
+missing ``brake'' that, if included in the model, 
+would hold mechanization to historical levels? Fully answering this question is
+beyond the scope of this paper. 
 
 \newpage
 

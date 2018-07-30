@@ -1,12 +1,12 @@
 # Fdb version 3
-["biber paper2"] 1532901619 "paper2.bcf" "paper2.bbl" "paper2" 1532903305
+["biber paper2"] 1532910117 "paper2.bcf" "paper2.bbl" "paper2" 1532910154
   "ascii input as UTF-8" 0 -1 0 ""
-  "paper2.bcf" 1532903305 93649 a5dea9b93b3d0db3d9313026f70e070f ""
-  "paper2.bib" 1532051957 21564 a2f41bdcf25ecc1ec8a261b90541e66d ""
+  "paper2.bcf" 1532910154 93713 96a978a2871827a6553d8a88c207c6c9 ""
+  "paper2.bib" 1532910071 21802 f600cc553e76e79b8e8b0f05ed2b1042 ""
   (generated)
-  "paper2.blg"
   "paper2.bbl"
-["pdflatex"] 1532903294 "paper2.tex" "paper2.pdf" "paper2" 1532903305
+  "paper2.blg"
+["pdflatex"] 1532910143 "paper2.tex" "paper2.pdf" "paper2" 1532910154
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1480098698 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1480098698 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1480098701 1328 c834bbb027764024c09d3d2bf908b5f0 ""
@@ -152,13 +152,13 @@
   "/usr/local/texlive/2017/texmf-var/web2c/pdftex/pdflatex.fmt" 1514125355 2589344 e3e8f289402fb761e5a9dc94a585dc77 ""
   "/usr/local/texlive/2017/texmf.cnf" 1514125340 455 5b996dcaa0eb4ef14a83b026bc0a008c ""
   "map.png" 1526172837 1566957 b3ebae88356965a89ceff34d2c9f8164 ""
-  "paper2.aux" 1532903305 19592 bf3fd0db782758c5d54d92519c7d0fbc ""
-  "paper2.bbl" 1532901623 93202 e80afeafc0f2860911773ef482ec15d2 "biber paper2"
-  "paper2.run.xml" 1532903305 2355 24d0c4828c081d8bb5730401452740f6 ""
-  "paper2.tex" 1532903289 44503 7dfa01832c47272fc0095f3fe0518cad ""
+  "paper2.aux" 1532910154 19797 5c9fa21174b8ab15933b9eb955adb0a3 ""
+  "paper2.bbl" 1532910121 94581 eea5124ec1e2df90df4dd3f5b7ecc587 "biber paper2"
+  "paper2.run.xml" 1532910154 2355 24d0c4828c081d8bb5730401452740f6 ""
+  "paper2.tex" 1532910101 45477 d4254ce6aa41c0145c9d4069b6a249fe ""
   (generated)
   "paper2.aux"
-  "paper2.pdf"
   "paper2.bcf"
-  "paper2.run.xml"
   "paper2.log"
+  "paper2.run.xml"
+  "paper2.pdf"

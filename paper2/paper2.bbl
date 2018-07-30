@@ -1815,6 +1815,39 @@
       \field{title}{Grasping the Democratic Peace: Principles for a Post-Cold War World}
       \field{year}{1994}
     \endentry
+    \entry{scheibert2001prussian}{book}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=46665c8adc667912aab9c2b476af6e8c}{%
+           family={Scheibert},
+           familyi={S\bibinitperiod},
+           given={Justus},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=880ae1cca8f06e09c3aaedda26ef9b57}{%
+           family={Trautmann},
+           familyi={T\bibinitperiod},
+           given={Frederic},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {University of Missouri Press}%
+      }
+      \strng{namehash}{16062c9d7d8c7cff871848c767913bbc}
+      \strng{fullhash}{16062c9d7d8c7cff871848c767913bbc}
+      \strng{bibnamehash}{16062c9d7d8c7cff871848c767913bbc}
+      \strng{authorbibnamehash}{16062c9d7d8c7cff871848c767913bbc}
+      \strng{authornamehash}{16062c9d7d8c7cff871848c767913bbc}
+      \strng{authorfullhash}{16062c9d7d8c7cff871848c767913bbc}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{A Prussian observes the American Civil War: the military studies of Justus Scheibert}
+      \field{year}{2001}
+    \endentry
     \entry{schmitt_2004}{article}{}
       \name{author}{1}{}{%
         {{uniquename=0,uniquepart=base,hash=ad828531b948246af75b69480aa21417}{%
